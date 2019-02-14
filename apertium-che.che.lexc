@@ -4,6 +4,27 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>   ! Noun
+%<v%>   ! Verb
+%<tv%>  ! Transitive
+%<iv%>  ! Intransitive
+%<pres%> ! Present
+%<past%> ! past
+%<fut%>  ! Future
+%<ptn%> ! Potential Future
+%<imf%> ! Imperfective
+%<pf%> ! Perfective
+
+
+
+
+
+
+
+
+
+
+
+
 
 ! Number morphology
 %<pl%>  ! Plural
@@ -46,4 +67,3 @@ house:house RegNounInfl ; ! A noun
 ! https://github.com/hfst/
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
 ! http://wiki.apertium.org/wiki/Hfst
-
