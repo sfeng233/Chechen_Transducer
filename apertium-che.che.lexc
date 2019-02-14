@@ -4,6 +4,8 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>   ! Noun
+
+! Verb
 %<v%>   ! Verb
 %<tv%>  ! Transitive
 %<iv%>  ! Intransitive
@@ -13,10 +15,57 @@ Multichar_Symbols
 %<ptn%> ! Potential Future
 %<imf%> ! Imperfective
 %<pf%> ! Perfective
+%<prog%> ! Progressive
+%<rec%> ! Recent
+%<rem%> ! Remote
+%<imp%> ! Imperative
+%<plt%> ! Polite Imperative
+%<imd%> ! Immediate Imperative
+%<tsk%> ! Tasked Imperative
+%<ctg%> ! Categorical imperative
+%<caus%> ! Causative
+%<wit%> ! Witnessed
+%<uwit%> ! Unwitnessed
+%<dnm%> ! Verbal denominal
+%<rcp%> ! Relative Clausal Participle
 
+!Postposition
+%<post%> ! Postposition
 
+!Adjective
+%<adj%> ! Adjective
+%<cls%> ! Class Adjective
+%<comp%> ! Comparative Adjective
+%<ext%> ! Extended Comparative
+%<sub%> ! Substantivized Adjective
+%<idp%> ! Independent
+%<dp%> ! Dependent
 
+! Adverb
+%<adv%> ! Adverb
+%<tmp%> ! Time
+%<loc%> ! Place
+%<man%> ! Manner
+%<rea%> ! Reason
+%<quan%> ! Quantifying
+%<des%> ! Descriptive
 
+! Numeral
+%<num%> ! Numeral
+%<car%> ! Cardinal
+%<ord%> ! Ordinal
+
+! Case Suffixes
+%<abs%> ! absolutive
+%<erg%> ! Ergative
+%<gen%> ! Gentivie
+%<dat%> ! Dative
+%<all%> ! Allative
+%<ins%> ! instrumental
+%<lat%> ! lative
+%<cmp%> ! Comparative
+%<ine%> ! Inessive
+%<abl%> ! Ablative
 
 
 
