@@ -99,6 +99,7 @@ Multichar_Symbols
 ! Other symbols
 %>      ! Morpheme boundary
 %{a%}
+%{AA%}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -108,6 +109,7 @@ Multichar_Symbols
 LEXICON Root
 
 NounRoot ;
+VerbRoot ;
 
 
 LEXICON RegNounDcInfl
@@ -144,6 +146,14 @@ LEXICON NounInfl-Aug
 
 
 !LEXICON RegNoun
+LEXICON Verb-TV
+
+%<v%>%<tv%>: Verb-Infl ;
+
+LEXICON Verb-Infl
+
+%<past%>%<rem%>%<wit%>:ира # ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -157,6 +167,14 @@ LEXICON NounRoot
 
 гала:гала RegNounDcInfl ; ! ""
 гала:галн%{a%} RegNounDcInfl-Aug ; ! ""
+
+LEXICON VerbRoot
+
+
+мала:м%{AA%}л%{a%} Verb-TV ;
+
+
+дада%<v%>%<iv%>%<pres%>:доду # ;
 
 
 ! Resources:
