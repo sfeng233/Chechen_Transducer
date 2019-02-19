@@ -8,7 +8,7 @@ Multichar_Symbols
 %<vc%>  ! v.class
 %<jc%>  ! j.class
 %<jc2%> ! j.class II
-%<dc%>  ! d.class 
+%<dc%>  ! d.class
 %<bc%>  ! b.class
 %<bc2%> ! b.class II
 
@@ -17,7 +17,7 @@ Multichar_Symbols
 %<sg%>  ! Singular
 
 
-! Case 
+! Case
 %<abs%> ! absolutive
 %<erg%> ! Ergative
 %<gen%> ! Gentivie
@@ -32,15 +32,15 @@ Multichar_Symbols
 ! Proper Noun
 %<np%>   ! Proper Noun
 %<pers%>   ! Personal
-%<p1%>   ! 1st-person 
-%<p2%>   ! 2nd-person 
-%<p3%>   ! 3rd-person 
-%<inc%>   ! Inclusive 
+%<p1%>   ! 1st-person
+%<p2%>   ! 2nd-person
+%<p3%>   ! 3rd-person
+%<inc%>   ! Inclusive
 %<exc%>   ! Exclusive
-%<dem%>   ! Demonstrative 
+%<dem%>   ! Demonstrative
 %<prx%>   ! Proximal
 %<dst%>   ! Distal
-%itg%>   ! Interrogative 
+%itg%>   ! Interrogative
 
 ! Pronoun
 %<prn%>   !
@@ -98,6 +98,7 @@ Multichar_Symbols
 
 ! Other symbols
 %>      ! Morpheme boundary
+%{a%}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -109,10 +110,40 @@ LEXICON Root
 NounRoot ;
 
 
-LEXICON RegNounInfl
+LEXICON RegNounDcInfl
 
-%<n%>%<sg%>: # ;
-%<n%>%<pl%>:%>s # ;
+%<n%>%<dc%>: NounInfl-NonAug ;
+
+
+LEXICON RegNounDcInfl-Aug
+
+%<n%>%<dc%>: NounInfl-Aug ;
+
+
+LEXICON RegNounEndingAbs
+:%>%{a%}ш # ;
+:%>ий # ;
+
+LEXICON RegNounEndingErg
+:%>о # ;
+:%>ac # ;
+
+LEXICON RegNounEndingGen
+:%>ийн # ;
+:%>ин # ;
+
+LEXICON NounInfl-NonAug
+%<abs%>%<sg%>: # ;
+
+LEXICON NounInfl-Aug
+%<abs%>%<pl%>: RegNounEngingAbs ;
+%<erg%>%<sg%>: RegNounEndingErg ;
+%<erg%>%<pl%>:%>ашa # ;
+%<gen%>%<sg%>:н # ;
+%<gen%>%<pl%>: RegNounEndingGen ;
+
+
+!LEXICON RegNoun
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -121,8 +152,11 @@ LEXICON RegNounInfl
 
 LEXICON NounRoot
 
-house:house RegNounInfl ; ! A noun
+!house:house RegNounInfl ; ! A noun
+кор:кор RegNounDcInfl ; ! "(gloss)"
 
+гала:гала RegNounDcInfl ; ! ""
+гала:галн%{a%} RegNounDcInfl-Aug ; ! ""
 
 
 ! Resources:
