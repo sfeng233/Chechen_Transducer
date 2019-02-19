@@ -126,22 +126,39 @@ LEXICON RegNounEndingAbs
 
 LEXICON RegNounEndingErg
 :%>о # ;
-:%>ac # ;
+:%>%{a%}c # ;
 
 LEXICON RegNounEndingGen
 :%>ийн # ;
 :%>ин # ;
 
+LEXICON RegNounEndingAll
+:%>%{a%}га # ;
+:%>е # ;
+
 LEXICON NounInfl-NonAug
 %<abs%>%<sg%>: # ;
 
 LEXICON NounInfl-Aug
-%<abs%>%<pl%>: RegNounEngingAbs ;
+%<abs%>%<pl%>: RegNounEndingAbs ;
 %<erg%>%<sg%>: RegNounEndingErg ;
-%<erg%>%<pl%>:%>ашa # ;
-%<gen%>%<sg%>:н # ;
+%<erg%>%<pl%>:%>%{a%}ша # ;
+%<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>: RegNounEndingGen ;
-
+%<dat%>%<sg%>:%{a%}на # ;
+%<dat%>%<pl%>:%>%{a%}шана # ;
+%<all%>%<sg%>: RegNounEndingAll ;
+%<all%>%<pl%>:%>%{a%}шка # ;
+%<ins%>%<sg%>:%{a%}ца # ;
+%<ins%>%<pl%>:%>%{a%}шца # ;
+%<lat%>%<sg%>:%{a%}х # ;
+%<lat%>%<pl%>:%{i%}х # ;
+%<cmp%>%<sg%>:%{a%}л # ;
+%<cmp%>%<pl%>:%{i%}л # ;
+%<ine%>%<sg%>:%{a%}хь # ;
+%<ine%>%<pl%>:%>%{a%}шкахь # ;
+%<abl%>%<sg%>:%{a%}ра # ;
+%<abl%>%<pl%>:%>%{a%}шкара # ;
 
 !LEXICON RegNoun
 
@@ -156,7 +173,10 @@ LEXICON NounRoot
 кор:кор RegNounDcInfl ; ! "(gloss)"
 
 гала:гала RegNounDcInfl ; ! ""
-гала:галн%{a%} RegNounDcInfl-Aug ; ! ""
+гала:галнa RegNounDcInfl-Aug ; ! ""
+
+лом:лом RegNounDcInfl ; ! ""
+лом:лоьм RegNounDcInfl-Aug ; ! ""
 
 
 ! Resources:
