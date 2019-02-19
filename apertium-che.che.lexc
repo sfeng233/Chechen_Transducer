@@ -3,7 +3,47 @@
 Multichar_Symbols
 
 ! Part of speech categories
+! Noun
 %<n%>   ! Noun
+%<vc%>  ! v.class
+%<jc%>  ! j.class
+%<jc2%> ! j.class II
+%<dc%>  ! d.class 
+%<bc%>  ! b.class
+%<bc2%> ! b.class II
+
+! Number feature
+%<pl%>  ! Plural
+%<sg%>  ! Singular
+
+
+! Case 
+%<abs%> ! absolutive
+%<erg%> ! Ergative
+%<gen%> ! Gentivie
+%<dat%> ! Dative
+%<all%> ! Allative
+%<ins%> ! instrumental
+%<lat%> ! lative
+%<cmp%> ! Comparative
+%<ine%> ! Inessive
+%<abl%> ! Ablative
+
+! Proper Noun
+%<np%>   ! Proper Noun
+%<pers%>   ! Personal
+%<p1%>   ! 1st-person 
+%<p2%>   ! 2nd-person 
+%<p3%>   ! 3rd-person 
+%<inc%>   ! Inclusive 
+%<exc%>   ! Exclusive
+%<dem%>   ! Demonstrative 
+%<prx%>   ! Proximal
+%<dst%>   ! Distal
+%itg%>   ! Interrogative 
+
+! Pronoun
+%<prn%>   !
 
 ! Verb
 %<v%>   ! Verb
@@ -55,29 +95,6 @@ Multichar_Symbols
 %<car%> ! Cardinal
 %<ord%> ! Ordinal
 
-! Case Suffixes
-%<abs%> ! absolutive
-%<erg%> ! Ergative
-%<gen%> ! Gentivie
-%<dat%> ! Dative
-%<all%> ! Allative
-%<ins%> ! instrumental
-%<lat%> ! lative
-%<cmp%> ! Comparative
-%<ine%> ! Inessive
-%<abl%> ! Ablative
-
-
-
-
-
-
-
-
-
-! Number morphology
-%<pl%>  ! Plural
-%<sg%>  ! Singular
 
 ! Other symbols
 %>      ! Morpheme boundary
