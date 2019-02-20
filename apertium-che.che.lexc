@@ -184,7 +184,7 @@ LEXICON VerbInf
 %<v%>%<inf%>: # ;
 
 LEXICON VerbStem
-%<v%>%: VerbInfl ;
+%<v%>: VerbInfl ;
 
 LEXICON VerbInfl
 %<pres%>:у # ;
@@ -194,7 +194,7 @@ LEXICON VerbInfl
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
 %<past%>%<pf%>%<uwit%>:нера # ;
-%<fut%>%<ptn%>:ур # ；
+%<fut%>%<ptn%>:ур # ;
 
 
 
@@ -257,6 +257,7 @@ LEXICON VerbRoot
 
 мала:мала VerbInf ; ! "drink"
 мала:м%{AA%}л VerbStem ; ! "drink"
+
 
 
 дада%<v%>%<iv%>%<pres%>:доду # ;
