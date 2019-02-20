@@ -177,7 +177,7 @@ LEXICON NounB2c-Aug
 
 
 LEXICON RegNounUninfl
-%<abs%>%<sg%>: # ;
+%<abs%>%<sg%>: # ; 
 
 LEXICON RegNounInfl
 %<abs%>%<pl%>: RegNounInfl-AbsPl ;
