@@ -211,6 +211,14 @@ LEXICON NounRoot
 кол:кол RegNounInfl-Abs ; ! "bush"
 кол:коьл RegNounInfl-Aug ; ! "bush"
 
+! Irregular Plural
+
+йоӏ%<n%>%<sg%>:йоӏ # ; ! "girl"
+йоӏ%<n%>%<pl%>:мехкарий # ; ! "girls"
+
+стаг%<n%>%<sg%>:стаг # ; ! "person"
+стаг%<n%>%<pl%>:нах # ; ! "people"
+
 LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounInfl ; ! "Satujev"
