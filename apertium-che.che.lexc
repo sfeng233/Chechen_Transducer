@@ -100,6 +100,7 @@ Multichar_Symbols
 %>      ! Morpheme boundary
 %{a%}
 %{I%}
+%{H%}
 %{i%}
 %{A%}
 %{AA%}
@@ -132,7 +133,7 @@ LEXICON RegNounEndingAbs
 :%>%{I%}й # ;
 
 LEXICON RegNounEndingErg
-:%>о # ;
+:%>%{H%}о # ;
 :%{a%}c # ;
 
 LEXICON RegNounEndingGen
@@ -145,10 +146,10 @@ LEXICON RegNounEndingAll
 
 LEXICON NounInfl-Abs
 %<abs%>%<sg%>: # ;
+%<erg%>%<sg%>: RegNounEndingErg ;
 
 LEXICON NounInfl-Aug
 %<abs%>%<pl%>: RegNounEndingAbs ;
-%<erg%>%<sg%>: RegNounEndingErg ;
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>: RegNounEndingGen ;
@@ -210,6 +211,16 @@ LEXICON NounRoot
 
 кол:кол RegNounInfl-Abs ; ! "bush"
 кол:коьл RegNounInfl-Aug ; ! "bush"
+
+ахгІайре:ахгІайре RegNounInfl-Abs ; ! "peninsula"
+ахгІайре:ахгІайре RegNounInfl-Aug ; ! "peninsula"
+
+кулинарка:кулинарка RegNounInfl-Abs ; ! "cookery"
+кулинарка:кулинарка RegNounInfl-Aug ; ! "cookery"
+
+школа:школа RegNounInfl-Abs ; ! "school"
+школа:школ RegNounInfl-Aug ; ! "school"
+
 
 ! Irregular Plural
 
