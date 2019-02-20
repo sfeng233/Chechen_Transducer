@@ -7,60 +7,60 @@ Tests:
   Adjective: {}
   Adverb: {}
   Allative Case:
-    ахгІайре<n><jc2><sg><all>:
+    ахгІайре<n><jc2><all><sg>:
     - aхгІайрегa
-    ахдош<n><dc><sg><all>:
-    - ахдашe
-    школа<n><jc><sg><all>:
+    лом<n><dc><all><sg>:
+    - лоьме
+    школа<n><jc><all><sg>:
     - школе
   Aspect: {}
   Cardinal{{tag|car}}: {}
   Case: {}
   Case Suffixes:
-    лом<n><dc><sg><abl>:
+    лом<n><dc><abl><sg>:
     - лоьмара
-    лом<n><dc><sg><abs>:
+    лом<n><dc><abs><sg>:
     - лом
-    лом<n><dc><sg><all>:
+    лом<n><dc><all><sg>:
     - лоьме
-    лом<n><dc><sg><cmp>:
+    лом<n><dc><cmp><sg>:
     - лоьмал
-    лом<n><dc><sg><dat>:
-    - лоьмо
-    лом<n><dc><sg><erg>:
-    - лоьман
-    лом<n><dc><sg><gen>:
+    лом<n><dc><dat><sg>:
     - лоьмана
-    лом<n><dc><sg><ine>:
+    лом<n><dc><erg><sg>:
+    - лоьмо
+    лом<n><dc><gen><sg>:
+    - лоьман
+    лом<n><dc><ine><sg>:
     - лоьмахь
-    лом<n><dc><sg><ins>:
+    лом<n><dc><ins><sg>:
     - лоьмаца
-    лом<n><dc><sg><lat>:
-    - лоьмехь
+    лом<n><dc><lat><sg>:
+    - лоьмахь
   Class adj {{tag|cls}}: {}
   Comparative adj{{tag|comp}}: {}
   Demonstrative Pronoun {{tag|dem}}: {}
   Ergative Case:
-    ахгІайре<n><jc2><sg><erg>:
+    ахгІайре<n><jc2><erg><sg>:
     - ахгІайрено
-    ахдош<n><dc><sg><erg>:
-    - ахдашо
-    котама<n><jc2><sg><erg>:
-    - котамо
+    кулинарка<n><jc><erg><sg>:
+    - кулинарко
+    лом<n><dc><erg><sg>:
+    - лоьмо
   Evidentiality: {}
   Examples: {}
   Exceptions:
-    кол<n><jc2><pl>:
+    кол<n><jc2><abs><pl>:
     - коьллаш
-    ламаро<n><jc2><pl>:
+    ламаро<n><jc2><abs><pl>:
     - ламарой
-    патар<n><dc><pl>:
+    патар<n><dc><abs><pl>:
     - патарш
   Interrogative Pronoun {{tag|itg}}: {}
   Irregular:
-    йоӏ<n><jc><pl>:
+    йоӏ<n><jc><abs><pl>:
     - мехкарий
-    стаг<n><jc2><pl>:
+    стаг<n><jc2><abs><pl>:
     - нах
   Main Parts of Speech in Chechen: {}
   Mood: {}
@@ -73,7 +73,7 @@ Tests:
   Past Imperfective Tense:
     дада<v><iv><past><imp>:
     - додура
-    деша<v><iv><past><imp>:
+    деша<v><tv><past><imp>:
     - доьшура
     дижа<v><iv><past><imp>:
     - дуьжура
@@ -85,7 +85,7 @@ Tests:
     - кхорзура
     мала<v><tv><past><imp>:
     - молура
-    тоса<v><tv><past><imp>:
+    тоса<v><iv><past><imp>:
     - тусура
     хила<v><iv><past><imp>:
     - хуьлура
@@ -105,7 +105,7 @@ Tests:
   Personal Pronoun {{tag|pers}}: {}
   Plural: {}
   Plural for PropN:
-    Сатуев<np><pl>:
+    Сатуев<np><fam><abs><pl>:
     - Сатуевгӏар
   Postposition: {}
   Potential Future:
@@ -113,15 +113,13 @@ Tests:
     - додур
     дижа<v><iv><fut><ptn>:
     - дуьжу
-    тоса<v><tv><fut><ptn>:
+    тоса<v><iv><fut><ptn>:
     - тусу
     эца<v><tv><fut><ptn>:
     - оьцур
   Present Perfect Tense:
     даккха<v><tv><pres><pf>:
     - даьккхина
-    детта<v><tv><pres><pf>:
-    - деттина
     деша<v><tv><pres><pf>:
     - дешна
     дотта<v><tv><pres><pf>:
@@ -148,13 +146,13 @@ Tests:
     - туьхи
   References: {}
   Regular change:
-    гала<n><dc><pl>:
+    гала<n><dc><abs><pl>:
     - галнаш
-    кор<n><dc><pl>:
+    кор<n><dc><abs><pl>:
     - кораш
-    моз<n><dc><pl>:
+    моз<n><dc><abs><pl>:
     - мозий
-    хьаша<n><jc2><pl>:
+    хьаша<n><jc2><abs><pl>:
     - хьеший
   Relative adj: {}
   Remote Past Tense - Witnessed:
@@ -197,3 +195,4 @@ Tests:
   Tense: {}
   Transitivity: {}
   Verb: {}
+  Verbal Morphology: {}
