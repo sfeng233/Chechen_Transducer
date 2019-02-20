@@ -18,19 +18,22 @@ Multichar_Symbols
 
 
 ! Case
-%<abs%> ! absolutive
+%<abs%> ! Absolutive
 %<erg%> ! Ergative
 %<gen%> ! Gentivie
 %<dat%> ! Dative
 %<all%> ! Allative
-%<ins%> ! instrumental
-%<lat%> ! lative
+%<ins%> ! Instrumental
+%<lat%> ! Lative
 %<cmp%> ! Comparative
 %<ine%> ! Inessive
 %<abl%> ! Ablative
 
 ! Proper Noun
 %<np%>   ! Proper Noun
+
+! Pronoun
+%<prn%>   ! Pronoun
 %<pers%>   ! Personal
 %<p1%>   ! 1st-person
 %<p2%>   ! 2nd-person
@@ -40,10 +43,7 @@ Multichar_Symbols
 %<dem%>   ! Demonstrative
 %<prx%>   ! Proximal
 %<dst%>   ! Distal
-%itg%>   ! Interrogative
-
-! Pronoun
-%<prn%>   !
+%<itg%>   ! Interrogative
 
 ! Verb
 %<v%>   ! Verb
@@ -99,8 +99,11 @@ Multichar_Symbols
 ! Other symbols
 %>      ! Morpheme boundary
 %{a%}
-%{AA%}
+%{I%}
 %{i%}
+%{A%}
+%{AA%}
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -110,60 +113,64 @@ Multichar_Symbols
 LEXICON Root
 
 NounRoot ;
+PropNounRoot ;
 VerbRoot ;
 
 
-LEXICON RegNounDcInfl
+LEXICON RegNounInfl-Abs
 
-%<n%>%<dc%>: NounInfl-NonAug ;
+%<n%>: NounInfl-Abs ;
 
 
-LEXICON RegNounDcInfl-Aug
+LEXICON RegNounInfl-Aug
 
-%<n%>%<dc%>: NounInfl-Aug ;
+%<n%>: NounInfl-Aug ;
 
 
 LEXICON RegNounEndingAbs
-:%>%{a%}ш # ;
-:%>ий # ;
+:%{a%}ш # ;
+:%>%{I%}й # ;
 
 LEXICON RegNounEndingErg
 :%>о # ;
-:%>%{a%}c # ;
+:%{a%}c # ;
 
 LEXICON RegNounEndingGen
-:%>ийн # ;
-:%>ин # ;
+:и%{i%}н # ;
+
 
 LEXICON RegNounEndingAll
-:%>%{a%}га # ;
+:%{a%}га # ;
 :%>е # ;
 
-LEXICON NounInfl-NonAug
+LEXICON NounInfl-Abs
 %<abs%>%<sg%>: # ;
 
 LEXICON NounInfl-Aug
 %<abs%>%<pl%>: RegNounEndingAbs ;
 %<erg%>%<sg%>: RegNounEndingErg ;
-%<erg%>%<pl%>:%>%{a%}ша # ;
+%<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>: RegNounEndingGen ;
 %<dat%>%<sg%>:%{a%}на # ;
-%<dat%>%<pl%>:%>%{a%}шана # ;
+%<dat%>%<pl%>:%{a%}шана # ;
 %<all%>%<sg%>: RegNounEndingAll ;
-%<all%>%<pl%>:%>%{a%}шка # ;
+%<all%>%<pl%>:%{a%}шка # ;
 %<ins%>%<sg%>:%{a%}ца # ;
-%<ins%>%<pl%>:%>%{a%}шца # ;
+%<ins%>%<pl%>:%{a%}шца # ;
 %<lat%>%<sg%>:%{a%}х # ;
-%<lat%>%<pl%>:%{i%}х # ;
+%<lat%>%<pl%>:%{A%}х # ;
 %<cmp%>%<sg%>:%{a%}л # ;
-%<cmp%>%<pl%>:%{i%}л # ;
+%<cmp%>%<pl%>:%{A%}л # ;
 %<ine%>%<sg%>:%{a%}хь # ;
-%<ine%>%<pl%>:%>%{a%}шкахь # ;
+%<ine%>%<pl%>:%{a%}шкахь # ;
 %<abl%>%<sg%>:%{a%}ра # ;
-%<abl%>%<pl%>:%>%{a%}шкара # ;
+%<abl%>%<pl%>:%{a%}шкара # ;
 
-!LEXICON RegNoun
+LEXICON PropNounInfl
+%<np%>%<sg%>: # ;
+%<np%>%<pl%>:гӏар # ;
+
 LEXICON Verb-TV
 
 %<v%>%<tv%>: Verb-Infl ;
@@ -180,14 +187,35 @@ LEXICON Verb-Infl
 
 LEXICON NounRoot
 
-!house:house RegNounInfl ; ! A noun
-кор:кор RegNounDcInfl ; ! "(gloss)"
+кор:кор RegNounInfl-Abs ; ! "window"
+кор:кор RegNounInfl-Aug ; ! "window"
 
-гала:гала RegNounDcInfl ; ! ""
-гала:галнa RegNounDcInfl-Aug ; ! ""
+гала:гала RegNounInfl-Abs ; ! "noodle"
+гала:галнa RegNounInfl-Aug ; ! "noodle"
 
-лом:лом RegNounDcInfl ; ! ""
-лом:лоьм RegNounDcInfl-Aug ; ! ""
+лом:лом RegNounInfl-Abs ; ! "lion"
+лом:лоьм RegNounInfl-Aug ; ! "lion"
+
+хьаша:хьаша RegNounInfl-Abs ; ! "guest"
+хьаша:хьеш RegNounInfl-Aug ; ! "guest"
+
+моз:моз RegNounInfl-Abs ; ! "fly(noun)"
+моз:моз RegNounInfl-Aug ; ! "fly(noun)"
+
+ламаро:ламаро RegNounInfl-Abs ; ! "mountainer"
+ламаро:ламаро RegNounInfl-Aug ; ! "mountainer"
+
+патар:патар RegNounInfl-Abs ; ! "leaf"
+патар:патар RegNounInfl-Aug ; ! "leaf"
+
+кол:кол RegNounInfl-Abs ; ! "bush"
+кол:коьл RegNounInfl-Aug ; ! "bush"
+
+LEXICON PropNounRoot
+
+Сатуев:Сатуев PropNounInfl ; ! "Satujev"
+
+
 
 LEXICON VerbRoot
 
