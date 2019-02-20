@@ -258,9 +258,56 @@ LEXICON VerbRoot
 мала:мала VerbInf ; ! "drink"
 мала:м%{AA%}л VerbStem ; ! "drink"
 
+дада:дада VerbInf ; ! "run"
+дада:д%{AA%}д VerbStem ; ! "run"
+
+кхарза:кхарза VerbInf ; ! "fry"
+кхарза:кх%{AA%}рз VerbStem ; ! "fry"
+
+зен:зен VerbInf ; ! "examine" do not add on suffix normally
+зен:з%{E%} VerbStem ; ! "examine"
+
+лен:лен VerbInf ; ! "talk" do not add on suffix normally
+лен:л%{E%} VerbStem ; ! "talk"
+
+эца:эца VerbInf ; ! "buy"
+эца:%{EE%}ц VerbStem ; ! "buy"
+
+тоса:тоса VerbInf ; ! "feel"
+тоса:т%{O%}с VerbStem ; ! "feel"
+
+дохка:дохка VerbInf ; ! "sell"
+дохка:д%{O%}хк VerbStem ; ! "sell"
+
+дижа:дижа VerbInf ; ! "sleep"
+дижа:д%{I%}ж VerbStem ; ! "sleep"
+
+хила:хила VerbInf ; ! "happen"
+хила:х%{I%}л VerbStem ; ! "happen"
+
+дотта:дотта VerbInf ; ! "pour"
+дотта:д%{O%}тт VerbStem ; ! "pour"
+
+даккха:даккха VerbInf ; ! "receive"
+даккха:д%{AA%}ккх VerbStem ; ! "receive"
+
+деша:деша VerbInf ; ! "read"
+деша:д%{E%}ш VerbStem ; ! "read"
+
+детта:детта VerbInf ; ! "throw"
+детта:д%{E%}тт VerbStem ; ! "throw"
+
+тоха:тоха VerbInf ; ! "hit/strike"
+тоха:т%{O%}х VerbStem ; ! "hit/strike"
+
+дига:дига VerbInf ; ! "lead"
+дига:д%{I%}г VerbStem ; ! "lead"
+
+дула:дула VerbInf ; ! "inflate"
+дула:дул VerbStem ; ! "inflate"
 
 
-дада%<v%>%<iv%>%<pres%>:доду # ;
+
 
 
 ! Resources:
