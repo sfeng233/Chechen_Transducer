@@ -31,6 +31,7 @@ Multichar_Symbols
 
 ! Proper Noun
 %<np%>   ! Proper Noun
+%<fam%>  ! Family name
 
 ! Pronoun
 %<prn%>   ! Pronoun
@@ -217,8 +218,8 @@ LEXICON RegNounInfl-All
 :%>е # ;
 
 LEXICON PropNounInfl
-%<np%>%<abs%>%<sg%>: # ;
-%<np%>%<abs%>%<pl%>:гӏар # ;
+%<np%>%<fam%>%<abs%>%<sg%>: # ;
+%<np%>%<fam%>%<abs%>%<pl%>:гӏар # ;
 
 
 LEXICON Verb-IV
