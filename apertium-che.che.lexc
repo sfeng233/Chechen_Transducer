@@ -5,12 +5,12 @@ Multichar_Symbols
 ! Part of speech categories
 ! Noun
 %<n%>   ! Noun
-%<vc%>  ! v.class
-%<jc%>  ! j.class
-%<jc2%> ! j.class II
-%<dc%>  ! d.class
-%<bc%>  ! b.class
-%<bc2%> ! b.class II
+%<cl_v%>  ! v.class
+%<cl_j%>  ! j.class
+%<cl_j2%> ! j.class II
+%<cl_d%>  ! d.class
+%<cl_b%>  ! b.class
+%<cl_b2%> ! b.class II
 
 ! Number feature
 %<pl%>  ! Plural
@@ -124,44 +124,69 @@ PropNounRoot ;
 VerbRoot ;
 
 
-LEXICON RegNounInfl-Abs
+LEXICON NounVc !Absolutive forms aka. citation forms
 
-%<n%>: NounInfl-Abs ;
+%<n%>%<cl_v%>: RegNounUninfl ;
+
+LEXICON NounJc
+
+%<n%>%<cl_j%>: RegNounUninfl ;
+
+LEXICON NounJ2c
+
+%<n%>%<cl_j2%>: RegNounUninfl ;
+
+LEXICON NounDc
+
+%<n%>%<cl_d%>: RegNounUninfl ;
+
+LEXICON NounBc
+
+%<n%>%<cl_b%>: RegNounUninfl ;
+
+LEXICON NounB2c
+
+%<n%>%<cl_b2%>:  RegNounUninfl ;
 
 
-LEXICON RegNounInfl-Aug
+LEXICON NounVc-Aug ! Augment base (different from abs forms)
 
-%<n%>: NounInfl-Aug ;
+%<n%>%<cl_v%>: RegNounInfl ;
+
+LEXICON NounJc-Aug
+
+%<n%>%<cl_j%>: RegNounInfl ;
+
+LEXICON NounJ2c-Aug
+
+%<n%>%<cl_j2%>: RegNounInfl ;
+
+LEXICON NounDc-Aug
+
+%<n%>%<cl_d%>: RegNounInfl ;
+
+LEXICON NounBc-Aug
+
+%<n%>%<cl_b%>: RegNounInfl ;
+
+LEXICON NounB2c-Aug
+
+%<n%>%<cl_b2%>: RegNounInfl ;
 
 
-LEXICON RegNounEndingAbs
-:%{a%}ш # ;
-:%>%{i%}й # ;
 
-LEXICON RegNounEndingErg
-:%>%{h%}о # ;
-:%{a%}c # ;
-
-LEXICON RegNounEndingGen
-:и%{ii%}н # ;
-
-
-LEXICON RegNounEndingAll
-:%{a%}га # ;
-:%>е # ;
-
-LEXICON NounInfl-Abs
+LEXICON RegNounUninfl
 %<abs%>%<sg%>: # ;
-%<erg%>%<sg%>: RegNounEndingErg ;
 
-LEXICON NounInfl-Aug
-%<abs%>%<pl%>: RegNounEndingAbs ;
+LEXICON RegNounInfl
+%<abs%>%<pl%>: RegNounInfl-AbsPl ;
+%<erg%>%<sg%>: RegNounInfl-Erg ;
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
-%<gen%>%<pl%>: RegNounEndingGen ;
+%<gen%>%<pl%>: RegNounInfl-Gen ;
 %<dat%>%<sg%>:%{a%}на # ;
 %<dat%>%<pl%>:%{a%}шана # ;
-%<all%>%<sg%>: RegNounEndingAll ;
+%<all%>%<sg%>: RegNounInfl-All ;
 %<all%>%<pl%>:%{a%}шка # ;
 %<ins%>%<sg%>:%{a%}ца # ;
 %<ins%>%<pl%>:%{a%}шца # ;
@@ -174,19 +199,37 @@ LEXICON NounInfl-Aug
 %<abl%>%<sg%>:%{a%}ра # ;
 %<abl%>%<pl%>:%{a%}шкара # ;
 
+
+LEXICON RegNounInfl-AbsPl
+:%{a%}ш # ;
+:%>%{i%}й # ;
+
+LEXICON RegNounInfl-Erg
+:%>%{h%}о # ;
+:%{a%}c # ;
+
+LEXICON RegNounInfl-Gen
+:и%{ii%}н # ;
+
+
+LEXICON RegNounInfl-All
+:%{a%}га # ;
+:%>е # ;
+
 LEXICON PropNounInfl
 %<np%>%<abs%>%<sg%>: # ;
 %<np%>%<abs%>%<pl%>:гӏар # ;
 
 
-LEXICON VerbInf
+LEXICON Verb-IV
 
-%<v%>%<inf%>: # ;
+%<v%>%<iv%>: VerbInfl ;
 
-LEXICON VerbStem
-%<v%>: VerbInfl ;
+LEXICON Verb-TV
+%<v%>%<tv%>: VerbInfl ;
 
 LEXICON VerbInfl
+%<inf%>:a # ;
 %<pres%>:у # ;
 %<pres%>%<prog%>:уш # ;
 %<pres%>%<pf%>:%{i%}нa # ;
@@ -205,47 +248,47 @@ LEXICON VerbInfl
 
 LEXICON NounRoot
 
-кор:кор RegNounInfl-Abs ; ! "window"
-кор:кор RegNounInfl-Aug ; ! "window"
+кор:кор NounDc ; ! "window"
+кор:кор NounDc-Aug ; ! "window"
 
-гала:гала RegNounInfl-Abs ; ! "noodle"
-гала:галнa RegNounInfl-Aug ; ! "noodle"
+гала:гала NounDc ; ! "noodle"
+гала:галнa NounDc-Aug ; ! "noodle"
 
-лом:лом RegNounInfl-Abs ; ! "lion"
-лом:лоьм RegNounInfl-Aug ; ! "lion"
+лом:лом NounDc ; ! "lion"
+лом:лоьм NounDc-Aug ; ! "lion"
 
-хьаша:хьаша RegNounInfl-Abs ; ! "guest"
-хьаша:хьеш RegNounInfl-Aug ; ! "guest"
+хьаша:хьаша NounJc2 ; ! "guest"
+хьаша:хьеш NounJc2-Aug ; ! "guest"
 
-моз:моз RegNounInfl-Abs ; ! "fly(noun)"
-моз:моз RegNounInfl-Aug ; ! "fly(noun)"
+моз:моз NounDc ; ! "fly(noun)"
+моз:моз NounDc-Aug ; ! "fly(noun)"
 
-ламаро:ламаро RegNounInfl-Abs ; ! "mountainer"
-ламаро:ламаро RegNounInfl-Aug ; ! "mountainer"
+ламаро:ламаро NounJc2 ; ! "mountainer"
+ламаро:ламаро NounJc2-Aug ; ! "mountainer"
 
-патар:патар RegNounInfl-Abs ; ! "leaf"
-патар:патар RegNounInfl-Aug ; ! "leaf"
+патар:патар NounDc ; ! "leaf"
+патар:патар NounDc-Aug ; ! "leaf"
 
-кол:кол RegNounInfl-Abs ; ! "bush"
-кол:коьл RegNounInfl-Aug ; ! "bush"
+кол:кол NounJc2 ; ! "bush"
+кол:коьл NounJc2-Aug ; ! "bush"
 
-ахгІайре:ахгІайре RegNounInfl-Abs ; ! "peninsula"
-ахгІайре:ахгІайре RegNounInfl-Aug ; ! "peninsula"
+ахгІайре:ахгІайре NounJc2 ; ! "peninsula"
+ахгІайре:ахгІайре NounJc2-Aug ; ! "peninsula"
 
-кулинарка:кулинарка RegNounInfl-Abs ; ! "cookery"
-кулинарка:кулинарка RegNounInfl-Aug ; ! "cookery"
+кулинарка:кулинарка NounJc ; ! "cookery"
+кулинарка:кулинарка NounJc-Aug ; ! "cookery"
 
-школа:школа RegNounInfl-Abs ; ! "school"
-школа:школ RegNounInfl-Aug ; ! "school"
+школа:школа NounJc ; ! "school"
+школа:школ NounJc-Aug ; ! "school"
 
 
 ! Irregular Plural
 
-йоӏ%<n%>%<sg%>:йоӏ # ; ! "girl"
-йоӏ%<n%>%<pl%>:мехкарий # ; ! "girls"
+йоӏ%<n%>%<cl_j%>%<abs%>%<sg%>:йоӏ # ; ! "girl"
+йоӏ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
 
-стаг%<n%>%<sg%>:стаг # ; ! "person"
-стаг%<n%>%<pl%>:нах # ; ! "people"
+стаг%<n%>%<cl_j2%>%<abs%>%<sg%>:стаг # ; ! "person"
+стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
 
 LEXICON PropNounRoot
 
@@ -255,56 +298,39 @@ LEXICON PropNounRoot
 
 LEXICON VerbRoot
 
-мала:мала VerbInf ; ! "drink"
-мала:м%{AA%}л VerbStem ; ! "drink"
+мала:м%{AA%}л Verb-TV ; ! "drink"
 
-дада:дада VerbInf ; ! "run"
-дада:д%{AA%}д VerbStem ; ! "run"
+дада:д%{AA%}д Verb-IV ; ! "run"
 
-кхарза:кхарза VerbInf ; ! "fry"
-кхарза:кх%{AA%}рз VerbStem ; ! "fry"
+кхарза:кх%{AA%}рз Verb-TV ; ! "fry"
 
-зен:зен VerbInf ; ! "examine" do not add on suffix normally
-зен:з%{E%} VerbStem ; ! "examine"
+зен:з%{E%}%{h%} Verb-TV ; ! "examine" do not need to add a to form infinitive
 
-лен:лен VerbInf ; ! "talk" do not add on suffix normally
-лен:л%{E%} VerbStem ; ! "talk"
+лен:л%{E%}%{h%} Verb-IV ; ! "talk" do not need to add a to form infinitive
 
-эца:эца VerbInf ; ! "buy"
-эца:%{EE%}ц VerbStem ; ! "buy"
+эца:%{EE%}ц Verb-TV ; ! "buy"
 
-тоса:тоса VerbInf ; ! "feel"
-тоса:т%{O%}с VerbStem ; ! "feel"
+тоса:т%{O%}с Verb-IV ; ! "feel"
 
-дохка:дохка VerbInf ; ! "sell"
-дохка:д%{O%}хк VerbStem ; ! "sell"
+дохка:д%{O%}хк Verb-TV ; ! "sell"
 
-дижа:дижа VerbInf ; ! "sleep"
-дижа:д%{I%}ж VerbStem ; ! "sleep"
+дижа:д%{I%}ж Verb-IV ; ! "sleep"
 
-хила:хила VerbInf ; ! "happen"
-хила:х%{I%}л VerbStem ; ! "happen"
+хила:х%{I%}л Verb-IV ; ! "happen"
 
-дотта:дотта VerbInf ; ! "pour"
-дотта:д%{O%}тт VerbStem ; ! "pour"
+дотта:д%{O%}тт Verb-TV ; ! "pour"
 
-даккха:даккха VerbInf ; ! "receive"
-даккха:д%{AA%}ккх VerbStem ; ! "receive"
+даккха:д%{AA%}ккх Verb-TV ; ! "receive"
 
-деша:деша VerbInf ; ! "read"
-деша:д%{E%}ш VerbStem ; ! "read"
+деша:д%{E%}ш Verb-TV ; ! "read"
 
-детта:детта VerbInf ; ! "throw"
-детта:д%{E%}тт VerbStem ; ! "throw"
+детта:д%{E%}тт Verb-TV ; ! "throw"
 
-тоха:тоха VerbInf ; ! "hit/strike"
-тоха:т%{O%}х VerbStem ; ! "hit/strike"
+тоха:т%{O%}х Verb-TV ; ! "hit/strike"
 
-дига:дига VerbInf ; ! "lead"
-дига:д%{I%}г VerbStem ; ! "lead"
+дига:д%{I%}г Verb-TV ; ! "lead"
 
-дула:дула VerbInf ; ! "inflate"
-дула:дул VerbStem ; ! "inflate"
+дула:дул Verb-IV ; ! "inflate"
 
 
 
