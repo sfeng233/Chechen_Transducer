@@ -49,6 +49,7 @@ Multichar_Symbols
 %<v%>   ! Verb
 %<tv%>  ! Transitive
 %<iv%>  ! Intransitive
+%<inf%> ! Infinite form
 %<pres%> ! Present
 %<past%> ! past
 %<fut%>  ! Future
@@ -99,12 +100,17 @@ Multichar_Symbols
 ! Other symbols
 %>      ! Morpheme boundary
 %{a%}
-%{I%}
-%{H%}
 %{i%}
+%{h%}
+%{ii%}
 %{A%}
-%{AA%}
 
+%{B%}
+%{AA%}
+%{E%}
+%{EE%}
+%{O%}
+%{I%}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -130,14 +136,14 @@ LEXICON RegNounInfl-Aug
 
 LEXICON RegNounEndingAbs
 :%{a%}ш # ;
-:%>%{I%}й # ;
+:%>%{i%}й # ;
 
 LEXICON RegNounEndingErg
-:%>%{H%}о # ;
+:%>%{h%}о # ;
 :%{a%}c # ;
 
 LEXICON RegNounEndingGen
-:и%{i%}н # ;
+:и%{ii%}н # ;
 
 
 LEXICON RegNounEndingAll
@@ -169,16 +175,27 @@ LEXICON NounInfl-Aug
 %<abl%>%<pl%>:%{a%}шкара # ;
 
 LEXICON PropNounInfl
-%<np%>%<sg%>: # ;
-%<np%>%<pl%>:гӏар # ;
+%<np%>%<abs%>%<sg%>: # ;
+%<np%>%<abs%>%<pl%>:гӏар # ;
 
-LEXICON Verb-TV
 
-%<v%>%<tv%>: Verb-Infl ;
+LEXICON VerbInf
 
-LEXICON Verb-Infl
+%<v%>%<inf%>: # ;
 
+LEXICON VerbStem
+%<v%>%: VerbInfl ;
+
+LEXICON VerbInfl
+%<pres%>:у # ;
+%<pres%>%<prog%>:уш # ;
+%<pres%>%<pf%>:%{i%}нa # ;
+%<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
+%<past%>%<imp%>:ура # ;
+%<past%>%<pf%>%<uwit%>:нера # ;
+%<fut%>%<ptn%>:ур # ；
+
 
 
 
@@ -238,8 +255,8 @@ LEXICON PropNounRoot
 
 LEXICON VerbRoot
 
-
-мала:м%{AA%}л%{a%} Verb-TV ;
+мала:мала VerbInf ; ! "drink"
+мала:м%{AA%}л VerbStem ; ! "drink"
 
 
 дада%<v%>%<iv%>%<pres%>:доду # ;
