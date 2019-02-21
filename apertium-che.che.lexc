@@ -203,10 +203,10 @@ LEXICON RegNounInfl
 
 LEXICON RegNounInfl-AbsPl
 :%{a%}ш # ;
-:%>%{i%}й # ;
+:%{i%}й # ;
 
 LEXICON RegNounInfl-Erg
-:%>%{h%}о # ;
+:%{h%}о # ;
 :%{a%}c # ;
 
 LEXICON RegNounInfl-Gen
@@ -215,7 +215,7 @@ LEXICON RegNounInfl-Gen
 
 LEXICON RegNounInfl-All
 :%{a%}га # ;
-:%>е # ;
+:е # ;
 
 LEXICON PropNounInfl
 %<np%>%<fam%>%<abs%>%<sg%>: # ;
@@ -230,10 +230,10 @@ LEXICON Verb-TV
 %<v%>%<tv%>: VerbInfl ;
 
 LEXICON VerbInfl
-%<inf%>:a # ;
+%<inf%>:а # ;
 %<pres%>:у # ;
 %<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}нa # ;
+%<pres%>%<pf%>:%{i%}на # ;
 %<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
@@ -253,7 +253,7 @@ LEXICON NounRoot
 кор:кор NounDc-Aug ; ! "window"
 
 гала:гала NounDc ; ! "noodle"
-гала:галнa NounDc-Aug ; ! "noodle"
+гала:гална NounDc-Aug ; ! "noodle"
 
 лом:лом NounDc ; ! "lion"
 лом:лоьм NounDc-Aug ; ! "lion"
