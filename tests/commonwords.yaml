@@ -5,13 +5,13 @@ Config:
     Morph: ../che.automorf.hfst
 Tests:
 !265
-    а:%<conj%>: а ! "and"
+    а%<conj%>: а ! "and"
 !64
 т:%<unk%>
 !60
 у:%<unk%>
 !46
-    Дала:%<unk%>: Дала ! "give"
+    Дала%<unk%>: Дала ! "give"
 !37
 х:%<unk%>
 !25

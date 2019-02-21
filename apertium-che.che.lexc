@@ -108,8 +108,10 @@ Multichar_Symbols
 %{h%}
 %{e%}
 %{y%}
+%{g%}
 
 %{b%}
+%{YY%}
 %{A%}
 %{E%}
 %{EE%}
@@ -196,9 +198,9 @@ LEXICON RegNounInfl
 %<ins%>%<sg%>:%{a%}ца # ;
 %<ins%>%<pl%>:%{a%}шца # ;
 %<lat%>%<sg%>:%{a%}х # ;
-%<lat%>%<pl%>:%{y%}х # ;
+%<lat%>%<pl%>:%{YY%}х # ;
 %<cmp%>%<sg%>:%{a%}л # ;
-%<cmp%>%<pl%>:%{y%}л # ;
+%<cmp%>%<pl%>:%{YY%}л # ;
 %<ine%>%<sg%>:%{a%}хь # ;
 %<ine%>%<pl%>:%{a%}шкахь # ;
 %<abl%>%<sg%>:%{a%}ра # ;
@@ -206,7 +208,7 @@ LEXICON RegNounInfl
 
 
 LEXICON RegNounInfl-AbsPl
-:%{a%}ш # ;
+:%{g%}%{a%}ш # ;
 :%{i%}й # ;
 
 LEXICON RegNounInfl-Erg
@@ -231,9 +233,9 @@ LEXICON Verb-TV
 
 LEXICON VerbInfl
 %<inf%>:а # ;
-%<pres%>:у # ;
+%<pres%>:%{y%} # ;
 %<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}на # ;
+%<pres%>%<pf%>:%{i%}%{g%}а # ;
 %<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
@@ -261,7 +263,7 @@ LEXICON NounRoot
 хьаша:хьаша NounJ2c ; ! "guest"
 хьаша:хьеш NounJ2c-Aug ; ! "guest"
 
-моз:моз NounDc ; ! "fly(noun)"
+моз:моз NounDc ; ! "fl(noun)"
 моз:моз NounDc-Aug ; ! "fly(noun)"
 
 ламаро:ламаро NounJ2c ; ! "mountainer"
@@ -277,7 +279,7 @@ LEXICON NounRoot
 ахгӏайре:ахгӏайре NounJ2c-Aug ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
-кулинарка:кулинарка NounJc-Aug ; ! "cookery"
+кулинарка:кулинарк%{a%} NounJc-Aug ; ! "cookery"
 
 школа:школа NounJc ; ! "school"
 школа:школ NounJc-Aug ; ! "school"
@@ -336,7 +338,7 @@ LEXICON VerbRoot
 
 ! Conjunction
 
-а:%<conj%>: а # ; ! "and"
+а%<conj%>: а # ; ! "and"
 
 
 
