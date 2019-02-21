@@ -1,0 +1,198 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../che.autogen.hfst
+    Morph: ../che.automorf.hfst
+Tests:
+  Adjective: {}
+  Adverb: {}
+  Allative Case:
+    ахгӏайре<n><cl_j2><all><sg>:
+    - ахгӏайрега
+    лом<n><cl_d><all><sg>:
+    - лоьме
+    школа<n><cl_j><all><sg>:
+    - школе
+  Aspect: {}
+  Cardinal{{tag|car}}: {}
+  Case: {}
+  Case Suffixes:
+    лом<n><cl_d><abl><sg>:
+    - лоьмара
+    лом<n><cl_d><abs><sg>:
+    - лом
+    лом<n><cl_d><all><sg>:
+    - лоьме
+    лом<n><cl_d><cmp><sg>:
+    - лоьмал
+    лом<n><cl_d><dat><sg>:
+    - лоьмана
+    лом<n><cl_d><erg><sg>:
+    - лоьмо
+    лом<n><cl_d><gen><sg>:
+    - лоьман
+    лом<n><cl_d><ine><sg>:
+    - лоьмахь
+    лом<n><cl_d><ins><sg>:
+    - лоьмаца
+    лом<n><cl_d><lat><sg>:
+    - лоьмах
+  Class adj {{tag|cls}}: {}
+  Comparative adj{{tag|comp}}: {}
+  Demonstrative Pronoun {{tag|dem}}: {}
+  Ergative Case:
+    ахгӏайре<n><cl_j2><erg><sg>:
+    - ахгӏайрено
+    кулинарка<n><cl_j><erg><sg>:
+    - кулинарко
+    лом<n><cl_d><erg><sg>:
+    - лоьмо
+  Evidentiality: {}
+  Examples: {}
+  Exceptions:
+    кол<n><cl_j2><abs><pl>:
+    - коьллаш
+    ламаро<n><cl_j2><abs><pl>:
+    - ламарой
+    патар<n><cl_d><abs><pl>:
+    - патарш
+  Interrogative Pronoun {{tag|itg}}: {}
+  Irregular:
+    йоӏ<n><cl_j><abs><pl>:
+    - мехкарий
+    стаг<n><cl_j2><abs><pl>:
+    - нах
+  Main Parts of Speech in Chechen: {}
+  Mood: {}
+  Noun: {}
+  Noun Class: {}
+  Number Feature: {}
+  Numeral: {}
+  Ordinal{{tag|ord}}: {}
+  Other Verb forms: {}
+  Past Imperfective Tense:
+    дада<v><iv><past><imp>:
+    - додура
+    деша<v><tv><past><imp>:
+    - доьшура
+    дижа<v><iv><past><imp>:
+    - дуьжура
+    дохка<v><tv><past><imp>:
+    - духкура
+    дула<v><iv><past><imp>:
+    - дулура
+    кхарза<v><tv><past><imp>:
+    - кхорзура
+    мала<v><tv><past><imp>:
+    - молура
+    тоса<v><iv><past><imp>:
+    - тусура
+    хила<v><iv><past><imp>:
+    - хуьлура
+  Past Perfect Tense - Unwitnessed:
+    даккха<v><tv><past><pf><uwit>:
+    - даьккхинера
+    детта<v><tv><past><pf><uwit>:
+    - деттинера
+    деша<v><tv><past><pf><uwit>:
+    - дешнера
+    дига<v><tv><past><pf><uwit>:
+    - дигнера
+    дотта<v><tv><past><pf><uwit>:
+    - доьттинера
+    мала<v><tv><past><pf><uwit>:
+    - мелнера
+  Personal Pronoun {{tag|pers}}: {}
+  Plural: {}
+  Plural for PropN:
+    Сатуев<np><fam><abs><pl>:
+    - Сатуевгӏар
+  Postposition: {}
+  Potential Future:
+    дада<v><iv><fut><ptn>:
+    - додур
+    дижа<v><iv><fut><ptn>:
+    - дуьжу
+    тоса<v><iv><fut><ptn>:
+    - тусу
+    эца<v><tv><fut><ptn>:
+    - оьцур
+  Present Perfect Tense:
+    даккха<v><tv><pres><pf>:
+    - даьккхина
+    деша<v><tv><pres><pf>:
+    - дешна
+    дотта<v><tv><pres><pf>:
+    - доьттина
+    мала<v><tv><pres><pf>:
+    - мелла
+  Pronoun: {}
+  PropNoun: {}
+  Qualitative (standard) adj: {}
+  Recent Past Tense - Witnessed:
+    даккха<v><tv><past><rec><wit>:
+    - даьккхи
+    детта<v><tv><past><rec><wit>:
+    - дийтти
+    деша<v><tv><past><rec><wit>:
+    - деши
+    дига<v><tv><past><rec><wit>:
+    - диги
+    дотта<v><tv><past><rec><wit>:
+    - доьтти
+    мала<v><tv><past><rec><wit>:
+    - мели
+    тоха<v><tv><past><rec><wit>:
+    - туьхи
+  References: {}
+  Regular change:
+    гала<n><cl_d><abs><pl>:
+    - галаш
+    кор<n><cl_d><abs><pl>:
+    - кораш
+    моз<n><cl_d><abs><pl>:
+    - мозий
+    хьаша<n><cl_j2><abs><pl>:
+    - хьеший
+  Relative adj: {}
+  Remote Past Tense - Witnessed:
+    даккха<v><tv><past><rem><wit>:
+    - даьккхира
+    детта<v><tv><past><rem><wit>:
+    - дийттира
+    деша<v><tv><past><rem><wit>:
+    - дешира
+    дига<v><tv><past><rem><wit>:
+    - дигира
+    дотта<v><tv><past><rem><wit>:
+    - доьттира
+    мала<v><tv><past><rem><wit>:
+    - мелира
+    тоха<v><tv><past><rem><wit>:
+    - туьхира
+  Simple Present Tense:
+    дада<v><iv><pres>:
+    - доду
+    дижа<v><iv><pres>:
+    - дуьжу
+    дохка<v><tv><pres>:
+    - духку
+    зен<v><tv><pres>:
+    - зоь
+    кхарза<v><tv><pres>:
+    - кхорзу
+    лен<v><tv><pres>:
+    - лоь
+    мала<v><tv><pres>:
+    - молу
+    тоса<v><iv><pres>:
+    - тусу
+    хила<v><iv><pres>:
+    - хуьлу
+    эца<v><tv><pres>:
+    - оьцу
+  Substantivized adj {{tag|sub}}: {}
+  Tense: {}
+  Transitivity: {}
+  Verb: {}
+  Verbal Morphology: {}
