@@ -4,8 +4,7 @@ Config:
     Gen: ../che.autogen.hfst
     Morph: ../che.automorf.hfst
 Tests:
-  Adjective: {}
-  Adverb: {}
+
   Allative Case:
     ахгӏайре<n><cl_j2><all><sg>:
     - ахгӏайрега
@@ -13,9 +12,7 @@ Tests:
     - лоьме
     школа<n><cl_j><all><sg>:
     - школе
-  Aspect: {}
-  Cardinal{{tag|car}}: {}
-  Case: {}
+
   Case Suffixes:
     лом<n><cl_d><abl><sg>:
     - лоьмара
@@ -37,9 +34,7 @@ Tests:
     - лоьмаца
     лом<n><cl_d><lat><sg>:
     - лоьмах
-  Class adj {{tag|cls}}: {}
-  Comparative adj{{tag|comp}}: {}
-  Demonstrative Pronoun {{tag|dem}}: {}
+
   Ergative Case:
     ахгӏайре<n><cl_j2><erg><sg>:
     - ахгӏайрено
@@ -47,8 +42,7 @@ Tests:
     - кулинарко
     лом<n><cl_d><erg><sg>:
     - лоьмо
-  Evidentiality: {}
-  Examples: {}
+
   Exceptions:
     кол<n><cl_j2><abs><pl>:
     - коьллаш
@@ -56,20 +50,13 @@ Tests:
     - ламарой
     патар<n><cl_d><abs><pl>:
     - патарш
-  Interrogative Pronoun {{tag|itg}}: {}
+
   Irregular:
     йоӏ<n><cl_j><abs><pl>:
     - мехкарий
     стаг<n><cl_j2><abs><pl>:
     - нах
-  Main Parts of Speech in Chechen: {}
-  Mood: {}
-  Noun: {}
-  Noun Class: {}
-  Number Feature: {}
-  Numeral: {}
-  Ordinal{{tag|ord}}: {}
-  Other Verb forms: {}
+
   Past Imperfective Tense:
     дада<v><iv><past><imp>:
     - додура
@@ -102,12 +89,11 @@ Tests:
     - доьттинера
     мала<v><tv><past><pf><uwit>:
     - мелнера
-  Personal Pronoun {{tag|pers}}: {}
-  Plural: {}
+
   Plural for PropN:
     Сатуев<np><fam><abs><pl>:
     - Сатуевгӏар
-  Postposition: {}
+
   Potential Future:
     дада<v><iv><fut><ptn>:
     - додур
@@ -126,9 +112,7 @@ Tests:
     - доьттина
     мала<v><tv><pres><pf>:
     - мелла
-  Pronoun: {}
-  PropNoun: {}
-  Qualitative (standard) adj: {}
+
   Recent Past Tense - Witnessed:
     даккха<v><tv><past><rec><wit>:
     - даьккхи
@@ -144,7 +128,7 @@ Tests:
     - мели
     тоха<v><tv><past><rec><wit>:
     - туьхи
-  References: {}
+
   Regular change:
     гала<n><cl_d><abs><pl>:
     - галаш
@@ -154,7 +138,7 @@ Tests:
     - мозий
     хьаша<n><cl_j2><abs><pl>:
     - хьеший
-  Relative adj: {}
+
   Remote Past Tense - Witnessed:
     даккха<v><tv><past><rem><wit>:
     - даьккхира
@@ -191,8 +175,3 @@ Tests:
     - хуьлу
     эца<v><tv><pres>:
     - оьцу
-  Substantivized adj {{tag|sub}}: {}
-  Tense: {}
-  Transitivity: {}
-  Verb: {}
-  Verbal Morphology: {}
