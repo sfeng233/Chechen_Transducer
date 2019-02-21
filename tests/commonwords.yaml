@@ -1,5 +1,15 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../che.autogen.hfst
+    Morph: ../che.automorf.hfst
+Tests:
+
+  Allative Case:
+    ахгӏайре<n><cl_j2><all><sg>:
+    - ахгӏайрега
 !265
-а:%<unk%>
+    а:%<unk%>: а
 !64
 т:%<unk%>
 !60

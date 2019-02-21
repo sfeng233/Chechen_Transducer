@@ -74,6 +74,9 @@ Multichar_Symbols
 !Postposition
 %<post%> ! Postposition
 
+!Conjunction
+%<conj%> !Conjunction
+
 !Adjective
 %<adj%> ! Adjective
 %<cls%> ! Class Adjective
