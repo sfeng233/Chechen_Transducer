@@ -237,7 +237,7 @@ LEXICON VerbInfl
 %<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
-%<past%>%<pf%>%<uwit%>:нера # ;
+%<past%>%<pf%>%<uwit%>:%{i%}нера # ;
 %<fut%>%<ptn%>:ур # ;
 
 
@@ -273,8 +273,8 @@ LEXICON NounRoot
 кол:кол NounJ2c ; ! "bush"
 кол:коьл NounJ2c-Aug ; ! "bush"
 
-ахгІайре:ахгІайре NounJ2c ; ! "peninsula"
-ахгІайре:ахгІайре NounJ2c-Aug ; ! "peninsula"
+ахгӏайре:ахгӏайре NounJ2c ; ! "peninsula"
+ахгӏайре:ахгӏайре NounJ2c-Aug ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
 кулинарка:кулинарка NounJc-Aug ; ! "cookery"
@@ -332,6 +332,7 @@ LEXICON VerbRoot
 дига:д%{I%}г Verb-TV ; ! "lead"
 
 дула:дул Verb-IV ; ! "inflate"
+
 
 
 
