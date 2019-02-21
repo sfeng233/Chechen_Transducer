@@ -4,22 +4,14 @@ Config:
     Gen: ../che.autogen.hfst
     Morph: ../che.automorf.hfst
 Tests:
-
-  Allative Case:
-    ахгӏайре<n><cl_j2><all><sg>:
-    - ахгӏайрега
 !265
-<<<<<<< HEAD
-    а:%<conj%>: а
-=======
-    а:%<unk%>: а ! and
->>>>>>> 16706b167532e97ce5f02d0c179360f87f5b3dae
+    а:%<conj%>: а ! "and"
 !64
 т:%<unk%>
 !60
 у:%<unk%>
 !46
-Дала:%<unk%>: Дала ! give
+    Дала:%<unk%>: Дала ! "give"
 !37
 х:%<unk%>
 !25
