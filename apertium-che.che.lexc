@@ -334,6 +334,9 @@ LEXICON VerbRoot
 дула:дул Verb-IV ; ! "inflate"
 
 
+! Conjunction
+
+а:%<conj%>: а # ; ! "and"
 
 
 
