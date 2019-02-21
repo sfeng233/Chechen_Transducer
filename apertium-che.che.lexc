@@ -177,7 +177,7 @@ LEXICON NounB2c-Aug
 
 
 LEXICON RegNounUninfl
-%<abs%>%<sg%>: # ; 
+%<abs%>%<sg%>: # ;
 
 LEXICON RegNounInfl
 %<abs%>%<pl%>: RegNounInfl-AbsPl ;
@@ -258,23 +258,23 @@ LEXICON NounRoot
 лом:лом NounDc ; ! "lion"
 лом:лоьм NounDc-Aug ; ! "lion"
 
-хьаша:хьаша NounJc2 ; ! "guest"
-хьаша:хьеш NounJc2-Aug ; ! "guest"
+хьаша:хьаша NounJ2c ; ! "guest"
+хьаша:хьеш NounJ2c-Aug ; ! "guest"
 
 моз:моз NounDc ; ! "fly(noun)"
 моз:моз NounDc-Aug ; ! "fly(noun)"
 
-ламаро:ламаро NounJc2 ; ! "mountainer"
-ламаро:ламаро NounJc2-Aug ; ! "mountainer"
+ламаро:ламаро NounJ2c ; ! "mountainer"
+ламаро:ламаро NounJ2c-Aug ; ! "mountainer"
 
 патар:патар NounDc ; ! "leaf"
 патар:патар NounDc-Aug ; ! "leaf"
 
-кол:кол NounJc2 ; ! "bush"
-кол:коьл NounJc2-Aug ; ! "bush"
+кол:кол NounJ2c ; ! "bush"
+кол:коьл NounJ2c-Aug ; ! "bush"
 
-ахгІайре:ахгІайре NounJc2 ; ! "peninsula"
-ахгІайре:ахгІайре NounJc2-Aug ; ! "peninsula"
+ахгІайре:ахгІайре NounJ2c ; ! "peninsula"
+ахгІайре:ахгІайре NounJ2c-Aug ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
 кулинарка:кулинарка NounJc-Aug ; ! "cookery"
