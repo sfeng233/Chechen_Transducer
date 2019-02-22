@@ -229,7 +229,7 @@ LEXICON PropNounUninfl
 
 LEXICON PropNounFInfl
 %<np%>%<fam%>%<abs%>%<sg%>: # ;
-%<np%>%<fam%>%<abs%>%<pl%>:гӏар # ;
+%<np%>%<fam%>%<abs%>%<pl%>:гӀар # ;
 
 
 LEXICON Verb-IV
@@ -283,8 +283,8 @@ LEXICON NounRoot
 кол:кол NounJ2c ; ! "bush"
 кол:коьл NounJ2c-Aug ; ! "bush"
 
-ахгӏайре:ахгӏайре NounJ2c ; ! "peninsula"
-ахгӏайре:ахгӏайре NounJ2c-Aug ; ! "peninsula"
+ахгӀайре:ахгӀайре NounJ2c ; ! "peninsula"
+ахгӀайре:ахгӀайре NounJ2c-Aug ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
 кулинарка:кулинарк%{a%} NounJc-Aug ; ! "cookery"
@@ -300,8 +300,8 @@ LEXICON NounRoot
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
-йоӏ:йоӏ NounJc ; ! "girl"
-йоӏ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
+йоӀ:йоӀ NounJc ; ! "girl"
+йоӀ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
 
 стаг:стаг NounJ2c ; ! "person"
 стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
