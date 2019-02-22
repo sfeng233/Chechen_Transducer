@@ -4,46 +4,46 @@ Config:
     Gen: ../che.autogen.hfst
     Morph: ../che.automorf.hfst
 Tests:
-!265
-    а%<conj%>: а ! "and"
-!64
-т:%<unk%>
-!60
-у:%<unk%>
-!46
-    Дала%<np%>: Дала ! "God"
-!37
-х:%<unk%>
-!25
-    ала%<v%>%<iv%>%<past%>%<rem%>%<wit%>: элира ! "said"
-!22
-Веза:%<unk%>
-!21
-д:%<unk%>
-!20
-Т:%<unk%>
-!20
-аккха:%<unk%>
-!18
-е:%<unk%>
-!18
-ехь:%<unk%>
-!18
-ера:%<unk%>
-!15
-    латта%<v%>%<iv%>%<pres%>: лаьтта ! "grow, support"
-!15
-    масса%<n%>%<cl_j2%>%<erg%>%<sg%>: массо ! "living creature"
-!15
-ду%<v%>
-!13
-    иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза ! "he/she/it"
-!12
-к:%<unk%>
-!12
-    и%<prn%>%<dem%>%<dst%>: и ! "that"
-!12
-    тайпан%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind"
+
+    а%<conj%>: а ! "and" 265
+
+    т%<unk%>: т ! 64
+
+    у%<unk%>: y ! 60
+
+    Дала%<np%>: Дала ! "God" 46
+
+    х%<unk%>: х !37
+
+    ала%<v%>%<iv%>%<past%>%<rem%>%<wit%>: элира ! "said" 25
+
+    Веза%<unk%>: Веза !22
+
+    д%<unk%>: д !21
+
+    Т%<unk%>: Т !20
+
+    аккха%<unk%>: аккха !20
+
+    е%<unk%>: е ! 18
+
+    ехь%<unk%>: ехь !18
+
+    ера%<unk%>: ера !18
+
+    латта%<v%>%<iv%>%<pres%>: лаьтта ! "grow, support" 15
+
+    масса%<n%>%<cl_j2%>%<erg%>%<sg%>: массо ! "living creature" 15
+
+    ду%<unk%>: ду !15
+
+    иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза ! "he/she/it" 13
+
+    к%<unk%>: к !12
+
+    и%<prn%>%<dem%>%<dst%>: и ! "that" 12
+
+    тайпан%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind" 12
 
 
 !21-2-2019
@@ -53,4 +53,4 @@ Tests:
 !Coverage: 18.23% after adding лаьтта
 !Coverage: 20.45% after adding Дала
 !Coverage: 21.27% after adding массо
-!Coverage: 24.17% adding others 
+!Coverage: 24.17% adding others
