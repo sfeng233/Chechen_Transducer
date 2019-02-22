@@ -132,6 +132,8 @@ LEXICON Root
 NounRoot ;
 PropNounRoot ;
 VerbRoot ;
+Conjunction ;
+ProNoun ;
 
 
 LEXICON NounVc !Absolutive forms aka. citation forms
@@ -353,11 +355,12 @@ LEXICON VerbRoot
 латта:ла%{b%}тт Verb-IV ; ! "grow,support"
 
 
-! Conjunction
+LEXICON Conjunction
 
 а%<conj%>: а # ; ! "and"
 
-! PropNoun
+
+LEXICON ProNoun
 
 иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза # ; ! "he/she/it"
 
