@@ -296,7 +296,6 @@ LEXICON NounRoot
 тайпа:тайпа NounDc ; ! "sort, kind"
 тайпа:тайпан NounDc-Aug ; ! "sort, kind"
 
-
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
 йоӏ:йоӏ NounJc ; ! "girl"
@@ -304,6 +303,7 @@ LEXICON NounRoot
 
 стаг:стаг NounJ2c ; ! "person"
 стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
+
 
 LEXICON PropNounRoot
 
@@ -364,8 +364,6 @@ LEXICON VerbRoot
 уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
 
 и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
-
-
 
 
 ! Resources:
