@@ -305,7 +305,7 @@ LEXICON NounRoot
 LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
-Дала:Дала # ; ! "God"
+Дала%<np%>:Дала # ; ! "God"
 
 
 

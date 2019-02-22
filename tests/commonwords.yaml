@@ -5,52 +5,43 @@ Config:
     Morph: ../che.automorf.hfst
 Tests:
 
-    а%<conj%>: а ! "and" 265
+  Commonwords:
+    а<conj>: а
 
-    т%<unk%>: т ! 64
+    т<unk>: т
 
-    у%<unk%>: y ! 60
+    у<unk>: y
 
-    Дала%<np%>: Дала ! "God" 46
+    Дала<np>: Дала
 
-    х%<unk%>: х !37
+    х<unk>: х
 
-    ала%<v%>%<iv%>%<past%>%<rem%>%<wit%>: элира ! "said" 25
+    ала<v><iv><past><rem><wit>: элира
 
-    Веза%<unk%>: Веза !22
+    Веза<unk>: Веза
 
-    д%<unk%>: д !21
+    д<unk>: д
 
-    Т%<unk%>: Т !20
+    Т<unk>: Т
 
-    аккха%<unk%>: аккха !20
+    аккха<unk>: аккха
 
-    е%<unk%>: е ! 18
+    е<unk>: е
 
-    ехь%<unk%>: ехь !18
+    ехь<unk>: ехь
 
-    ера%<unk%>: ера !18
+    ера<unk>: ера
 
-    латта%<v%>%<iv%>%<pres%>: лаьтта ! "grow, support" 15
+    латта<v><iv><pres>: лаьтта
 
-    масса%<n%>%<cl_j2%>%<erg%>%<sg%>: массо ! "living creature" 15
+    масса<n><cl_j2><erg><sg>: массо
 
-    ду%<unk%>: ду !15
+    ду<unk>: ду
 
-    иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза ! "he/she/it" 13
+    иза<prn><pers><p3><abs><sg>: иза
 
-    к%<unk%>: к !12
+    к<unk>: к
 
-    и%<prn%>%<dem%>%<dst%>: и ! "that" 12
+    и<prn><dem><dst>: и
 
-    тайпан%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind" 12
-
-
-!21-2-2019
-!Coverage: 1.59%
-!Coverage: 15.73% after adding а
-!Coverage: 17.03% after adding элира
-!Coverage: 18.23% after adding лаьтта
-!Coverage: 20.45% after adding Дала
-!Coverage: 21.27% after adding массо
-!Coverage: 24.17% adding others
+    тайпан<n><cl_d><dat><sg>: тайпана
