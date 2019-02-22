@@ -118,6 +118,7 @@ Multichar_Symbols
 %{O%}
 %{I%}
 %{Y%}
+%{AA%}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -334,6 +335,8 @@ LEXICON VerbRoot
 дига:диг Verb-TV ; ! "lead"
 
 дула:дул Verb-IV ; ! "inflate"
+
+ала:%{AA%}л Verb-IV ; ! "say"
 
 
 ! Conjunction
