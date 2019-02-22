@@ -192,7 +192,7 @@ LEXICON RegNounInfl
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
-%<dat%>%<sg%>:%{a%}на # ;
+%<dat%>%<sg%>:%{a%}%{h%}а # ;
 %<dat%>%<pl%>:%{a%}шана # ;
 %<all%>%<sg%>: RegNounInfl-All ;
 %<all%>%<pl%>:%{a%}шка # ;
@@ -288,6 +288,9 @@ LEXICON NounRoot
 масса:масса NounJ2c ; ! "living creature"
 масса:масс NounJ2c-Aug ; ! "living creature"
 
+тайпа:тайпа NounDc ; ! "sort, kind"
+тайпа:тайпан NounDc-Aug ; ! "sort, kind"
+
 
 ! Irregular Plural
 
@@ -348,6 +351,14 @@ LEXICON VerbRoot
 ! Conjunction
 
 а%<conj%>: а # ; ! "and"
+
+! PropNoun
+
+иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза # ; ! "he/she/it"
+
+уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
+
+и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
 
 
 

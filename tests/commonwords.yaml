@@ -37,13 +37,13 @@ Tests:
 !15
 ду%<v%>
 !13
-иза:%<unk%>
+    иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза ! "he/she/it"
 !12
 к:%<unk%>
 !12
-и:%<unk%>
+    и%<prn%>%<dem%>%<dst%>: и ! "that"
 !12
-    тайпа%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind"
+    тайпан%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind"
 
 
 !21-2-2019
@@ -53,4 +53,4 @@ Tests:
 !Coverage: 18.23% after adding лаьтта
 !Coverage: 20.45% after adding Дала
 !Coverage: 21.27% after adding массо
-!Coverage:
+!Coverage: 24.17% adding others 
