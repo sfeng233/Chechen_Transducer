@@ -6,7 +6,7 @@ Alphabet
  %{i%}:и %{i%}:0
  %{h%}:н %{h%}:0
  %{e%}:й %{e%}:0
- %{y%}:у %{y%}:0
+ %{y%}:у %{y%}:0 %{y%}:а 
  %{g%}:л %{g%}:0 %{g%}:н ! the geminated place holder, more to come
 
  %{b%}:ь %{b%}:0

@@ -11,7 +11,7 @@ Tests:
 !60
 у:%<unk%>
 !46
-    Дала%<unk%>: Дала ! "give"
+    Дала%<np%>: Дала ! "God"
 !37
 х:%<unk%>
 !25
@@ -31,11 +31,11 @@ Tests:
 !18
 ера:%<unk%>
 !15
-лаьтта:%<unk%>
+    латта%<v%>%<iv%>%<pres%>: лаьтта ! "grow, support"
 !15
-массо:%<unk%>
+    масса%<n%>%<cl_j2%>%<erg%>%<sg%>: массо ! "living creature"
 !15
-ду:%<unk%>
+ду%<v%>
 !13
 иза:%<unk%>
 !12
@@ -48,3 +48,7 @@ Tests:
 !21-2-2019
 !Coverage: 1.59%
 !Coverage: 15.73% after adding а
+!Coverage: 17.03% after adding элира
+!Coverage: 18.23% after adding лаьтта
+!Coverage: 20.45% after adding Дала
+!Coverage: 21.27% after adding массо
