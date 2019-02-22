@@ -222,6 +222,9 @@ LEXICON RegNounInfl-All
 :%{a%}га # ;
 :е # ;
 
+LEXICON PropNounUninfl
+%<np%>%<abs%>%<sg%>: # ;
+
 LEXICON PropNounFInfl
 %<np%>%<fam%>%<abs%>%<sg%>: # ;
 %<np%>%<fam%>%<abs%>%<pl%>:гӏар # ;
@@ -294,18 +297,18 @@ LEXICON NounRoot
 тайпа:тайпан NounDc-Aug ; ! "sort, kind"
 
 
-! Irregular Plural
+! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
-йоӏ%<n%>%<cl_j%>%<abs%>%<sg%>:йоӏ # ; ! "girl"
+йоӏ:йоӏ NounJc ; ! "girl"
 йоӏ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
 
-стаг%<n%>%<cl_j2%>%<abs%>%<sg%>:стаг # ; ! "person"
+стаг:стаг NounJ2c ; ! "person"
 стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
 
 LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
-Дала%<np%>:Дала # ; ! "God"
+Дала:Дала PropNounUninfl ; ! "God"
 
 
 
@@ -317,9 +320,9 @@ LEXICON VerbRoot
 
 кхарза:кх%{A%}рз Verb-TV ; ! "fry"
 
-зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine" do not need to add a to form infinitive
+зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine"
 
-лен:л%{E%}%{b%}%{h%} Verb-IV ; ! "talk" do not need to add a to form infinitive
+лен:л%{E%}%{b%}%{h%} Verb-IV ; ! "talk"
 
 эца:%{EE%}%{b%}ц Verb-TV ; ! "buy"
 
