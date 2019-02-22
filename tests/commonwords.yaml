@@ -43,7 +43,8 @@ Tests:
 !12
 и:%<unk%>
 !12
-тайпана:%<unk%>
+    тайпа%<n%>%<cl_d%>%<dat%>%<sg%>: тайпана ! "sort, kind"
+
 
 !21-2-2019
 !Coverage: 1.59%
@@ -52,3 +53,4 @@ Tests:
 !Coverage: 18.23% after adding лаьтта
 !Coverage: 20.45% after adding Дала
 !Coverage: 21.27% after adding массо
+!Coverage:
