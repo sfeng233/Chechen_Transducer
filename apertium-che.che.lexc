@@ -165,17 +165,37 @@ LEXICON NounVc-Aug ! Augment base (different from abs forms)
 
 %<n%>%<cl_v%>: RegNounInfl ;
 
-LEXICON NounJc-Aug
+LEXICON NounJc-Aug-anim
 
 %<n%>%<cl_j%>: RegNounInfl ;
+%<n%>%<cl_j%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
-LEXICON NounJ2c-Aug
+LEXICON NounJc-Aug-inan
+
+%<n%>%<cl_j%>: RegNounInfl ;
+%<n%>%<cl_j%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
+
+LEXICON NounJ2c-Aug-anim
 
 %<n%>%<cl_j2%>: RegNounInfl ;
+%<n%>%<cl_j2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
-LEXICON NounDc-Aug
+LEXICON NounJ2c-Aug-inan
+
+%<n%>%<cl_j2%>: RegNounInfl ;
+%<n%>%<cl_j2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
+
+
+
+LEXICON NounDc-Aug-anim
 
 %<n%>%<cl_d%>: RegNounInfl ;
+%<n%>%<cl_d%>%<abs%>%<pl%>: RegNounInfl-AbsPl-anim ;
+
+LEXICON NounDc-Aug-inan
+
+%<n%>%<cl_d%>: RegNounInfl ;
+%<n%>%<cl_d%>%<abs%>%<pl%>: RegNounInfl-AbsPl-inan ;
 
 LEXICON NounBc-Aug
 
@@ -191,7 +211,7 @@ LEXICON RegNounUninfl
 %<abs%>%<sg%>: # ;
 
 LEXICON RegNounInfl
-%<abs%>%<pl%>: RegNounInfl-AbsPl ;
+
 %<erg%>%<sg%>: RegNounInfl-Erg ;
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
@@ -211,10 +231,11 @@ LEXICON RegNounInfl
 %<abl%>%<sg%>:%{a%}ра # ;
 %<abl%>%<pl%>:%{a%}шкара # ;
 
+LEXICON RegNounInfl-AbsPl-inan
+:%>%{g%}%{a%}ш # ;
 
-LEXICON RegNounInfl-AbsPl
-:%{g%}%{a%}ш # ;
-:%{i%}й # ;
+LEXICON RegNounInfl-AbsPl-anim
+:%>%{i%}й # ;
 
 LEXICON RegNounInfl-Erg
 :%{h%}о # ;
@@ -260,28 +281,28 @@ LEXICON VerbInfl
 LEXICON NounRoot
 
 кор:кор NounDc ; ! "window"
-кор:кор NounDc-Aug ; ! "window"
+кор:кор NounDc-Aug-inan ; ! "window"
 
 гала:гала NounDc ; ! "noodle"
-гала:гална NounDc-Aug ; ! "noodle"
+гала:гална NounDc-Aug-inan ; ! "noodle"
 
 лом:лом NounDc ; ! "lion"
-лом:лоьм NounDc-Aug ; ! "lion"
+лом:лоьм NounDc-Aug-anim ; ! "lion"
 
 хьаша:хьаша NounJ2c ; ! "guest"
-хьаша:хьеш NounJ2c-Aug ; ! "guest"
+хьаша:хьеш NounJ2c-Aug-anim ; ! "guest"
 
-моз:моз NounDc ; ! "fl(noun)"
-моз:моз NounDc-Aug ; ! "fly(noun)"
+моз:моз NounDc ; ! "fly(noun)"
+моз:моз NounDc-Aug-anim ; ! "fly(noun)"
 
 ламаро:ламаро NounJ2c ; ! "mountainer"
-ламаро:ламаро NounJ2c-Aug ; ! "mountainer"
+ламаро:ламаро NounJ2c-Aug-anim ; ! "mountainer"
 
 патар:патар NounDc ; ! "leaf"
-патар:патар NounDc-Aug ; ! "leaf"
+патар:патар NounDc-Aug-inan ; ! "leaf"
 
 кол:кол NounJ2c ; ! "bush"
-кол:коьл NounJ2c-Aug ; ! "bush"
+кол:коьл NounJ2c-Aug-inan ; ! "bush"
 
 ахгӀайре:ахгӀайре NounJ2c ; ! "peninsula"
 ахгӀайре:ахгӀайре NounJ2c-Aug ; ! "peninsula"
@@ -290,7 +311,7 @@ LEXICON NounRoot
 кулинарка:кулинарк%{a%} NounJc-Aug ; ! "cookery"
 
 школа:школа NounJc ; ! "school"
-школа:школ NounJc-Aug ; ! "school"
+школа:школ NounJc-Aug-inan ; ! "school"
 
 масса:масса NounJ2c ; ! "living creature"
 масса:масс NounJ2c-Aug ; ! "living creature"
