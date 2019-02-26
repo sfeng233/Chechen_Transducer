@@ -292,13 +292,8 @@ LEXICON NounRoot
 хьаша:хьаша NounJ2c ; ! "guest"
 хьаша:хьеш NounJ2c-Aug-anim ; ! "guest"
 
-<<<<<<< HEAD
 моз:моз NounDc ; ! "fly(noun)"
 моз:моз NounDc-Aug-anim ; ! "fly(noun)"
-=======
-моз:моз NounDc ; ! "fl(noun)"
-моз:моз NounDc-Aug ; ! "fly(noun)"
->>>>>>> 353a42c0c6db3c3627ac59aaff9534d01ab3859f
 
 ламаро:ламаро NounJ2c ; ! "mountainer"
 ламаро:ламаро NounJ2c-Aug-anim ; ! "mountainer"
