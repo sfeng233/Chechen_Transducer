@@ -27,7 +27,10 @@ Vow = А Я Э Е О Ё Ы И У Ю
 Rules
 
 !"Remove suffix vowel with vowel-ending stem"
-!Vow:0 <=> _ %>: :Vow ;
+!Vow:0 <=> _ (%>) :Vow ;
+
+"Plurals"
+ %{a%}:0 <=> :Vow ( %>: ) _ ;
 
 "Hargle bargle"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
