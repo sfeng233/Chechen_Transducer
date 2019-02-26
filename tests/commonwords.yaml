@@ -5,50 +5,45 @@ Config:
     Morph: ../che.automorf.hfst
 Tests:
 
-  Allative Case:
-    ахгӏайре<n><cl_j2><all><sg>:
-    - ахгӏайрега
-!265
-    а:%<unk%>: а ! and
-!64
-т:%<unk%>
-!60
-у:%<unk%>
-!46
-Дала:%<unk%>: Дала ! give
-!37
-х:%<unk%>
-!25
-элира:%<unk%>
-!22
-Веза:%<unk%>
-!21
-д:%<unk%>
-!20
-Т:%<unk%>
-!20
-аккха:%<unk%>
-!18
-е:%<unk%>
-!18
-ехь:%<unk%>
-!18
-ера:%<unk%>
-!15
-лаьтта:%<unk%>
-!15
-массо:%<unk%>
-!15
-ду:%<unk%>
-!13
-иза:%<unk%>
-!12
-к:%<unk%>
-!12
-и:%<unk%>
-!12
-тайпана:%<unk%>
+  Commonwords:
+    а<conj>: а
 
-!21-2-2019
-!Coverage: 1.59%
-!Translation time: 0.018239736557006836 seconds
+    т<unk>: т
+
+    у<unk>: y
+
+    уьш<prn><pers><p3><abs><pl>: уьш 
+
+    Дала<np><abs><sg>: Дала
+
+    х<unk>: х
+
+    ала<v><iv><past><rem><wit>: элира
+
+    Веза<unk>: Веза
+
+    д<unk>: д
+
+    Т<unk>: Т
+
+    аккха<unk>: аккха
+
+    е<unk>: е
+
+    ехь<unk>: ехь
+
+    ера<unk>: ера
+
+    латта<v><iv><pres>: лаьтта
+
+    масса<n><cl_j2><erg><sg>: массо
+
+    ду<unk>: ду
+
+    иза<prn><pers><p3><abs><sg>: иза
+
+    к<unk>: к
+
+    и<prn><dem><dst>: и
+
+    тайпан<n><cl_d><dat><sg>: тайпана

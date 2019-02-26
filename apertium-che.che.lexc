@@ -100,6 +100,8 @@ Multichar_Symbols
 %<car%> ! Cardinal
 %<ord%> ! Ordinal
 
+%<unk%> ! Unknow
+
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -108,14 +110,17 @@ Multichar_Symbols
 %{h%}
 %{e%}
 %{y%}
+%{g%}
 
 %{b%}
+%{YY%}
 %{A%}
 %{E%}
 %{EE%}
 %{O%}
 %{I%}
 %{Y%}
+%{AA%}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -127,6 +132,8 @@ LEXICON Root
 NounRoot ;
 PropNounRoot ;
 VerbRoot ;
+Conjunction ;
+ProNoun ;
 
 
 LEXICON NounVc !Absolutive forms aka. citation forms
@@ -161,7 +168,7 @@ LEXICON NounVc-Aug ! Augment base (different from abs forms)
 LEXICON NounJc-Aug-anim
 
 %<n%>%<cl_j%>: RegNounInfl ;
- %<n%>%<cl_j%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+%<n%>%<cl_j%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounJc-Aug-inan
 
@@ -209,24 +216,23 @@ LEXICON RegNounInfl
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
-%<dat%>%<sg%>:%{a%}на # ;
+%<dat%>%<sg%>:%{a%}%{h%}а # ;
 %<dat%>%<pl%>:%{a%}шана # ;
 %<all%>%<sg%>: RegNounInfl-All ;
 %<all%>%<pl%>:%{a%}шка # ;
 %<ins%>%<sg%>:%{a%}ца # ;
 %<ins%>%<pl%>:%{a%}шца # ;
 %<lat%>%<sg%>:%{a%}х # ;
-%<lat%>%<pl%>:%{y%}х # ;
+%<lat%>%<pl%>:%{YY%}х # ;
 %<cmp%>%<sg%>:%{a%}л # ;
-%<cmp%>%<pl%>:%{y%}л # ;
+%<cmp%>%<pl%>:%{YY%}л # ;
 %<ine%>%<sg%>:%{a%}хь # ;
 %<ine%>%<pl%>:%{a%}шкахь # ;
 %<abl%>%<sg%>:%{a%}ра # ;
 %<abl%>%<pl%>:%{a%}шкара # ;
 
-
 LEXICON RegNounInfl-AbsPl-inan
-:%>%{a%}ш # ;
+:%>%{g%}%{a%}ш # ;
 
 LEXICON RegNounInfl-AbsPl-anim
 :%>%{i%}й # ;
@@ -239,9 +245,12 @@ LEXICON RegNounInfl-All
 :%{a%}га # ;
 :е # ;
 
-LEXICON PropNounInfl
+LEXICON PropNounUninfl
+%<np%>%<abs%>%<sg%>: # ;
+
+LEXICON PropNounFInfl
 %<np%>%<fam%>%<abs%>%<sg%>: # ;
-%<np%>%<fam%>%<abs%>%<pl%>:гӏар # ;
+%<np%>%<fam%>%<abs%>%<pl%>:гӀар # ;
 
 
 LEXICON Verb-IV
@@ -253,9 +262,9 @@ LEXICON Verb-TV
 
 LEXICON VerbInfl
 %<inf%>:а # ;
-%<pres%>:у # ;
+%<pres%>:%{y%} # ;
 %<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}на # ;
+%<pres%>%<pf%>:%{i%}%{g%}а # ;
 %<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
@@ -283,8 +292,13 @@ LEXICON NounRoot
 хьаша:хьаша NounJ2c ; ! "guest"
 хьаша:хьеш NounJ2c-Aug-anim ; ! "guest"
 
+<<<<<<< HEAD
 моз:моз NounDc ; ! "fly(noun)"
 моз:моз NounDc-Aug-anim ; ! "fly(noun)"
+=======
+моз:моз NounDc ; ! "fl(noun)"
+моз:моз NounDc-Aug ; ! "fly(noun)"
+>>>>>>> 353a42c0c6db3c3627ac59aaff9534d01ab3859f
 
 ламаро:ламаро NounJ2c ; ! "mountainer"
 ламаро:ламаро NounJ2c-Aug-anim ; ! "mountainer"
@@ -295,27 +309,34 @@ LEXICON NounRoot
 кол:кол NounJ2c ; ! "bush"
 кол:коьл NounJ2c-Aug-inan ; ! "bush"
 
-ахгӏайре:ахгӏайре NounJ2c ; ! "peninsula"
-ахгӏайре:ахгӏайре NounJ2c-Aug-inan ; ! "peninsula"
+ахгӀайре:ахгӀайре NounJ2c ; ! "peninsula"
+ахгӀайре:ахгӀайре NounJ2c-Aug ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
-кулинарка:кулинарка NounJc-Aug-inan ; ! "cookery"
+кулинарка:кулинарк%{a%} NounJc-Aug ; ! "cookery"
 
 школа:школа NounJc ; ! "school"
 школа:школ NounJc-Aug-inan ; ! "school"
 
+масса:масса NounJ2c ; ! "living creature"
+масса:масс NounJ2c-Aug ; ! "living creature"
 
-! Irregular Plural
+тайпа:тайпа NounDc ; ! "sort, kind"
+тайпа:тайпан NounDc-Aug ; ! "sort, kind"
 
-йоӏ%<n%>%<cl_j%>%<abs%>%<sg%>:йоӏ # ; ! "girl"
-йоӏ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
+! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
-стаг%<n%>%<cl_j2%>%<abs%>%<sg%>:стаг # ; ! "person"
+йоӀ:йоӀ NounJc ; ! "girl"
+йоӀ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
+
+стаг:стаг NounJ2c ; ! "person"
 стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
+
 
 LEXICON PropNounRoot
 
-Сатуев:Сатуев PropNounInfl ; ! "Satujev"
+Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
+Дала:Дала PropNounUninfl ; ! "God"
 
 
 
@@ -327,9 +348,9 @@ LEXICON VerbRoot
 
 кхарза:кх%{A%}рз Verb-TV ; ! "fry"
 
-зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine" do not need to add a to form infinitive
+зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine"
 
-лен:л%{E%}%{b%}%{h%} Verb-IV ; ! "talk" do not need to add a to form infinitive
+лен:л%{E%}%{b%}%{h%} Verb-IV ; ! "talk"
 
 эца:%{EE%}%{b%}ц Verb-TV ; ! "buy"
 
@@ -355,9 +376,23 @@ LEXICON VerbRoot
 
 дула:дул Verb-IV ; ! "inflate"
 
+ала:%{AA%}л Verb-IV ; ! "say"
+
+латта:ла%{b%}тт Verb-IV ; ! "grow,support"
 
 
+LEXICON Conjunction
 
+а%<conj%>: а # ; ! "and"
+
+
+LEXICON ProNoun
+
+иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза # ; ! "he/she/it"
+
+уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
+
+и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
 
 
 ! Resources:

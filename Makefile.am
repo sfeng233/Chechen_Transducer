@@ -28,6 +28,9 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol .deps/.d
 	hfst-twolc $< -o $@
 
+.deps/spellrelax.hfst: dev/spellrelax.twol .deps/.d
+	hfst-twolc $< -o $@
+
 .deps/$(LANG1).RL.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
 	cat $< | grep -v 'Dir/LR' > $@
 
@@ -49,8 +52,8 @@ TARGETS_COMMON =			\
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -O $< -o $@
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst
-	hfst-invert $< | hfst-fst2fst -O -o $@
+$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst
+	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@
