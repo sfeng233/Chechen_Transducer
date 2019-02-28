@@ -299,17 +299,17 @@ LEXICON VerbInfl
 
 LEXICON NounRoot
 
-кӀант :кӀант NounVc ; ! "boy"
-кӀант: кӀент NounVc-Aug-anim; ! "boys"
+кӀант:кӀант NounVc ; ! "boy"
+кӀант:кӀент NounVc-Aug-anim; ! "boys"
 
-йоӀ: йоӀ NounJc ; ! "girl"
-йоӀ: мехкар NounJc-anim ; ! "girls"
+йоӀ:йоӀ NounJc ; ! "girl"
+йоӀ:мехкар NounJc-Aug-anim ; ! "girls"
 
-малх: малх NounBc ; ! "sun"
-малх :мелхаш NounBc-inan ; ! "suns"
+малх:малх NounBc ; ! "sun"
+малх:мелхаш NounBc-Aug-inan ; ! "suns"
 
-Ӏаж: Ӏаж NounBc2 ; ! "apple"
-Ӏаж : Ӏежаш NounBc2-inan ; ! "apples"
+Ӏаж:Ӏаж NounBc2 ; ! "apple"
+Ӏаж:Ӏежаш NounBc2-Aug-inan ; ! "apples"
 
 кор:кор NounDc ; ! "window"
 кор:кор NounDc-Aug-inan ; ! "window"

@@ -38,7 +38,7 @@ a => _ ;
 !Vow:0 <=> _ (%>) :Vow ;
 
 "Plurals"
- %{a%}:0 <=> :Vow ( %>: ) _ ;
+ %{a%}:0 <=> :Vow ( %>: ) ( %{g%}: ) _ ;
 
 "Hargle bargle"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
