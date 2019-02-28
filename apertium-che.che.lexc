@@ -111,6 +111,7 @@ Multichar_Symbols
 %{e%}
 %{y%}
 %{g%}
+%{ee%}
 
 %{b%}
 %{YY%}
@@ -258,7 +259,7 @@ LEXICON RegNounInfl-AbsPl-anim
 :%>%{i%}й # ;
 
 LEXICON RegNounInfl-Erg
-:%{h%}о # ;
+:%>%{h%}о # ;
 
 LEXICON RegNounInfl-All
 :%{a%}га # ;

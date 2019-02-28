@@ -9,6 +9,7 @@ Alphabet
  %{e%}:й %{e%}:0
  %{y%}:у %{y%}:0 %{y%}:а
  %{g%}:л %{g%}:0 %{g%}:н ! the geminated place holder, more to come
+ %{ee%}:е %{ee%}:0
 
  %{b%}:ь %{b%}:0
  %{YY%}:и %{YY%}:я
@@ -28,6 +29,9 @@ Sets
 Vow = А Я Э Е О Ё Ы И У Ю
       а я э е о ё ы и у ю ;
 
+Cons =  Й Ц К Н Г Ш Щ З Х Ъ Ф В П Р Л Д Ж Ч С М Т Ь Б
+        й ц к н г ш щ з х ъ ф в п р л д ж ч с м т ь б ;
+
 Rules
 
 "Spell relax for palochka"
@@ -39,8 +43,19 @@ a => _ ;
 
 "Plurals"
  %{a%}:0 <=> :Vow ( %>: ) ( %{g%}: ) _ ;
+!             :р ( %>: ) ( %{g%}: ) _ ;
+
+!"deletion of и after o"
+!%{i%}:0 <=> :о %>:0 _ й ;
 
 "Hargle bargle"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
+! "deletion of e before a vowel suffix"
+! %{ee%}:0 <=> : _ ( %>: ) Vow .#. ;
+
+"Have a buffer consonant н before suffix -о"
+%{h%}:н <=> :Vow %>:0 _ ;
+
 
 ! Resources:
