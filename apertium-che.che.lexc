@@ -306,10 +306,10 @@ LEXICON NounRoot
 йоӀ:мехкар NounJc-Aug-anim ; ! "girls"
 
 малх:малх NounBc ; ! "sun"
-малх:мелхаш NounBc-Aug-inan ; ! "suns"
+малх:мелх NounBc-Aug-inan ; ! "suns"
 
 Ӏаж:Ӏаж NounBc2 ; ! "apple"
-Ӏаж:Ӏежаш NounBc2-Aug-inan ; ! "apples"
+Ӏаж:Ӏеж NounBc2-Aug-inan ; ! "apples"
 
 кор:кор NounDc ; ! "window"
 кор:кор NounDc-Aug-inan ; ! "window"
