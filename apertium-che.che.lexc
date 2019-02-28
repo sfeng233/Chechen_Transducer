@@ -135,45 +135,68 @@ VerbRoot ;
 Conjunction ;
 ProNoun ;
 
+LEXICON NounVc !Absolutive forms aka. citation forms
 
+%<n%>%<cl_v%>: RegNounUninfl ;
 
-LEXICON NounDc-Aug-anim
+LEXICON NounJc
+
+%<n%>%<cl_j%>: RegNounUninfl ;
+
+LEXICON NounJ2c
+
+%<n%>%<cl_j2%>: RegNounUninfl ;
+
+LEXICON NounDc
 
 %<n%>%<cl_d%>: RegNounUninfl ;
+
+LEXICON NounBc
+
+%<n%>%<cl_b%>: RegNounUninfl ;
+
+LEXICON NounB2c
+
+%<n%>%<cl_b2%>:  RegNounUninfl ;
+
+
+LEXICON NounDc-Aug-anim ! Augment base (different from abs forms)
+
+%<n%>%<cl_d%>: RegNounInfl ;
 %<n%>%<cl_d%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
-LEXICON NounDc-Aug-inan
+LEXICON NounDc-Aug-inan ! Augment base (different from abs forms)
 
-%<n%>%<cl_d%>: RegNounUninfl ;
+%<n%>%<cl_d%>: RegNounInfl ;
 %<n%>%<cl_d%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-LEXICON NounBc-Aug-Anim
+LEXICON NounBc-Aug-anim
 
-%<n%>%<cl_b%>: RegNounUninfl ;
+%<n%>%<cl_b%>: RegNounInfl ;
 %<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
-LEXICON NounBc-Aug-Inan
+LEXICON NounBc-Aug-inan
 
-%<n%>%<cl_b%>: RegNounUninfl ;
+%<n%>%<cl_b%>: RegNounInfl ;
 %<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
 LEXICON NounB2c-Aug-anim
 
-%<n%>%<cl_b2%>:  RegNounUninfl ;
+%<n%>%<cl_b2%>:  RegNounInfl ;
 %<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounB2c-Aug-inan
 
-%<n%>%<cl_b2%>:  RegNounUninfl ;
+%<n%>%<cl_b2%>:  RegNounInfl ;
 %<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
 
-LEXICON NounVc-Aug-anim ! Augment base (different from abs forms)
+LEXICON NounVc-Aug-anim
 
 %<n%>%<cl_v%>: RegNounInfl ;
 %<n%>%<cl_v%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
-LEXICON NounVc-Aug-inan ! Augment base (different from abs forms)
+LEXICON NounVc-Aug-inan
 
 %<n%>%<cl_v%>: RegNounInfl ;
 %<n%>%<cl_v%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
@@ -198,16 +221,6 @@ LEXICON NounJ2c-Aug-inan
 %<n%>%<cl_j2%>: RegNounInfl ;
 %<n%>%<cl_j2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-
-LEXICON NounBc-Aug-anim
-
-%<n%>%<cl_b%>: RegNounInfl ;
-%<n%>%<cl_b%>%<abs%>%<pl%>: RegNounInfl-AbsPl-anim ;
-
-LEXICON NounBc-Aug-inan
-
-%<n%>%<cl_b%>: RegNounInfl ;
-%<n%>%<cl_b%>%<abs%>%<pl%>: RegNounInfl-AbsPl-inan ;
 
 
 
@@ -246,7 +259,6 @@ LEXICON RegNounInfl-AbsPl-anim
 
 LEXICON RegNounInfl-Erg
 :%{h%}о # ;
-:%{a%}с # ;
 
 LEXICON RegNounInfl-All
 :%{a%}га # ;
@@ -288,10 +300,10 @@ LEXICON VerbInfl
 LEXICON NounRoot
 
 кӀант :кӀант NounVc ; ! "boy"
-кӀант: кӀентий NounVc-Aug-anim; ! "boys"
+кӀант: кӀент NounVc-Aug-anim; ! "boys"
 
-йол: йол NounJc ; ! "girl"
-йол: мехкарий NounJc-anim ; ! "girls"
+йоӀ: йоӀ NounJc ; ! "girl"
+йоӀ: мехкар NounJc-anim ; ! "girls"
 
 малх: малх NounBc ; ! "sun"
 малх :мелхаш NounBc-inan ; ! "suns"
@@ -327,7 +339,7 @@ LEXICON NounRoot
 ахгӀайре:ахгӀайре NounJ2c-Aug-inan ; ! "peninsula"
 
 кулинарка:кулинарка NounJc ; ! "cookery"
-кулинарка:кулинарк%{a%} NounJc-Aug-inan ; ! "cookery"
+кулинарка:кулинарк NounJc-Aug-inan ; ! "cookery"
 
 школа:школа NounJc ; ! "school"
 школа:школ NounJc-Aug-inan ; ! "school"
@@ -339,9 +351,6 @@ LEXICON NounRoot
 тайпа:тайпан NounDc-Aug-inan ; ! "sort, kind"
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
-
-йоӀ:йоӀ NounJc ; ! "girl"
-йоӀ%<n%>%<cl_j%>%<abs%>%<pl%>:мехкарий # ; ! "girls"
 
 стаг:стаг NounJ2c ; ! "person"
 стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
