@@ -6,8 +6,8 @@ Config:
 Tests:
 
   Allative Case:
-    ахгӏайре<n><cl_j2><all><sg>:
-    - ахгӏайрега
+    ахгӀайре<n><cl_j2><all><sg>:
+    - ахгӀайрега
     лом<n><cl_d><all><sg>:
     - лоьме
     школа<n><cl_j><all><sg>:
@@ -36,8 +36,8 @@ Tests:
     - лоьмах
 
   Ergative Case:
-    ахгӏайре<n><cl_j2><erg><sg>:
-    - ахгӏайрено
+    ахгӀайре<n><cl_j2><erg><sg>:
+    - ахгӀайрено
     кулинарка<n><cl_j><erg><sg>:
     - кулинарко
     лом<n><cl_d><erg><sg>:
@@ -52,7 +52,7 @@ Tests:
     - патарш
 
   Irregular:
-    йоӏ<n><cl_j><abs><pl>:
+    йоӀ<n><cl_j><abs><pl>:
     - мехкарий
     стаг<n><cl_j2><abs><pl>:
     - нах
@@ -92,7 +92,7 @@ Tests:
 
   Plural for PropN:
     Сатуев<np><fam><abs><pl>:
-    - Сатуевгӏар
+    - СатуевгӀар
 
   Potential Future:
     дада<v><iv><fut><ptn>:
