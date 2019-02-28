@@ -56,6 +56,7 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
 "Have a buffer consonant н before suffix -о"
 %{h%}:н <=> :Vow %>:0 _ ;
+            а _ а ;
 
 
 ! Resources:

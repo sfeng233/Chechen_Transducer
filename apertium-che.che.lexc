@@ -237,7 +237,7 @@ LEXICON RegNounInfl
 %<erg%>%<pl%>:%{a%}ша # ;
 %<gen%>%<sg%>:%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
-%<dat%>%<sg%>:%{a%}%{h%}а # ;
+%<dat%>%<sg%>:%{a%}на # ;
 %<dat%>%<pl%>:%{a%}шана # ;
 %<all%>%<sg%>: RegNounInfl-All ;
 %<all%>%<pl%>:%{a%}шка # ;
