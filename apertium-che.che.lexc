@@ -108,6 +108,7 @@ Multichar_Symbols
 %{a%}
 %{i%}
 %{h%}
+%{H%}
 %{e%}
 %{y%}
 %{g%}
@@ -116,6 +117,7 @@ Multichar_Symbols
 %{x%}
 
 %{b%}
+%{b1%}
 %{YY%}
 %{A%}
 %{A1%}
@@ -284,14 +286,14 @@ LEXICON Verb-TV
 
 LEXICON VerbInfl
 %<inf%>:а # ;
-%<pres%>:%{y%} # ;
-%<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}на # ;
-%<past%>%<rec%>%<wit%>:и # ;
-%<past%>%<rem%>%<wit%>:ира # ;
-%<past%>%<imp%>:ура # ;
-%<past%>%<pf%>%<uwit%>:%{i%}нера # ;
-%<fut%>%<ptn%>:ур # ;
+%<pres%>:%>%{y%} # ;
+%<pres%>%<prog%>:%>уш # ;
+%<pres%>%<pf%>:%>%{i%}%{H%}а # ;
+%<past%>%<rec%>%<wit%>:%>и # ;
+%<past%>%<rem%>%<wit%>:%>ира # ;
+%<past%>%<imp%>:%>ура # ;
+%<past%>%<pf%>%<uwit%>:%>%{i%}нера # ;
+%<fut%>%<ptn%>:%>ур # ;
 
 
 
@@ -368,7 +370,7 @@ LEXICON PropNounRoot
 
 LEXICON VerbRoot
 
-мала:м%{A%}л Verb-TV ; ! "drink"
+мала:м%{A%}л%{x%} Verb-TV ; ! "drink"
 
 дада:д%{A%}д Verb-IV ; ! "run"
 
@@ -392,7 +394,7 @@ LEXICON VerbRoot
 
 даккха:да%{b%}ккх Verb-TV ; ! "receive"
 
-деша:д%{E%}%{b%}ш Verb-TV ; ! "read"
+деша:д%{E%}%{b%}ш%{x%} Verb-TV ; ! "read"
 
 детта:д%{Y%}%{e%}тт Verb-TV ; ! "throw"
 
