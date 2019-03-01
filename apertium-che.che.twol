@@ -8,12 +8,14 @@ Alphabet
  %{h%}:н %{h%}:0
  %{e%}:й %{e%}:0
  %{y%}:у %{y%}:0 %{y%}:а
- %{g%}:л %{g%}:0 %{g%}:н ! the geminated place holder, more to come
+ %{g%}:л %{g%}:0 %{g%}:н %{g%}:р ! the geminated place holder, more to come
  %{ee%}:е %{ee%}:0
+ %{г%}:г %{г%}:0
 
  %{b%}:ь %{b%}:0
  %{YY%}:и %{YY%}:я
  %{A%}:а %{A%}:е %{A%}:о
+ %{A1%}:а %{A1%}:е
  %{E%}:о %{E%}:е
  %{EE%}:э %{EE%}:о
  %{O%}:о %{O%}:у
@@ -55,8 +57,27 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 ! %{ee%}:0 <=> : _ ( %>: ) Vow .#. ;
 
 "Have a buffer consonant н before suffix -о"
-%{h%}:н <=> :Vow %>:0 _ ;
+%{h%}:н <=> :Vow ( %>: ) _ ;
             а _ а ;
+
+"gemination"
+%{g%}:Cy <=> :Cx %>: _ ;
+      where Cx in ( л н р )
+            Cy in ( л н р )
+      matched ;
+
+
+"allative case ending1"
+%{A1%}:а <=> :Vow %>: %{a%}: %{г%}: _ ;
+
+"allative case ending2"
+%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
+
+"Allative case 2-1"
+%{г%}:0 <=> :Cons %>: %{a%}: _ %{A1%}: ;
+
+"buffer a"
+%{a%}:а <=> :Cons %>: _ Cons ;
 
 
 ! Resources:

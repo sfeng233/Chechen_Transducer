@@ -112,10 +112,12 @@ Multichar_Symbols
 %{y%}
 %{g%}
 %{ee%}
+%{г%}
 
 %{b%}
 %{YY%}
 %{A%}
+%{A1%}
 %{E%}
 %{EE%}
 %{O%}
@@ -234,23 +236,23 @@ LEXICON RegNounUninfl
 LEXICON RegNounInfl
 
 %<erg%>%<sg%>: RegNounInfl-Erg ;
-%<erg%>%<pl%>:%{a%}ша # ;
-%<gen%>%<sg%>:%{a%}н # ;
+%<erg%>%<pl%>:%>%{a%}ша # ;
+%<gen%>%<sg%>:%>%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
-%<dat%>%<sg%>:%{a%}на # ;
-%<dat%>%<pl%>:%{a%}шана # ;
+%<dat%>%<sg%>:%>%{a%}на # ;
+%<dat%>%<pl%>:%>%{a%}шана # ;
 %<all%>%<sg%>: RegNounInfl-All ;
-%<all%>%<pl%>:%{a%}шка # ;
-%<ins%>%<sg%>:%{a%}ца # ;
-%<ins%>%<pl%>:%{a%}шца # ;
-%<lat%>%<sg%>:%{a%}х # ;
-%<lat%>%<pl%>:%{YY%}х # ;
-%<cmp%>%<sg%>:%{a%}л # ;
+%<all%>%<pl%>:%>%{a%}шка # ;
+%<ins%>%<sg%>:%>%{a%}ца # ;
+%<ins%>%<pl%>:%>%{a%}шца # ;
+%<lat%>%<sg%>:%>%{a%}х # ;
+%<lat%>%<pl%>:%>%{YY%}х # ;
+%<cmp%>%<sg%>:%>%{a%}л # ;
 %<cmp%>%<pl%>:%{YY%}л # ;
-%<ine%>%<sg%>:%{a%}хь # ;
-%<ine%>%<pl%>:%{a%}шкахь # ;
-%<abl%>%<sg%>:%{a%}ра # ;
-%<abl%>%<pl%>:%{a%}шкара # ;
+%<ine%>%<sg%>:%>%{a%}хь # ;
+%<ine%>%<pl%>:%>%{a%}шкахь # ;
+%<abl%>%<sg%>:%>%{a%}ра # ;
+%<abl%>%<pl%>:%>%{a%}шкара # ;
 
 LEXICON RegNounInfl-AbsPl-inan
 :%>%{g%}%{a%}ш # ;
@@ -262,8 +264,7 @@ LEXICON RegNounInfl-Erg
 :%>%{h%}о # ;
 
 LEXICON RegNounInfl-All
-:%{a%}га # ;
-:е # ;
+:%>%{a%}%{г%}%{A1%} # ;
 
 LEXICON PropNounUninfl
 %<np%>%<abs%>%<sg%>: # ;
@@ -284,7 +285,7 @@ LEXICON VerbInfl
 %<inf%>:а # ;
 %<pres%>:%{y%} # ;
 %<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}%{g%}а # ;
+%<pres%>%<pf%>:%{i%}на # ;
 %<past%>%<rec%>%<wit%>:и # ;
 %<past%>%<rem%>%<wit%>:ира # ;
 %<past%>%<imp%>:ура # ;
