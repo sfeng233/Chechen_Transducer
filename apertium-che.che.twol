@@ -11,6 +11,7 @@ Alphabet
  %{g%}:л %{g%}:0 %{g%}:н %{g%}:р ! the geminated place holder, more to come
  %{ee%}:е %{ee%}:0
  %{г%}:г %{г%}:0
+ %{x%}:0
 
  %{b%}:ь %{b%}:0
  %{YY%}:и %{YY%}:я
@@ -44,11 +45,12 @@ a => _ ;
 !Vow:0 <=> _ (%>) :Vow ;
 
 "Plurals"
- %{a%}:0 <=> :Vow ( %>: ) ( %{g%}: ) _ ;
-!             :р ( %>: ) ( %{g%}: ) _ ;
+ %{a%}:0 <=> :Vow ( %>: ) _ ;
+             %{x%}: %>: _ ;
 
-!"deletion of и after o"
-!%{i%}:0 <=> :о %>:0 _ й ;
+
+"deletion of и after o"
+%{i%}:0 <=> :о %>: _ й .#. ;
 
 "Hargle bargle"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
@@ -61,7 +63,7 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
             а _ а ;
 
 "gemination"
-%{g%}:Cy <=> :Cx %>: _ ;
+%{g%}:Cy <=> :Cx ( %>: ) _ ;
       where Cx in ( л н р )
             Cy in ( л н р )
       matched ;

@@ -113,6 +113,7 @@ Multichar_Symbols
 %{g%}
 %{ee%}
 %{г%}
+%{x%}
 
 %{b%}
 %{YY%}
@@ -255,7 +256,7 @@ LEXICON RegNounInfl
 %<abl%>%<pl%>:%>%{a%}шкара # ;
 
 LEXICON RegNounInfl-AbsPl-inan
-:%>%{g%}%{a%}ш # ;
+:%>%{a%}ш # ;
 
 LEXICON RegNounInfl-AbsPl-anim
 :%>%{i%}й # ;
@@ -332,10 +333,10 @@ LEXICON NounRoot
 ламаро:ламаро NounJ2c-Aug-anim ; ! "mountainer"
 
 патар:патар NounDc ; ! "leaf"
-патар:патар NounDc-Aug-inan ; ! "leaf"
+патар:патар%{x%} NounDc-Aug-inan ; ! "leaf"
 
 кол:кол NounJ2c ; ! "bush"
-кол:коьл NounJ2c-Aug-inan ; ! "bush"
+кол:коьл%{g%} NounJ2c-Aug-inan ; ! "bush"
 
 ахгӀайре:ахгӀайре NounJ2c ; ! "peninsula"
 ахгӀайре:ахгӀайре NounJ2c-Aug-inan ; ! "peninsula"
