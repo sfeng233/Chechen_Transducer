@@ -4,6 +4,7 @@ Alphabet
 
 
  %{a%}:а %{a%}:0
+ %{a1%}:а %{a1%}:0
  %{i%}:и %{i%}:0
  %{i1%}:и %{i1%}:0
  %{h%}:н %{h%}:0
@@ -79,6 +80,9 @@ a => _ ;
 
 "buffer a"
 %{a%}:а <=> :Cons ( %>: ) _ :Cons ;
+
+!"buffer a1"
+!%{a1%}:0 <=> :Cons %>: _ %{г%}: %{A1%}: ;
 
 "alternation of a to o/e"
 %{A%}:Vy <=> _ :Cons ( :Cons ) %>: Vx ;
