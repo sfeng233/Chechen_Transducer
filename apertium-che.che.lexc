@@ -107,6 +107,7 @@ Multichar_Symbols
 %>      ! Morpheme boundary
 %{a%}
 %{i%}
+%{i1%}
 %{h%}
 %{H%}
 %{e%}
@@ -118,6 +119,7 @@ Multichar_Symbols
 
 %{b%}
 %{b1%}
+%{b2%}
 %{YY%}
 %{A%}
 %{A1%}
@@ -288,11 +290,11 @@ LEXICON VerbInfl
 %<inf%>:%>а # ;
 %<pres%>:%>у # ;
 %<pres%>%<prog%>:%>уш # ;
-%<pres%>%<pf%>:%>%{i%}%{H%}а # ;
+%<pres%>%<pf%>:%>%{i1%}%{H%}а # ;
 %<past%>%<rec%>%<wit%>:%>и # ;
 %<past%>%<rem%>%<wit%>:%>ира # ;
 %<past%>%<imp%>:%>ура # ;
-%<past%>%<pf%>%<uwit%>:%>%{i%}нера # ;
+%<past%>%<pf%>%<uwit%>:%>%{i1%}нера # ;
 %<fut%>%<ptn%>:%>ур # ;
 
 
@@ -390,15 +392,15 @@ LEXICON VerbRoot
 
 хила:х%{I%}%{b1%}л Verb-IV ; ! "happen"
 
-дотта:до%{b%}тт Verb-TV ; ! "pour"
+дотта:до%{b2%}тт Verb-TV ; ! "pour"
 
-даккха:да%{b%}ккх Verb-TV ; ! "receive"
+даккха:да%{b2%}ккх Verb-TV ; ! "receive"
 
-деша:д%{E%}%{b%}ш Verb-TV ; ! "read"
+деша:д%{E%}%{b1%}ш Verb-TV ; ! "read"
 
 детта:д%{Y%}%{e%}тт Verb-TV ; ! "throw"
 
-тоха:т%{O%}%{b%}х Verb-TV ; ! "hit/strike"
+тоха:т%{O%}%{b2%}х Verb-TV ; ! "hit/strike"
 
 дига:диг Verb-TV ; ! "lead"
 
