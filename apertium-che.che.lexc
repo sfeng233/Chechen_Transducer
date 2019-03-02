@@ -117,6 +117,7 @@ Multichar_Symbols
 %{x%}
 
 %{b%}
+%{b1%}
 %{YY%}
 %{A%}
 %{A1%}
@@ -385,9 +386,9 @@ LEXICON VerbRoot
 
 дохка:д%{O%}хк Verb-TV ; ! "sell"
 
-дижа:д%{I%}%{b%}ж Verb-IV ; ! "sleep"
+дижа:д%{I%}%{b1%}ж Verb-IV ; ! "sleep"
 
-хила:х%{I%}%{b%}л Verb-IV ; ! "happen"
+хила:х%{I%}%{b1%}л Verb-IV ; ! "happen"
 
 дотта:до%{b%}тт Verb-TV ; ! "pour"
 

@@ -15,6 +15,7 @@ Alphabet
  %{x%}:0
 
  %{b%}:ь %{b%}:0
+ %{b1%}:ь %{b1%}:0
  %{YY%}:и %{YY%}:я
  %{A%}:а %{A%}:е %{A%}:о
  %{A1%}:а %{A1%}:е
@@ -44,12 +45,14 @@ a => _ ;
 
 "Plurals"
 %{a%}:0 <=> :Vow ( %>: ) _ ;
-             %{x%}: %>: _ ;
+            %{x%}: %>: _ ;
+            :Cons %>: _ %{г%}: %{A1%}: ;
 
 
 "deletion of и after o"
 %{i%}:0 <=> :о %>: _ й ;
             %{A%}: л _ ;
+            %{E%}: ш _ ;
 
 
 
@@ -67,27 +70,38 @@ a => _ ;
 "allative case ending1"
 %{A1%}:а <=> :Vow %>: %{a%}: %{г%}: _ ;
 
-!"allative case ending2"
-!%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
+"allative case ending2"
+%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
 
 "Allative case 2-1"
 %{г%}:0 <=> :Cons %>: %{a%}: _ %{A1%}: ;
 
 "buffer a"
-%{a%}:а <=> :Cons %>: _ :Cons ;
+%{a%}:а <=> :Cons ( %>: ) _ :Cons ;
 
-"alternation of a in verb stem1"
+"alternation of a to o/e"
 %{A%}:Vy <=> _ :Cons ( :Cons ) %>: Vx ;
       where Vx in ( а у и )
             Vy in ( а о е )
       matched ;
 
-"alternation of a in verb stem2"
+"alternation of a to o/e 2"
 %{A%}:е <=> _ :Cons %{i%}: %{H%}: а ;
             _ :Cons %{i%}: нера ;
 
 "gemination h"
 %{H%}:л <=> :л %>: %{i%}: _ ;
+
+!@ л:л о:о ь:ь м:м >:0 {а}:0 {г}:0 {A1}:е
+
+"alternation of o to y"
+%{O%}:у <=> _ :Cons ( :Cons ) %>: у ;
+
+"alternation of u to y"
+%{I%}:у <=> _ :Cons ( :Cons ) %>: у ;
+
+"insertion of b1"
+%{b1%}:ь <=> _ :Cons ( :Cons ) %>: у ;
 
 
 ! Resources:
