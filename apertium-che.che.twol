@@ -6,6 +6,7 @@ Alphabet
  %{a%}:а %{a%}:0
  %{i%}:и %{i%}:0
  %{h%}:н %{h%}:0
+ %{H%}:н %{H%}:л
  %{e%}:й %{e%}:0
  %{y%}:у %{y%}:0 %{y%}:а
  %{g%}:л %{g%}:0 %{g%}:н %{g%}:р ! the geminated place holder, more to come
@@ -41,22 +42,16 @@ Rules
 a => _ ;
 
 
-!"Remove suffix vowel with vowel-ending stem"
-!Vow:0 <=> _ (%>) :Vow ;
-
 "Plurals"
- %{a%}:0 <=> :Vow ( %>: ) _ ;
+%{a%}:0 <=> :Vow ( %>: ) _ ;
              %{x%}: %>: _ ;
 
 
 "deletion of и after o"
-%{i%}:0 <=> :о %>: _ й .#. ;
+%{i%}:0 <=> :о %>: _ й ;
+            %{A%}: л _ ;
 
-"Hargle bargle"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
-! "deletion of e before a vowel suffix"
-! %{ee%}:0 <=> : _ ( %>: ) Vow .#. ;
 
 "Have a buffer consonant н before suffix -о"
 %{h%}:н <=> :Vow ( %>: ) _ ;
@@ -79,7 +74,20 @@ i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 %{г%}:0 <=> :Cons %>: %{a%}: _ %{A1%}: ;
 
 "buffer a"
-%{a%}:а <=> :Cons %>: _ Cons ;
+%{a%}:а <=> :Cons %>: _ :Cons ;
+
+"alternation of a in verb stem1"
+%{A%}:Vy <=> _ :Cons ( :Cons ) %>: Vx ;
+      where Vx in ( а у и )
+            Vy in ( а о е )
+      matched ;
+
+"alternation of a in verb stem2"
+%{A%}:е <=> _ :Cons %{i%}: %{H%}: а ;
+            _ :Cons %{i%}: нера ;
+
+"gemination h"
+%{H%}:л <=> :л %>: %{i%}: _ ; 
 
 
 ! Resources:

@@ -108,6 +108,7 @@ Multichar_Symbols
 %{a%}
 %{i%}
 %{h%}
+%{H%}
 %{e%}
 %{y%}
 %{g%}
@@ -283,15 +284,15 @@ LEXICON Verb-TV
 %<v%>%<tv%>: VerbInfl ;
 
 LEXICON VerbInfl
-%<inf%>:а # ;
-%<pres%>:%{y%} # ;
-%<pres%>%<prog%>:уш # ;
-%<pres%>%<pf%>:%{i%}на # ;
-%<past%>%<rec%>%<wit%>:и # ;
-%<past%>%<rem%>%<wit%>:ира # ;
-%<past%>%<imp%>:ура # ;
-%<past%>%<pf%>%<uwit%>:%{i%}нера # ;
-%<fut%>%<ptn%>:ур # ;
+%<inf%>:%>а # ;
+%<pres%>:%>у # ;
+%<pres%>%<prog%>:%>уш # ;
+%<pres%>%<pf%>:%>%{i%}%{H%}а # ;
+%<past%>%<rec%>%<wit%>:%>и # ;
+%<past%>%<rem%>%<wit%>:%>ира # ;
+%<past%>%<imp%>:%>ура # ;
+%<past%>%<pf%>%<uwit%>:%>%{i%}нера # ;
+%<fut%>%<ptn%>:%>ур # ;
 
 
 
