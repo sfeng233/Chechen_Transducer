@@ -67,8 +67,8 @@ a => _ ;
 "allative case ending1"
 %{A1%}:а <=> :Vow %>: %{a%}: %{г%}: _ ;
 
-"allative case ending2"
-%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
+!"allative case ending2"
+!%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
 
 "Allative case 2-1"
 %{г%}:0 <=> :Cons %>: %{a%}: _ %{A1%}: ;
@@ -87,7 +87,7 @@ a => _ ;
             _ :Cons %{i%}: нера ;
 
 "gemination h"
-%{H%}:л <=> :л %>: %{i%}: _ ; 
+%{H%}:л <=> :л %>: %{i%}: _ ;
 
 
 ! Resources:
