@@ -40,7 +40,7 @@
       <program name="lt-proc -w">
         <file name="che.automorf.bin"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc -1 -n -w">
         <file name="che.rlx.bin"/>
       </program>
     </pipeline>
@@ -59,4 +59,3 @@
   </mode>
 
 </modes>
-
