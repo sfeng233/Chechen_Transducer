@@ -11,6 +11,7 @@ Multichar_Symbols
 %<cl_d%>  ! d.class
 %<cl_b%>  ! b.class
 %<cl_b2%> ! b.class II
+%<cl_u%>  ! unknown class
 
 ! Number feature
 %<pl%>  ! Plural
@@ -130,6 +131,15 @@ Multichar_Symbols
 %{Y%}
 %{AA%}
 
+! Punctuations
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -143,6 +153,7 @@ VerbRoot ;
 Conjunction ;
 ProNoun ;
 AdjRoot ;
+Punctuation ;
 
 LEXICON NounVc !Absolutive forms aka. citation forms
 
@@ -469,6 +480,31 @@ LEXICON ProNoun
 уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
 
 и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+\%<sent%>:\ # ;
+/%<sent%>:/ # ;
 
 
 ! Resources:
