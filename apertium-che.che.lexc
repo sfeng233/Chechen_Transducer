@@ -142,6 +142,7 @@ PropNounRoot ;
 VerbRoot ;
 Conjunction ;
 ProNoun ;
+AdjRoot ;
 
 LEXICON NounVc !Absolutive forms aka. citation forms
 
@@ -357,6 +358,25 @@ LEXICON NounRoot
 тайпа:тайпа NounDc ; ! "sort, kind"
 тайпа:тайпан NounDc-Aug-inan ; ! "sort, kind"
 
+кан:кан NounDc ; ! "hair, wool"
+кан:кан NounDc-Aug-inan ; ! "hair, wool"
+
+бамба:бамба NounBc ; ! "cotton"
+бамба:бамб NounBc-Aug-inan ; ! "cotton"
+
+чолхе:чолхе NounJc ; ! "task, complicated task"
+чолхе:чолхен NounJc-Aug-inan ; ! "task, complicated task"
+
+накъосталла:накъосталла NounDc ; ! "help, fellowship"
+накъосталла:накъосталл NounDc-Aug-inan ; ! "help, fellowship"
+
+февраль:февраль NounBc2 ; ! "February"
+февраль:февраль NounBc2-Aug-inan ; ! "February"
+
+сема:сема NounJc ; ! "access, axle"
+сема:семн NounJc-Aug-inan ; ! "access, axle"
+
+
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
 стаг:стаг NounJ2c ; ! "person"
@@ -368,7 +388,10 @@ LEXICON PropNounRoot
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
 Дала:Дала PropNounUninfl ; ! "God"
 
+LEXICON AdjRoot
 
+чолхе%<adj%>:чолхе # ; ! "complex"
+сема%<adj%>:сема # ; !"alert, sharp"
 
 LEXICON VerbRoot
 
