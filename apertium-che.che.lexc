@@ -316,8 +316,8 @@ LEXICON NounRoot
 малх:малх NounBc ; ! "sun"
 малх:мелх NounBc-Aug-inan ; ! "suns"
 
-Ӏаж:Ӏаж NounBc2 ; ! "apple"
-Ӏаж:Ӏеж NounBc2-Aug-inan ; ! "apples"
+Ӏаж:Ӏаж NounB2c ; ! "apple"
+Ӏаж:Ӏеж NounB2c-Aug-inan ; ! "apples"
 
 кор:кор NounDc ; ! "window"
 кор:кор NounDc-Aug-inan ; ! "window"
@@ -370,11 +370,14 @@ LEXICON NounRoot
 накъосталла:накъосталла NounDc ; ! "help, fellowship"
 накъосталла:накъосталл NounDc-Aug-inan ; ! "help, fellowship"
 
-февраль:февраль NounBc2 ; ! "February"
-февраль:февраль NounBc2-Aug-inan ; ! "February"
+февраль:февраль NounB2c ; ! "February"
+февраль:февраль NounB2c-Aug-inan ; ! "February"
 
 сема:сема NounJc ; ! "access, axle"
 сема:семн NounJc-Aug-inan ; ! "access, axle"
+
+юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
+юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
