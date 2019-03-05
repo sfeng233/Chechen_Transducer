@@ -168,6 +168,10 @@ LEXICON NounB2c
 
 %<n%>%<cl_b2%>:  RegNounUninfl ;
 
+LEXICON NounUc
+
+%<n%>%<cl_u%>: RegNounUninfl ;
+
 
 LEXICON NounDc-Aug-anim ! Augment base (different from abs forms)
 
@@ -179,20 +183,20 @@ LEXICON NounDc-Aug-inan ! Augment base (different from abs forms)
 %<n%>%<cl_d%>: RegNounInfl ;
 %<n%>%<cl_d%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-LEXICON NounBc-Aug-anim
+!LEXICON NounBc-Aug-anim
 
-%<n%>%<cl_b%>: RegNounInfl ;
-%<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+!%<n%>%<cl_b%>: RegNounInfl ;
+!%<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounBc-Aug-inan
 
 %<n%>%<cl_b%>: RegNounInfl ;
 %<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-LEXICON NounB2c-Aug-anim
+!LEXICON NounB2c-Aug-anim
 
-%<n%>%<cl_b2%>:  RegNounInfl ;
-%<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+!%<n%>%<cl_b2%>:  RegNounInfl ;
+!%<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounB2c-Aug-inan
 
@@ -230,7 +234,15 @@ LEXICON NounJ2c-Aug-inan
 %<n%>%<cl_j2%>: RegNounInfl ;
 %<n%>%<cl_j2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
+!LEXICON NounUc-Aug-anim
 
+!%<n%>%<cl_u%>: RegNounInfl ;
+!%<n%>%<cl_u%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+
+LEXICON NounUc-Aug-inan
+
+%<n%>%<cl_u%>: RegNounInfl ;
+%<n%>%<cl_u%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
 
 
@@ -379,6 +391,14 @@ LEXICON NounRoot
 юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
 юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
 
+училище:училище NounDc ; ! "school"
+училище:училище NounDc-Aug-inan ; ! "school"
+
+актёр:актёр NounVc ; ! "actor"
+актёр:актёр NounVc-Aug-inan ; ! "school"
+
+музыка:музыка NounUc ; ! "music"
+музыка:музык NounUc-Aug-inan ; ! "music"
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
