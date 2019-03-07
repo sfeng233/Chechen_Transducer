@@ -11,9 +11,14 @@ SECTION
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 #SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
-# If there is an adverb to the left, cannot be a noun.
+# If there is an adverb to the left of an ambiguous n/adj word, remove noun reading.
+REMOVE (n) IF
+        (-1 (adv)) ;
 
-# If there is an adjective to the left, cannot be a adjective.
+# If there is an adjective to the left of an ambiguous n/adj word, remove adj reading.
+REMOVE (adj) IF
+        (-1 (adj)) ;
+        
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
