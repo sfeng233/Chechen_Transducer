@@ -154,6 +154,7 @@ Conjunction ;
 ProNoun ;
 AdjRoot ;
 Punctuation ;
+Adv ;
 
 LEXICON NounVc !Absolutive forms aka. citation forms
 
@@ -411,6 +412,13 @@ LEXICON NounRoot
 музыка:музыка NounUc ; ! "music"
 музыка:музык NounUc-Aug-inan ; ! "music"
 
+бухӀа:бухӀа NounJc ; ! "owl"
+бухӀа:бухӀан NounJc-Aug-inan ; ! "owl"
+
+хи:хи NounDc ; ! "river, water"
+
+
+
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
 стаг:стаг NounJ2c ; ! "person"
@@ -421,11 +429,17 @@ LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
 Дала:Дала PropNounUninfl ; ! "God"
+Йидал:Йидал PropNounUninfl ; ! "Volga River"
 
 LEXICON AdjRoot
 
 чолхе%<adj%>:чолхе # ; ! "complex"
 сема%<adj%>:сема # ; !"alert, sharp"
+экономикан%<adj%>:экономикан # ; ! "economic"
+
+LEXICON Adv
+
+буьйсанна%<adv%>%<tmp%>:буьйсанна # : ! "at night"
 
 LEXICON VerbRoot
 
@@ -466,6 +480,8 @@ LEXICON VerbRoot
 ала:%{AA%}л Verb-IV ; ! "say"
 
 латта:ла%{b%}тт Verb-IV ; ! "grow,support"
+
+хила:х%{I%}%{b1%}л Verb-IV ; ! "become, occur"
 
 
 LEXICON Conjunction
