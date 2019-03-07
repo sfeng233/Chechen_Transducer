@@ -429,7 +429,7 @@ LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
 Дала:Дала PropNounUninfl ; ! "God"
-Йидал:Йидал PropNounUninfl ; ! "Volga River"
+Ийдал:Ийдал PropNounUninfl ; ! "Volga River"
 
 LEXICON AdjRoot
 
@@ -439,7 +439,7 @@ LEXICON AdjRoot
 
 LEXICON Adv
 
-буьйсанна%<adv%>%<tmp%>:буьйсанна # : ! "at night"
+буьйсанна%<adv%>%<tmp%>:буьйсанна # ; ! "at night"
 
 LEXICON VerbRoot
 
