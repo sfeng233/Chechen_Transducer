@@ -132,7 +132,7 @@ a => _ ;
 %{E%}:о <=> _ :Cons ( :Cons ) %>: у ;
 
 "alternation of a to o"
-%{A2%}:о <=> _ :Cons ( :Cons ) ( :Cons ) %>: у ;
+%{A2%}:о <=> _ %{b3%}: :Cons ( :Cons ) ( :Cons ) %>: у ;
 
 
 
