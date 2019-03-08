@@ -19,15 +19,18 @@ Alphabet
  %{b%}:ь %{b%}:0
  %{b1%}:ь %{b1%}:0
  %{b2%}:ь %{b2%}:0
+ %{b3%}:ь %{b3%}:0
+ ! %{b4%}:ь %{b4%}:0
  %{YY%}:и %{YY%}:я
  %{A%}:а %{A%}:е %{A%}:о
  %{A1%}:а %{A1%}:е
+ %{A2%}:а %{A2%}:о
  %{E%}:о %{E%}:е
  %{EE%}:э %{EE%}:о
  %{O%}:о %{O%}:у
  %{I%}:и %{I%}:у
  %{Y%}:е %{Y%}:и
- %{AA%}:э %{AA%}:а
+ ! %{AA%}:а %{AA%}:о
 
 
  %>:0  ;
@@ -110,6 +113,9 @@ a => _ ;
 "insertion of b2"
 %{b2%}:0 <=> _ :Cons ( :Cons ) %>: а ;
 
+"insertion of b3"
+%{b3%}:ь <=> _ :Cons ( :Cons ) %>: и ;
+
 "alternation of e into и"     ! still not working perfectly cry
 %{Y%}:е <=> _ :Cons ( :Cons ) %>: а ;
             _ :Cons ( :Cons ) %>: %{i1%}: нера ;
@@ -124,6 +130,10 @@ a => _ ;
 
 "alternation of e to o"
 %{E%}:о <=> _ :Cons ( :Cons ) %>: у ;
+
+"alternation of a to o"
+%{A2%}:о <=> _ :Cons ( :Cons ) ( :Cons ) %>: у ;
+
 
 
 

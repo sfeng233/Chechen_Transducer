@@ -51,6 +51,7 @@ Multichar_Symbols
 %<v%>   ! Verb
 %<tv%>  ! Transitive
 %<iv%>  ! Intransitive
+%<cpl%> ! Copular
 %<inf%> ! Infinite form
 %<pres%> ! Present
 %<past%> ! past
@@ -121,15 +122,18 @@ Multichar_Symbols
 %{b%}
 %{b1%}
 %{b2%}
+%{b3%}
+! %{b4%}
 %{YY%}
 %{A%}
 %{A1%}
+%{A2%}
 %{E%}
 %{EE%}
 %{O%}
 %{I%}
 %{Y%}
-%{AA%}
+! %{AA%}
 
 ! Punctuations
 %<sent%>      ! Sentence marker
@@ -417,6 +421,15 @@ LEXICON NounRoot
 
 хи:хи NounDc ; ! "river, water"
 
+зен:зен NounDc ; ! "harm, loss"
+зен:зен NounDc-Aug-inan ; ! "harm, loss"
+
+йиш:йиш NounJc ; ! "voice"
+йиш:эшар NounJc-Aug-inan ; ! "voice"
+
+мотор:мотор NounUc ; ! "motor"
+мотор:мотор NounUc-Aug-inan ; ! "motor"
+
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
@@ -449,7 +462,8 @@ LEXICON VerbRoot
 
 кхарза:кх%{A%}рз Verb-TV ; ! "fry"
 
-зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine"
+! зен:з%{E%}%{b%}%{h%} Verb-TV ; ! "examine"
+зен%<v%>%<tv%>%<inf%>:зен # ; ! "examine"
 
 лен:л%{E%}%{b%}%{h%} Verb-IV ; ! "talk"
 
@@ -465,7 +479,7 @@ LEXICON VerbRoot
 
 дотта:до%{b2%}тт Verb-TV ; ! "pour"
 
-даккха:да%{b2%}ккх Verb-TV ; ! "receive"
+даккха:д%{A2%}%{b3%}ккх Verb-TV ; ! "receive"
 
 деша:д%{E%}%{b1%}ш Verb-TV ; ! "read"
 
@@ -477,11 +491,15 @@ LEXICON VerbRoot
 
 дула:дул Verb-IV ; ! "inflate"
 
-ала:%{AA%}л Verb-IV ; ! "say"
+ала:%{A2%}%{b3%}л Verb-IV ; ! "say"
 
 латта:ла%{b%}тт Verb-IV ; ! "grow,support"
 
 хила:х%{I%}%{b1%}л Verb-IV ; ! "become, occur"
+
+дан%<v%>%<tv%>%<inf%>:дан # ; ! "do, make"
+
+ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
 
 
 LEXICON Conjunction
@@ -492,6 +510,10 @@ LEXICON Conjunction
 LEXICON ProNoun
 
 иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза # ; ! "he/she/it"
+
+ас%<prn%>%<pers%>%<p1%>%<erg%>%<sg%>: ас # ; ! "I"
+
+цуьнга%<prn%>%<pers%>%<p3%>%<all%>%<sg%>: цуьнга # ; ! "its, hers, his"
 
 уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
 

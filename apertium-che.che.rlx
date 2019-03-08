@@ -12,13 +12,13 @@ SECTION
 #SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
 # If there is an adverb to the left of an ambiguous n/adj word, remove noun reading.
-REMOVE (n) IF
-        (-1 (adv)) ;
+# REMOVE (n) IF
+#        (-1 (adv)) ;
 
 # If there is an adjective to the left of an ambiguous n/adj word, remove adj reading.
-REMOVE (adj) IF
-        (-1 (adj)) ;
-        
+# REMOVE (adj) IF
+#        (-1 (adj)) ;
+
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
@@ -27,8 +27,21 @@ REMOVE (adj) IF
 # http://wiki.apertium.org/wiki/Constraint_Grammar
 # http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
 
+
 # Басар тохар — чолхе физикан-химин технологи: adj
 # Россехь хьехолин йохаллин истори чолхе хилар
 
 # Экономикан сема — Ийдал хи.    Экономическая ось — река Волга. Noun
 # БухӀа буьйсанна сема хуьлу. Adj
+
+# доккху зен дан йиш а ю. noun
+# Цхьаболчара дуьйцу, цунна Альцгеймеран лазарх зен хилла бохуш.
+# Хьарам зулми — и иштта къа ду, хийра нахан зен-зулам деш, къола деш воцучунна бен.
+# Чевнаш (16 гериг) бахьанехь могашаллина хилла зен Полинина хӀинца метта а ца хӀоттийна.
+# И суьрташ ма дацара цхьа хӀума хезаш а, я гуш, бала пайда болуш, я дан зен долуш.
+# Дала хаьржинчу берана зен ца дан, меллаша охьайоьссира Хьалимат шен хьайбанан букъа тӀера.
+# Цхьанна а зен деш ца хилла цо. Noun
+# ВаллахӀи, царна иза ган а гахь, суна хиънарг царна тоса а лахь, хӀуъа дина а, цхьа зен даза Ӏийр ма бац уьш.
+
+# доккху зен дан йиш ю. Noun
+# Ас аьлира цуьнга мотор зен. Verb. 
