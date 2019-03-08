@@ -11,14 +11,13 @@ SECTION
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 #SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
-# If there is an adverb to the left of an ambiguous n/adj word, remove noun reading.
-# REMOVE (n) IF
-#        (-1 (adv)) ;
+# If there is a verb to the right, remove the verb reading.
+REMOVE (v) IF
+        (1 (v)) ;
 
-# If there is an adjective to the left of an ambiguous n/adj word, remove adj reading.
-# REMOVE (adj) IF
-#        (-1 (adj)) ;
-
+# If there is a noun to the left, remove the noun reading.
+REMOVE (n) IF
+        (-1 (n)) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
@@ -44,4 +43,4 @@ SECTION
 # ВаллахӀи, царна иза ган а гахь, суна хиънарг царна тоса а лахь, хӀуъа дина а, цхьа зен даза Ӏийр ма бац уьш.
 
 # доккху зен дан йиш ю. Noun
-# Ас аьлира цуьнга мотор зен. Verb. 
+# Ас аьлира цуьнга мотор зен. Verb.
