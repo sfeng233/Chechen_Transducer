@@ -72,6 +72,7 @@ Multichar_Symbols
 %<uwit%> ! Unwitnessed
 %<dnm%> ! Verbal denominal
 %<rcp%> ! Relative Clausal Participle
+%<ptcp%> ! No idea
 
 !Postposition
 %<post%> ! Postposition
@@ -307,6 +308,28 @@ LEXICON PropNounFInfl
 %<np%>%<fam%>%<abs%>%<sg%>: # ;
 %<np%>%<fam%>%<abs%>%<pl%>:гӀар # ;
 
+LEXICON PropNounInfl
+%<np%>: RegNounInfl-1 ;
+
+LEXICON RegNounInfl-1
+%<erg%>%<sg%>:%>а # ;
+%<erg%>%<pl%>:%>%{a%}ша # ;
+%<gen%>%<sg%>:%>%{a%}н # ;
+%<gen%>%<pl%>:и%{e%}н # ;
+%<dat%>%<sg%>:%>%{a%}на # ;
+%<dat%>%<pl%>:%>%{a%}шана # ;
+%<all%>%<sg%>: RegNounInfl-All ;
+%<all%>%<pl%>:%>%{a%}шка # ;
+%<ins%>%<sg%>:%>%{a%}ца # ;
+%<ins%>%<pl%>:%>%{a%}шца # ;
+%<lat%>%<sg%>:%>%{a%}х # ;
+%<lat%>%<pl%>:%>%{YY%}х # ;
+%<cmp%>%<sg%>:%>%{a%}л # ;
+%<cmp%>%<pl%>:%{YY%}л # ;
+%<ine%>%<sg%>:%>%{a%}хь # ;
+%<ine%>%<pl%>:%>%{a%}шкахь # ;
+%<abl%>%<sg%>:%>%{a%}ра # ;
+%<abl%>%<pl%>:%>%{a%}шкара # ;
 
 LEXICON Verb-IV
 
@@ -392,8 +415,8 @@ LEXICON NounRoot
 бамба:бамба NounBc ; ! "cotton"
 бамба:бамб NounBc-Aug-inan ; ! "cotton"
 
-чолхе:чолхе NounJc ; ! "task, complicated task"
-чолхе:чолхен NounJc-Aug-inan ; ! "task, complicated task"
+!чолхе:чолхе NounJc ; ! "task, complicated task"
+!чолхе:чолхен NounJc-Aug-inan ; ! "task, complicated task"
 
 накъосталла:накъосталла NounDc ; ! "help, fellowship"
 накъосталла:накъосталл NounDc-Aug-inan ; ! "help, fellowship"
@@ -401,11 +424,11 @@ LEXICON NounRoot
 февраль:февраль NounB2c ; ! "February"
 февраль:февраль NounB2c-Aug-inan ; ! "February"
 
-сема:сема NounJc ; ! "access, axle"
-сема:семн NounJc-Aug-inan ; ! "access, axle"
+!сема:сема NounJc ; ! "access, axle"
+!сема:семн NounJc-Aug-inan ; ! "access, axle"
 
 юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
-юьхк:юьхк NounJc ; ! "stump, block, core of an apple"
+юьхк:юьхк NounJc-Aug-inan ; ! "stump, block, core of an apple"
 
 училище:училище NounDc ; ! "school"
 училище:училище NounDc-Aug-inan ; ! "school"
@@ -430,6 +453,29 @@ LEXICON NounRoot
 мотор:мотор NounUc ; ! "motor"
 мотор:мотор NounUc-Aug-inan ; ! "motor"
 
+буьрка:буьрка NounJc ; ! "ball"
+буьрка:буьрк NounJc-Aug-inan ; ! "ball"
+
+ваша:ваша NounVc ; ! "brother"
+ваша:ваш NounVc-Aug-anim ; ! "brother"
+
+цӀе:цӀе NounJc ; ! "name"
+цӀе:цӀе NounJc-Aug-inan ; ! "name"
+
+базар:базар NounJc ; ! "bazaar, market"
+базар:базар NounJc-Aug-inan ; ! "bazaar, market"
+
+бепиг:бепиг NounJc ; ! "bread"
+бепиг:бепиг NounJc-Aug-inan ; ! "bread"
+
+котам:котам NounJc ; ! "chicken"
+котам:котам NounJc-Aug-anim ; ! "chicken"
+
+хӀуъа:хӀуъа NounUc ; ! "egg"
+
+машина:машина NounUc ; ! "car"
+
+нанас%<n%>%<cl_j%>%<erg%>%<sg%>:нанас ; ! "mother"
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
@@ -443,12 +489,21 @@ LEXICON PropNounRoot
 Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
 Дала:Дала PropNounUninfl ; ! "God"
 Ийдал:Ийдал PropNounUninfl ; ! "Volga River"
+Хьасан:Хьасан PropNounUninfl ; ! "Hasan"
+Хьасан:Хьасан PropNounInfl ; ! "Hasan"
+Иван:Иван PropNounUninfl ; ! "Ivan"
+Иван:Иван PropNounInfl ; ! "Ivan"
+Ахьмад:Ахьмад PropNounUninfl ; ! "Ahwmad"
+Ахьмад:Ахьмад PropNounInfl ; ! "Ahwmad"
+Аслан:Аслан PropNounUnifl ; ! "Aslan"
+Аслан:Аслан PropNounIfl ; ! "Aslan"
 
 LEXICON AdjRoot
 
 чолхе%<adj%>:чолхе # ; ! "complex"
 сема%<adj%>:сема # ; !"alert, sharp"
 экономикан%<adj%>:экономикан # ; ! "economic"
+керла%<adj%>:керла # ; ! "new"
 
 LEXICON Adv
 
@@ -498,8 +553,18 @@ LEXICON VerbRoot
 хила:х%{I%}%{b1%}л Verb-IV ; ! "become, occur"
 
 дан%<v%>%<tv%>%<inf%>:дан # ; ! "do, make"
+деш%<v%>%<tv%>%<prog%>%<ptcp%>:деш ; ! "making"
+до%<v%>%<tv%>%<pres%>:до ; ! "lay"
+дина%<v%>%<tv%>%<pres%>%<pf%>:дина ; ! "make"
+
+деза%<v%>%<pres%>:деза ; ! "must"
 
 ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
+ву%<v%>%<cpl%>%<cl_b%>:ву # ; ! "copular verb form for b-class"
+
+яьла:яьл Verb-TV ; ! "give"
+
+воьда:воьд Verb-IV ; ! "go"
 
 
 LEXICON Conjunction
@@ -518,6 +583,10 @@ LEXICON ProNoun
 уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
 
 и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
+
+сан%<prn%>%<pers%>%<p1%>%<gen%>%<sg%>: сан # ; ! "my"
+
+со%<prn%>%<pers%>%<p1%>%<abs%>%<sg%>: со # ; ! "I"
 
 LEXICON Punctuation
 

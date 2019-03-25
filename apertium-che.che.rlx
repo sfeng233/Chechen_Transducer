@@ -12,12 +12,12 @@ SECTION
 #SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
 # If there is a verb to the right, remove the verb reading.
-REMOVE (v) IF
-        (1 (v)) ;
+#REMOVE (v) IF
+#        (1 (v)) ;
 
 # If there is a noun to the left, remove the noun reading.
-REMOVE (n) IF
-        (-1 (n)) ;
+#REMOVE (n) IF
+#        (-1 (n)) ;
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
