@@ -325,11 +325,11 @@ LEXICON PropNounHyd
 
 LEXICON PropNounInfl
 %<abs%>%<sg%>: # ;
-%<erg%>%<sg%>: RegNounInfl-Erg ;
+%<erg%>%<sg%>:%>а # ; 
 %<erg%>%<pl%>:%>%{a%}ша # ;
 %<gen%>%<sg%>:%>%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
-%<dat%>%<sg%>:%>%{a%}на # ;
+%<dat%>%<sg%>:%>на # ;
 %<dat%>%<pl%>:%>%{a%}шана # ;
 %<all%>%<sg%>: RegNounInfl-All ;
 %<all%>%<pl%>:%>%{a%}шка # ;
@@ -509,6 +509,7 @@ LEXICON PropNounRoot
 Хьасан:Хьасан PropNounAnt ; ! "Hasan"
 Иван:Иван PropNounAnt ; ! "Ivan"
 Ахьмад:Ахьмад PropNounAnt ; ! "Ahwmad"
+! Ахьмад%<np%>%<ant%>%<erg%>%<sg%>:Ахьмада # ; ! "Ahwmad"
 Аслан:Аслан PropNounAnt ; ! "Aslan"
 
 LEXICON AdjRoot
