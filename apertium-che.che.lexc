@@ -475,7 +475,7 @@ LEXICON NounRoot
 
 машина:машина NounUc ; ! "car"
 
-нанас%<n%>%<cl_j%>%<erg%>%<sg%>:нанас ; ! "mother"
+нанас%<n%>%<cl_j%>%<erg%>%<sg%>:нанас # ; ! "mother"
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
@@ -495,8 +495,8 @@ LEXICON PropNounRoot
 Иван:Иван PropNounInfl ; ! "Ivan"
 Ахьмад:Ахьмад PropNounUninfl ; ! "Ahwmad"
 Ахьмад:Ахьмад PropNounInfl ; ! "Ahwmad"
-Аслан:Аслан PropNounUnifl ; ! "Aslan"
-Аслан:Аслан PropNounIfl ; ! "Aslan"
+Аслан:Аслан PropNounUninfl ; ! "Aslan"
+Аслан:Аслан PropNounInfl ; ! "Aslan"
 
 LEXICON AdjRoot
 
@@ -553,11 +553,11 @@ LEXICON VerbRoot
 хила:х%{I%}%{b1%}л Verb-IV ; ! "become, occur"
 
 дан%<v%>%<tv%>%<inf%>:дан # ; ! "do, make"
-деш%<v%>%<tv%>%<prog%>%<ptcp%>:деш ; ! "making"
-до%<v%>%<tv%>%<pres%>:до ; ! "lay"
-дина%<v%>%<tv%>%<pres%>%<pf%>:дина ; ! "make"
+деш%<v%>%<tv%>%<prog%>%<ptcp%>:деш # ; ! "making"
+до%<v%>%<tv%>%<pres%>:до # ; ! "lay"
+дина%<v%>%<tv%>%<pres%>%<pf%>:дина # ; ! "make"
 
-деза%<v%>%<pres%>:деза ; ! "must"
+деза%<v%>%<pres%>:деза # ; ! "must"
 
 ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
 ву%<v%>%<cpl%>%<cl_b%>:ву # ; ! "copular verb form for b-class"
