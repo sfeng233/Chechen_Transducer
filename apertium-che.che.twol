@@ -72,13 +72,13 @@ a => _ ;
 
 
 "allative case ending1"
-%{A1%}:а <=> :Vow %>: %{a%}: %{г%}: _ ;
+%{A1%}:а <=> :Vow %>: %{г%}: _ ;
 
 "allative case ending2"
-%{A1%}:е <=> :Cons %>: %{a%}: %{г%}: _ ;
+%{A1%}:е <=> :Cons %>: %{г%}: _ ;
 
 "Allative case 2-1"
-%{г%}:0 <=> :Cons %>: %{a%}: _ %{A1%}: ;
+%{г%}:0 <=> :Cons %>: _ %{A1%}: ;
 
 "buffer a"
 %{a%}:а <=> :Cons ( %>: ) _ :Cons ;

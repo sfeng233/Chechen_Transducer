@@ -302,7 +302,7 @@ LEXICON RegNounInfl-Erg
 :%>%{h%}о # ;
 
 LEXICON RegNounInfl-All
-:%>%{a%}%{г%}%{A1%} # ;
+:%>%{г%}%{A1%} # ;
 
 
 
@@ -479,7 +479,8 @@ LEXICON NounRoot
 цӀе:цӀе NounJc-Aug-inan ; ! "name"
 
 базар:базар NounJc ; ! "bazaar, market"
-базар:базар NounJc-Aug-inan ; ! "bazaar, market"
+! базар:базар NounJc-Aug-inan ; ! "bazaar, market"
+базар%<n%>%<cl_j%>%<all%>%<sg%>:базара # ;
 
 бепиг:бепиг NounJc ; ! "bread"
 бепиг:бепиг NounJc-Aug-inan ; ! "bread"
@@ -574,7 +575,7 @@ LEXICON VerbRoot
 ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
 ву%<v%>%<cpl%>%<cl_b%>:ву # ; ! "copular verb form for b-class"
 
-яьлла%<v%>%<iv%>%<pres%>%<pf%>:яьлла # ; ! "give"
+яьлла%<v%>%<tv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
 воьда:воьд Verb-IV ; ! "go"
 
