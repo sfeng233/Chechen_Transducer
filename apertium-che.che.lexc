@@ -32,7 +32,10 @@ Multichar_Symbols
 
 ! Proper Noun
 %<np%>   ! Proper Noun
-%<fam%>  ! Family name
+%<cog%>  ! Family name
+%<ant%>  ! First name
+%<hyd%>  ! Place name
+%<al%>   ! Other proper nouns
 
 ! Pronoun
 %<prn%>   ! Pronoun
@@ -301,18 +304,28 @@ LEXICON RegNounInfl-Erg
 LEXICON RegNounInfl-All
 :%>%{a%}%{г%}%{A1%} # ;
 
-LEXICON PropNounUninfl
-%<np%>%<abs%>%<sg%>: # ;
 
-LEXICON PropNounFInfl
-%<np%>%<fam%>%<abs%>%<sg%>: # ;
-%<np%>%<fam%>%<abs%>%<pl%>:гӀар # ;
+
+
+
+
+
+LEXICON PropNounCog
+%<np%>%<cog%>%<abs%>%<sg%>: # ;
+%<np%>%<cog%>%<abs%>%<pl%>:гӀар # ;
+
+LEXICON PropNounAnt
+%<np%>%<ant%>: PropNounInfl ;
+
+LEXICON PropNounAl
+%<np%>%<al%>: PropNounInfl ;
+
+LEXICON PropNounHyd
+%<np%>%<hyd%>: PropNounInfl ;
 
 LEXICON PropNounInfl
-%<np%>: RegNounInfl-1 ;
-
-LEXICON RegNounInfl-1
-%<erg%>%<sg%>:%>а # ;
+%<abs%>%<sg%>: # ;
+%<erg%>%<sg%>: RegNounInfl-Erg ;
 %<erg%>%<pl%>:%>%{a%}ша # ;
 %<gen%>%<sg%>:%>%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
@@ -330,6 +343,9 @@ LEXICON RegNounInfl-1
 %<ine%>%<pl%>:%>%{a%}шкахь # ;
 %<abl%>%<sg%>:%>%{a%}ра # ;
 %<abl%>%<pl%>:%>%{a%}шкара # ;
+
+
+
 
 LEXICON Verb-IV
 
@@ -486,17 +502,13 @@ LEXICON NounRoot
 
 LEXICON PropNounRoot
 
-Сатуев:Сатуев PropNounFInfl ; ! "Satujev"
-Дала:Дала PropNounUninfl ; ! "God"
-Ийдал:Ийдал PropNounUninfl ; ! "Volga River"
-Хьасан:Хьасан PropNounUninfl ; ! "Hasan"
-Хьасан:Хьасан PropNounInfl ; ! "Hasan"
-Иван:Иван PropNounUninfl ; ! "Ivan"
-Иван:Иван PropNounInfl ; ! "Ivan"
-Ахьмад:Ахьмад PropNounUninfl ; ! "Ahwmad"
-Ахьмад:Ахьмад PropNounInfl ; ! "Ahwmad"
-Аслан:Аслан PropNounUninfl ; ! "Aslan"
-Аслан:Аслан PropNounInfl ; ! "Aslan"
+Сатуев:Сатуев PropNounCog ; ! "Satujev"
+Дала:Дала PropNounAl ; ! "God"
+Ийдал:Ийдал PropNounHyd ; ! "Volga River"
+Хьасан:Хьасан PropNounAnt ; ! "Hasan"
+Иван:Иван PropNounAnt ; ! "Ivan"
+Ахьмад:Ахьмад PropNounAnt ; ! "Ahwmad"
+Аслан:Аслан PropNounAnt ; ! "Aslan"
 
 LEXICON AdjRoot
 
@@ -562,7 +574,7 @@ LEXICON VerbRoot
 ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
 ву%<v%>%<cpl%>%<cl_b%>:ву # ; ! "copular verb form for b-class"
 
-яьла:яьл Verb-TV ; ! "give"
+яьлла%<v%>%<iv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
 воьда:воьд Verb-IV ; ! "go"
 
