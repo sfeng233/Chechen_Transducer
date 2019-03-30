@@ -76,6 +76,7 @@ Multichar_Symbols
 %<dnm%> ! Verbal denominal
 %<rcp%> ! Relative Clausal Participle
 %<ptcp%> ! No idea
+%<neg%> ! Negation
 
 !Postposition
 %<post%> ! Postposition
@@ -161,6 +162,7 @@ LEXICON Root
 NounRoot ;
 PropNounRoot ;
 VerbRoot ;
+Negation ;
 Conjunction ;
 ProNoun ;
 AdjRoot ;
@@ -509,6 +511,17 @@ LEXICON NounRoot
 сацар:сацар NounUc ; ! "pause"
 сацарца%<n%>%<cl_u%>%<abs%>%<pl%>:сацарца # ; ! "pause"
 
+стигал:стигалх NounJc ; ! "top"
+стигалх%<n%>%<cl_j%>%<lat%>%<sg%>:стигалх # ; ! "top"
+
+мотт:мотт NounB2c ; ! "language, tongue"
+мотт:меттан NounB2c-Aug-inan ; ! "language, tongue"
+
+диалект:диалект NounUc ; ! "dialect"
+диалект:диалект NounUc-Aug-inan ; ! "dialect"
+
+
+
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
@@ -533,6 +546,32 @@ LEXICON AdjRoot
 сема%<adj%>:сема # ; !"alert, sharp"
 экономикан%<adj%>:экономикан # ; ! "economic"
 керла%<adj%>:керла # ; ! "new"
+нохчийн%<adj%>:нохчийн # ; ! "Chechen"
+коптий%<adj%>:коптий # ; ! "Coptic"
+немцойн%<adj%>:немцойн # ; ! "German"
+тюркийн%<adj%>:тюркийн # ; ! "Turkish"
+оьрсийн%<adj%>:оьрсийн # ; ! "Russian"
+Ӏаьрбийн%<adj%>:Ӏаьрбийн # ; ! "Arabic"
+туркойн%<adj%>:туркойн # ; ! "Turkish"
+официалан%<adj%>:официалан # ; ! "official"
+абхазхойн%<adj%>:абхазхойн # ; ! "Abkhaz"
+абазойн%<adj%>:абазойн # ; ! "Abaza"
+грекийн%<adj%>:грекийн # ; ! "Greek"
+гӀумкийн%<adj%>:гӀумкийн # ; ! "Kumyk"
+гӀезалойн%<adj%>:гӀезалойн # ; ! "Tatar"
+португалийн%<adj%>:португалийн # ; ! "Portuguese"
+французийн%<adj%>:французийн # ; ! "French"
+латинан%<adj%>:латинан # ; ! "Latin"
+шумерийн%<adj%>:шумерийн # ; ! "Sumerian"
+Болгарийн%<adj%>:Болгарийн # ; ! "Bulgarian"
+Пачхьалкхан%<adj%>:Пачхьалкхан # ; ! "state"
+Ингалсан%<adj%>:Ингалсан # ; ! "English"
+Украинийн%<adj%>:Украинийн # ; ! "Ukraine"
+Литературан%<adj%>:Литературан # ; ! "literary"
+классикан%<adj%>:классикан # ; ! "classic"
+романийн%<adj%>:романийн # ; ! "Roman"
+лавянийн%<adj%>:лавянийн # ; ! "Slavic"
+
 
 LEXICON Adv
 
@@ -603,6 +642,15 @@ LEXICON VerbRoot
 
 къаьста%<v%>%<iv%>%<pres%>:къаьста # ; ! "separate"
 
+дӀалетара%<v%>%<iv%>%<past%>%<imp%>:дӀалетара # ; ! "stuck"
+
+бийца:буьйц Verb-TV ; ! "speak"
+
+
+LEXICON Negation
+
+ца%<neg%>: ца # ; ! "not"
+
 
 LEXICON Conjunction
 
@@ -625,6 +673,8 @@ LEXICON ProNoun
 сан%<prn%>%<pers%>%<p1%>%<gen%>%<sg%>: сан # ; ! "my"
 
 со%<prn%>%<pers%>%<p1%>%<abs%>%<sg%>: со # ; ! "I"
+
+церан%<prn%>%<pers%>%<p3%>%<gen%>%<pl%>: церан # ; ! "their"
 
 LEXICON Punctuation
 
