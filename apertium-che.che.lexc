@@ -149,6 +149,9 @@ Multichar_Symbols
 %<rpar%>      ! Parenthetical marker (right hand side)
 %<lpar%>      ! Parenthetical marker (left hand side)
 
+! Mathematic symbols
+%<mat%>       ! Mathematic symbols
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -325,7 +328,7 @@ LEXICON PropNounHyd
 
 LEXICON PropNounInfl
 %<abs%>%<sg%>: # ;
-%<erg%>%<sg%>:%>а # ; 
+%<erg%>%<sg%>:%>а # ;
 %<erg%>%<pl%>:%>%{a%}ша # ;
 %<gen%>%<sg%>:%>%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
@@ -494,6 +497,18 @@ LEXICON NounRoot
 
 нанас%<n%>%<cl_j%>%<erg%>%<sg%>:нанас # ; ! "mother"
 
+алам:алам NounDc ; ! "phrase, expression"
+алам:алам NounDc-Aug-inan ; ! "phrase, expression"
+
+терахь:терахь NounDc ; ! "number"
+терахь:терахь NounDc-Aug-inan ; ! "number"
+
+шиъ:шиъ NounDc ; ! "pair"
+шиъ:шиъ NounDc-Aug-inan ; ! "pair"
+
+сацар:сацар NounUc ; ! "pause"
+сацарца%<n%>%<cl_u%>%<abs%>%<pl%>:сацарца # ; ! "pause"
+
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
@@ -522,6 +537,9 @@ LEXICON AdjRoot
 LEXICON Adv
 
 буьйсанна%<adv%>%<tmp%>:буьйсанна # ; ! "at night"
+масала%<adv%>:масала # ; ! "for example"\
+вовшех%<adv%>:вовшех # ; ! "each other"
+сов%<adv%>:сов # ; ! "more"
 
 LEXICON VerbRoot
 
@@ -574,16 +592,22 @@ LEXICON VerbRoot
 деза%<v%>%<pres%>:деза # ; ! "must"
 
 ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
-ву%<v%>%<cpl%>%<cl_b%>:ву # ; ! "copular verb form for b-class"
+ву%<v%>%<cpl%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
+бу%<v%>%<cpl%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
 
 яьлла%<v%>%<tv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
 воьда:воьд Verb-IV ; ! "go"
 
+юхадерзо%<v%>%<tv%>%<dnm%>%<erg%>%<sg%>:юхадерзо # ; ! "evaluate"
+
+къаьста%<v%>%<iv%>%<pres%>:къаьста # ; ! "separate"
+
 
 LEXICON Conjunction
 
 а%<conj%>: а # ; ! "and"
+я%<conj%>: я # ; ! "either"
 
 
 LEXICON ProNoun
@@ -626,6 +650,7 @@ LEXICON Punctuation
 %)%<rpar%>:%) # ;
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
++%<mat%>:+ # ;
 
 
 ! Resources:
