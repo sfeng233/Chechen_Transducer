@@ -362,7 +362,7 @@ LEXICON Verb-TV
 LEXICON VerbInfl
 %<inf%>:%>а # ;
 %<pres%>:%>у # ;
-%<pres%>%<prog%>%<ptcp%>:%>уш # ;
+%<prog%>%<ptcp%>:%>уш # ;
 %<pres%>%<pf%>:%>%{i1%}%{H%}а # ;
 %<past%>%<rec%>:%>и # ;
 %<past%>%<rem%>:%>ира # ;
@@ -520,6 +520,15 @@ LEXICON NounRoot
 диалект:диалект NounUc ; ! "dialect"
 диалект:диалект NounUc-Aug-inan ; ! "dialect"
 
+цициг:цициг NounDc ; ! "cat"
+цициг:цициг NounDc-Aug-anim ; ! "cat"
+
+шура:шура NounUc ; ! "milk"
+
+чай:чай NounDc ; ! "tea"
+чай:чай NounDc-Aug-inan ; ! "tea"
+
+
 
 
 
@@ -539,6 +548,7 @@ LEXICON PropNounRoot
 Ахьмад:Ахьмад PropNounAnt ; ! "Ahwmad"
 ! Ахьмад%<np%>%<ant%>%<erg%>%<sg%>:Ахьмада # ; ! "Ahwmad"
 Аслан:Аслан PropNounAnt ; ! "Aslan"
+Заремас%<np%>%<ant%>%<erg%>%<sg%>:Заремас # ; ! "Zamera"
 
 LEXICON AdjRoot
 
@@ -675,6 +685,8 @@ LEXICON ProNoun
 со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>: со # ; ! "I"
 
 церан%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>: церан # ; ! "their"
+
+суна%<prs%>%<pers%>%<p1%>%<sg%>%<dat%>:суна # ; ! "to me"
 
 LEXICON Punctuation
 
