@@ -75,7 +75,7 @@ Multichar_Symbols
 %<uwit%> ! Unwitnessed
 %<dnm%> ! Verbal denominal
 %<rcp%> ! Relative Clausal Participle
-%<ptcp%> ! No idea
+%<ptcp%> ! participle
 %<neg%> ! Negation
 
 !Postposition
@@ -362,10 +362,10 @@ LEXICON Verb-TV
 LEXICON VerbInfl
 %<inf%>:%>а # ;
 %<pres%>:%>у # ;
-%<pres%>%<prog%>:%>уш # ;
+%<pres%>%<prog%>%<ptcp%>:%>уш # ;
 %<pres%>%<pf%>:%>%{i1%}%{H%}а # ;
-%<past%>%<rec%>%<wit%>:%>и # ;
-%<past%>%<rem%>%<wit%>:%>ира # ;
+%<past%>%<rec%>:%>и # ;
+%<past%>%<rem%>:%>ира # ;
 %<past%>%<imp%>:%>ура # ;
 %<past%>%<pf%>%<uwit%>:%>%{i1%}нера # ;
 %<fut%>%<ptn%>:%>ур # ;
@@ -495,7 +495,7 @@ LEXICON NounRoot
 
 хӀуъа:хӀуъа NounUc ; ! "egg"
 
-машина:машина NounUc ; ! "car"
+машина:машина NounJc ; ! "car"
 
 нанас%<n%>%<cl_j%>%<erg%>%<sg%>:нанас # ; ! "mother"
 
@@ -630,9 +630,9 @@ LEXICON VerbRoot
 
 деза%<v%>%<pres%>:деза # ; ! "must"
 
-ю%<v%>%<cpl%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
-ву%<v%>%<cpl%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
-бу%<v%>%<cpl%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
+ю%<v%>%<cpl%>%<pres%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
+ву%<v%>%<cpl%>%<pres%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
+бу%<v%>%<cpl%>%<pres%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
 
 яьлла%<v%>%<tv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
@@ -660,21 +660,21 @@ LEXICON Conjunction
 
 LEXICON ProNoun
 
-иза%<prn%>%<pers%>%<p3%>%<abs%>%<sg%>: иза # ; ! "he/she/it"
+иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>: иза # ; ! "he/she/it"
 
-ас%<prn%>%<pers%>%<p1%>%<erg%>%<sg%>: ас # ; ! "I"
+ас%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>: ас # ; ! "I"
 
-цуьнга%<prn%>%<pers%>%<p3%>%<all%>%<sg%>: цуьнга # ; ! "its, hers, his"
+цуьнга%<prn%>%<pers%>%<p3%>%<sg%>%<all%>: цуьнга # ; ! "its, hers, his"
 
-уьш%<prn%>%<pers%>%<p3%>%<abs%>%<pl%>: уьш # ; ! "they"
+уьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>: уьш # ; ! "they"
 
 и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
 
-сан%<prn%>%<pers%>%<p1%>%<gen%>%<sg%>: сан # ; ! "my"
+сан%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>: сан # ; ! "my"
 
-со%<prn%>%<pers%>%<p1%>%<abs%>%<sg%>: со # ; ! "I"
+со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>: со # ; ! "I"
 
-церан%<prn%>%<pers%>%<p3%>%<gen%>%<pl%>: церан # ; ! "their"
+церан%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>: церан # ; ! "their"
 
 LEXICON Punctuation
 
