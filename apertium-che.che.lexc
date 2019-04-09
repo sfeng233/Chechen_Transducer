@@ -528,6 +528,9 @@ LEXICON NounRoot
 чай:чай NounDc ; ! "tea"
 чай:чай NounDc-Aug-inan ; ! "tea"
 
+газет:газет NounDc ; ! "newspaper"
+газет:газет NounDc-Aug-inan ; ! "newspaper"
+
 
 
 
@@ -671,6 +674,8 @@ LEXICON Conjunction
 LEXICON ProNoun
 
 иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>: иза # ; ! "he/she/it"
+
+цо%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>: цо # ; ! "he/she/it"
 
 ас%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>: ас # ; ! "I"
 
