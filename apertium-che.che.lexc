@@ -643,9 +643,9 @@ LEXICON VerbRoot
 
 деза%<v%>%<pres%>:деза # ; ! "must"
 
-ю%<v%>%<cpl%>%<pres%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
-ву%<v%>%<cpl%>%<pres%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
-бу%<v%>%<cpl%>%<pres%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
+у%<v%>%<cpl%>%<pres%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
+у%<v%>%<cpl%>%<pres%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
+у%<v%>%<cpl%>%<pres%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
 
 яьлла%<v%>%<tv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
