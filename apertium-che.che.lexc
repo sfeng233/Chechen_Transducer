@@ -21,7 +21,7 @@ Multichar_Symbols
 ! Case
 %<abs%> ! Absolutive
 %<erg%> ! Ergative
-%<gen%> ! Gentivie
+%<gen%> ! Genitive
 %<dat%> ! Dative
 %<all%> ! Allative
 %<ins%> ! Instrumental
@@ -109,6 +109,10 @@ Multichar_Symbols
 
 %<unk%> ! Unknow
 
+!Negative Particle
+%<neg%> ! Negative
+
+
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -168,6 +172,7 @@ ProNoun ;
 AdjRoot ;
 Punctuation ;
 Adv ;
+
 
 LEXICON NounVc !Absolutive forms aka. citation forms
 
@@ -361,6 +366,7 @@ LEXICON Verb-TV
 
 LEXICON VerbInfl
 %<inf%>:%>а # ;
+%<ptcp%>:%>ар RegNounInfl ;
 %<pres%>:%>у # ;
 %<prog%>%<ptcp%>:%>уш # ;
 %<pres%>%<pf%>:%>%{i1%}%{H%}а # ;
@@ -664,7 +670,8 @@ LEXICON VerbRoot
 
 LEXICON Negation
 
-ца%<neg%>: ца # ; ! "not"
+ца%<neg%>:ца # ; ! "not"
+ма%<neg%>:ма # ; ! 'negative imperative'
 
 
 LEXICON Conjunction
