@@ -369,6 +369,8 @@ LEXICON VerbInfl
 %<past%>%<imp%>:%>ура # ;
 %<past%>%<pf%>%<uwit%>:%>%{i1%}нера # ;
 %<fut%>%<ptn%>:%>ур # ;
+!%<dnm%>:%>ар RegNounInfl ;
+!%<dnm%>:%>ар RegNounUnInfl ;
 
 
 
