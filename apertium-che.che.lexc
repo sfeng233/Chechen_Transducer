@@ -45,6 +45,7 @@ Multichar_Symbols
 %<p3%>   ! 3rd-person
 %<inc%>   ! Inclusive
 %<exc%>   ! Exclusive
+%<ref%>   ! Reflective
 %<dem%>   ! Demonstrative
 %<prx%>   ! Proximal
 %<dst%>   ! Distal
@@ -363,6 +364,7 @@ LEXICON Verb-IV
 
 LEXICON Verb-TV
 %<v%>%<tv%>: VerbInfl ;
+%<v%>%<tv%>%<caus%>:%>ийт VerbInfl ; 
 
 LEXICON VerbInfl
 %<inf%>:%>а # ;
@@ -375,9 +377,16 @@ LEXICON VerbInfl
 %<past%>%<imp%>:%>ура # ;
 %<past%>%<pf%>%<uwit%>:%>%{i1%}нера # ;
 %<fut%>%<ptn%>:%>ур # ;
-!%<dnm%>:%>ар RegNounInfl ;
-!%<dnm%>:%>ар RegNounUnInfl ;
-
+%<dnm%>:%>ар RegNounInfl;
+%<rcp%>%<pres%>:%>ун # ;
+%<rcp%>%<past%>:%>%{i1%}%{H%}а # ;
+%<imp%>:%>н # ;
+%<plt%>%<p2%>%<sg%>:%>нхьа # ;
+%<plt%>%<p2%>%<pl%>:%>нша # ;
+%<imd%>:%>ал # ;
+%<tsk%>%<p2%>%<sg%>:%>алахь # ;
+%<tsk%>%<p2%>%<pl%>:%>алаш # ;
+%<cat%>:%>ийла # ;
 
 
 
