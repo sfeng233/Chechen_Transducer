@@ -11,7 +11,7 @@ TMPCORPUS=/tmp/$LG.corpus.txt
 bzcat $CORPUS > $TMPCORPUS
 
 echo "Generating hitparade (might take a bit!)"
-cat $TMPCORPUS | apertium-destxt | hfst-proc $ANALYSER | apertium-retxt | sed 's/\$/\$\n/g' > /tmp/$LG.parade.txt
+cat $TMPCORPUS | apertium-destxt | hfst-proc $ANALYSER | apertium-retxt | sed 's/\$\s*/\$\n/g' > /tmp/$LG.parade.txt
 
 echo "TOP UNKNOWN WORDS:"
 
