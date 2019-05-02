@@ -364,7 +364,7 @@ LEXICON Verb-IV
 
 LEXICON Verb-TV
 %<v%>%<tv%>: VerbInfl ;
-%<v%>%<tv%>%<caus%>:%>ийт VerbInfl ; 
+%<v%>%<tv%>%<caus%>:%>ийт VerbInfl ;
 
 LEXICON VerbInfl
 %<inf%>:%>а # ;
@@ -410,6 +410,9 @@ LEXICON NounRoot
 
 кор:кор NounDc ; ! "window"
 кор:кор NounDc-Aug-inan ; ! "window"
+
+сахьт:сахьт NounDc ; ! "hour"
+сахьт:сахьт NounDc-Aug-inan ; ! "hour"
 
 гала:гала NounDc ; ! "noodle"
 гала:гална NounDc-Aug-inan ; ! "noodle"
@@ -691,23 +694,23 @@ LEXICON Conjunction
 
 LEXICON ProNoun
 
-иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>: иза # ; ! "he/she/it"
+иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>:иза # ; ! "he/she/it"
 
-цо%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>: цо # ; ! "he/she/it"
+цо%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>:цо # ; ! "he/she/it"
 
-ас%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>: ас # ; ! "I"
+ас%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>:ас # ; ! "I"
 
-цуьнга%<prn%>%<pers%>%<p3%>%<sg%>%<all%>: цуьнга # ; ! "its, hers, his"
+цуьнга%<prn%>%<pers%>%<p3%>%<sg%>%<all%>:цуьнга # ; ! "its, hers, his"
 
-уьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>: уьш # ; ! "they"
+уьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>:уьш # ; ! "they"
 
-и%<prn%>%<dem%>%<dst%>: и # ; ! "that"
+и%<prn%>%<dem%>%<dst%>:и # ; ! "that"
 
-сан%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>: сан # ; ! "my"
+сан%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:сан # ; ! "my"
 
-со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>: со # ; ! "I"
+со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>:со # ; ! "I"
 
-церан%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>: церан # ; ! "their"
+церан%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:церан # ; ! "their"
 
 суна%<prs%>%<pers%>%<p1%>%<sg%>%<dat%>:суна # ; ! "to me"
 
