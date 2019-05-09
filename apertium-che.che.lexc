@@ -78,6 +78,7 @@ Multichar_Symbols
 %<rcp%> ! Relative Clausal Participle
 %<ptcp%> ! participle
 %<neg%> ! Negation
+%<cond%> ! Conditional
 
 !Postposition
 %<post%> ! Postposition
@@ -112,6 +113,9 @@ Multichar_Symbols
 
 !Negative Particle
 %<neg%> ! Negative
+
+! wh-word
+%<q%> ! Question word 
 
 
 
@@ -169,6 +173,7 @@ PropNounRoot ;
 VerbRoot ;
 Negation ;
 Conjunction ;
+Postposition ;
 ProNoun ;
 AdjRoot ;
 Punctuation ;
@@ -375,7 +380,7 @@ LEXICON VerbInfl
 %<past%>%<rec%>:%>и # ;
 %<past%>%<rem%>:%>ира # ;
 %<past%>%<imp%>:%>ура # ;
-%<past%>%<pf%>%<uwit%>:%>%{i1%}нера # ;
+%<past%>%<pf%>%:%>%{i1%}нера # ;
 %<fut%>%<ptn%>:%>ур # ;
 %<dnm%>:%>ар RegNounInfl;
 %<rcp%>%<pres%>:%>ун # ;
@@ -557,8 +562,8 @@ LEXICON NounRoot
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
 
-стаг:стаг NounJ2c ; ! "person"
-стаг%<n%>%<cl_j2%>%<abs%>%<pl%>:нах # ; ! "people"
+стаг:стаг NounVc ; ! "person"
+стаг%<n%>%<cl_v%>%<abs%>%<pl%>:нах # ; ! "people"
 
 
 LEXICON PropNounRoot
@@ -690,6 +695,11 @@ LEXICON Conjunction
 
 а%<conj%>: а # ; ! "and"
 я%<conj%>: я # ; ! "either"
+амма%<conj%>: амма # ; ! "but"
+
+LEXICON Postposition
+
+ши%<post%>: ши # ; ! "on"
 
 
 LEXICON ProNoun
