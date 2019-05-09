@@ -115,7 +115,7 @@ Multichar_Symbols
 %<neg%> ! Negative
 
 ! wh-word
-%<q%> ! Question word 
+%<q%> ! Question word
 
 
 
@@ -178,6 +178,10 @@ ProNoun ;
 AdjRoot ;
 Punctuation ;
 Adv ;
+Digits ;
+LOOP ;
+DIGITLEX ;
+
 
 
 LEXICON NounVc !Absolutive forms aka. citation forms
@@ -229,10 +233,10 @@ LEXICON NounBc-Aug-inan
 %<n%>%<cl_b%>: RegNounInfl ;
 %<n%>%<cl_b%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-!LEXICON NounB2c-Aug-anim
+LEXICON NounB2c-Aug-anim
 
-!%<n%>%<cl_b2%>:  RegNounInfl ;
-!%<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+%<n%>%<cl_b2%>:  RegNounInfl ;
+%<n%>%<cl_b2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounB2c-Aug-inan
 
@@ -270,10 +274,10 @@ LEXICON NounJ2c-Aug-inan
 %<n%>%<cl_j2%>: RegNounInfl ;
 %<n%>%<cl_j2%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-inan;
 
-!LEXICON NounUc-Aug-anim
+LEXICON NounUc-Aug-anim
 
-!%<n%>%<cl_u%>: RegNounInfl ;
-!%<n%>%<cl_u%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
+%<n%>%<cl_u%>: RegNounInfl ;
+%<n%>%<cl_u%>%<abs%>%<pl%>:  RegNounInfl-AbsPl-anim;
 
 LEXICON NounUc-Aug-inan
 
@@ -341,7 +345,7 @@ LEXICON PropNounHyd
 
 LEXICON PropNounInfl
 %<abs%>%<sg%>: # ;
-%<erg%>%<sg%>:%>а # ;
+%<erg%>%<sg%>:%>%{a%}с # ;
 %<erg%>%<pl%>:%>%{a%}ша # ;
 %<gen%>%<sg%>:%>%{a%}н # ;
 %<gen%>%<pl%>:и%{e%}н # ;
@@ -489,6 +493,7 @@ LEXICON NounRoot
 бухӀа:бухӀан NounJc-Aug-inan ; ! "owl"
 
 хи:хи NounDc ; ! "river, water"
+хи:хи NounDc-Aug-inan ; ! "river, water"
 
 зен:зен NounDc ; ! "harm, loss"
 зен:зен NounDc-Aug-inan ; ! "harm, loss"
@@ -556,6 +561,173 @@ LEXICON NounRoot
 газет:газет NounDc ; ! "newspaper"
 газет:газет NounDc-Aug-inan ; ! "newspaper"
 
+да:да NounVc ; ! "father"
+да:дех NounVc-Aug-anim ; ! "father"
+
+ваша:ваша NounVc ; ! "brother"
+ваша:ваша NounVc-Aug-anim ; ! "brother"
+
+автовокзал:автовокзал NounVc ; ! "bus station"
+автовокзал:автовокзал NounVc-Aug-inan ; ! "bus station"
+
+маха:маха NounUc ; ! "needle"
+маха:мех NounUc-Aug-anim ; ! "needle"
+
+чӀара:чӀара NounUc ; ! "fish"
+чӀара:чӀер NounUc-Aug-anim ; ! "fish"
+
+белхало:белхало NounUc ; ! "labourer"
+белхало:белхало NounUc-Aug-anim ; ! "labourer"
+
+куьзга:куьзга NounUc ; ! "glass"
+куьзга:куьзга NounUc-Aug-inan ; ! "glass"
+
+тур:тур NounUc ; ! "sword"
+тур:тар%{g%} NounUc-Aug-inan ;
+
+бепиг:бепиг NounDc ; ! "bread"
+бепиг:бепиг NounDc-Aug-inan ;
+
+берана:берана NounDc ; ! "advice"
+берана:берана NounDc-Aug-inan ; ! "advice"
+
+стигал:стигал NounUc ; ! "sky"
+стигал:стигал NounUc-Aug-inan ; ! "sky"
+
+батта:батта NounUc ; ! "month"
+батта:батт NounUc-Aug-inan ;
+
+кехат:кехат NounDc ; ! "letter"
+кехат:кехат NounDc-Aug-inan ;
+
+уьрса:уьрса NounUc ; ! "knife"
+уьрса:уьрса NounUc-Aug-inan ; ! "knife"
+
+ресторан:ресторан NounUc ; ! "restaurant"
+ресторан:ресторан NounUc-Aug-inan ; ! "restaurant"
+
+къурд:къурд NounBc ; ! "sip"
+къурд:къурд NounBc-Aug-inan ; ! "sip"
+
+дечиг:дечиг NounUc ; ! "wood"
+дечиг:дечиг NounBc-Aug-inan ; ! "wood"
+
+нускал:нускал NounUc ; ! "bride"
+нускал:нускал NounUc-Aug-anim ;
+
+лазара:лазара NounUc ; ! "illness"
+лазара:лазар NounUc-Aug-inan ; ! "illness"
+
+университет:университет NounJc ; ! "university"
+университет:университет NounJc-Aug-inan ;
+
+бежана:бежана NounB2c ; ! "cattle"
+бежана:бежан NounB2c-Aug-anim ;
+
+неъ:неъ NounJc ; ! "door"
+неъ:неӀар NounJc-Aug-inan ; ! "door"
+
+клуб:клуб NounJc ; ! "club"
+клуб:клуб NounJc-Aug-inan ; ! "club"
+
+ло:ло NounDc ; ! "snow"
+ло:ло NounDc-Aug-inan ; ! "snow"
+
+книжка:книжка NounUc; ! "book"
+книжка:книжка NounUc-Aug-inan; ! "book"
+
+етт:етт NounJc ; ! "cow"
+етт:етт NounJc-Aug-anim ; ! "cow"
+
+жижиг:жижиг NounUc ; ! "meat"
+жижиг:жижиг NounUc-Aug-inan ; ! "meat"
+
+стоьл:стоьл NounJc ; ! "table"
+стоьл:стоьл NounJc-Aug-inan ;
+
+доттагӀ:доттагӀ NounUc ; ! "friend"
+доттагӀ:доттагӀчуьн NounUc-Aug-anim ;
+
+хена:хена NounUc ; ! "air"
+хена:хена NounUc-Aug-inan ; ! "air"
+
+хӀоттама:хӀоттама NounUc ; ! "state"
+хӀоттама:хӀоттам NounUc-Aug-inan ;
+
+гӀант:гӀант NounUc ; ! "chair"
+гӀант:гӀант NounUc-Aug-inan ; ! "chair"
+
+худар:худар NounDc ; ! "porridge"
+худар:худар NounDc-Aug-inan ; ! "porridge"
+
+догӀ:догӀ NounUc ; ! "rain"
+догӀ:догӀан NounUc-Aug-inan ; ! "rain"
+
+урама:урама NounUc ; ! "street"
+урама:урам NounUc-Aug-inan ; ! "street"
+
+кога%<n%>%<cl_u%>%<abs%>%<pl%>:кога # ; ! "boots"
+
+мохь:мохь NounUc ; ! "lard"
+мохь:мохь NounUc-Aug-inan ; ! "lard"
+
+цӀено:цӀено NounDc ; ! "house"
+цӀено:цӀено NounDc-Aug-inan ; ! "house"
+
+хӀун%<n%>%<itg%>%<cl_d%>%<abs%>%<sg%>:хӀун # ; ! "what"
+
+болх:болх NounUc ; ! "work, job"
+болх:болх NounUc-Aug-inan ; ! "work, job"
+
+йиша:йиша NounJc ; ! "sister"
+йиша:йиша NounJc-Aug-anim ; ! "sister"
+
+юрт:юрт NounUc ; ! "village"
+юрт:юрт NounUc-Aug-inan ; ! "village"
+
+чоь:чоь NounUc ; ! "room"
+чоь:чо NounUc-Aug-inan ; ! "room"
+
+синкъерам:синкъерам NounUc ; ! "party"
+синкъерам:синкъерам NounUc-Aug-inan ; ! "party"
+
+задания:задания NounJc ; ! "assignment"
+задания:заданий NounJc-Aug-inan ; ! "assignment"
+
+малх:малх NounUc ; ! "sun"
+малх:малх NounUc-Aug-inan ; ! "sun"
+
+цӀа:цӀа NounUc ; ! "home"
+
+урок:урок NounJc ; ! "lesson"
+урок:урок NounJc-Aug-inan ; ! "lesson"
+
+церг:церг NounJc ; ! "tooth"
+церг:церг NounJc-Aug-inan ; ! "tooth"
+
+революци:революци NounJc ; ! "revolution"
+революци:революци NounJc-Aug-inan ; ! "revolution"
+
+мохк:мохк NounUc ; ! "country"
+мохк:мохк NounU-Aug-inan ; ! "country"
+
+къам:къам NounDc ; ! "tribe"
+къам:къам NounDc-Aug-inan ; ! "tribe"
+
+проект:проект NounJc ; ! "project"
+проект:проект NounJc-Aug-inan ; ! "project"
+
+автобуса:автобуса NounJc ; ! "bus"
+автобуса:автобуса NounJc-Aug-inan ;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -566,6 +738,8 @@ LEXICON NounRoot
 стаг%<n%>%<cl_v%>%<abs%>%<pl%>:нах # ; ! "people"
 
 
+
+
 LEXICON PropNounRoot
 
 Сатуев:Сатуев PropNounCog ; ! "Satujev"
@@ -574,9 +748,24 @@ LEXICON PropNounRoot
 Хьасан:Хьасан PropNounAnt ; ! "Hasan"
 Иван:Иван PropNounAnt ; ! "Ivan"
 Ахьмад:Ахьмад PropNounAnt ; ! "Ahwmad"
-! Ахьмад%<np%>%<ant%>%<erg%>%<sg%>:Ахьмада # ; ! "Ahwmad"
+Ахьмад%<np%>%<ant%>%<erg%>%<sg%>:Ахьмада # ; ! "Ahwmad"
 Аслан:Аслан PropNounAnt ; ! "Aslan"
-Заремас%<np%>%<ant%>%<erg%>%<sg%>:Заремас # ; ! "Zamera"
+Зарема:Зарема PropNounAnt ; ! "Zamera"
+Ӏимран:Ӏимран PropNounAnt ; ! "Imran"
+Моско:Моско PropNounHyd ; ! "Moscow"
+Руслан:Руслан PropNounAnt ; ! "Ruslan"
+Муса:Муса PropNounAnt ; ! "Musa"
+Ӏумара%<np%>%<ant%>%<erg%>%<sg%>:Ӏумара # ; ! "Wumar"
+Ӏумар:Ӏумар PropNounAnt ;
+Америка:Америка PropNounHyd ; ! "America"
+Малика:Малика PropNounAnt ; ! "Malika"
+Султан:Султан PropNounAnt ; ! "Sultan"
+Шамил:Шамил PropNounAnt ; ! "Samuel"
+Зейна:Зейна PropNounAnt ; ! "Zejna"
+Жовхьар:Жовхьар PropNounAnt ; ! "John"
+Мурад:Мурад PropNounAnt ; ! "Myrad"
+
+
 
 LEXICON AdjRoot
 
@@ -609,6 +798,26 @@ LEXICON AdjRoot
 классикан%<adj%>:классикан # ; ! "classic"
 романийн%<adj%>:романийн # ; ! "Roman"
 лавянийн%<adj%>:лавянийн # ; ! "Slavic"
+хаза%<adj%>:хаза # ; ! "beautiful"
+вон%<adj%>:вон # ; ! "bad"
+мерза%<adj%>:мерза # ; ! "tasty"
+дика%<adj%>:дика # ; ! "good"
+цӀиэн%<adj%>:цӀиэн # ; ! "red"
+деза%<adj%>:деза # ; ! "heavy"
+довха%<adj%>:довха # ; ! "hot"
+деуькъа%<adj%>:деуькъа # ; ! "thick"
+дораха%<adj%>:дораха # ; ! "fat"
+дерстана%<adj%>:дерстана # ; ! "thin"
+доца%<adj%>:доца # ; ! "short"
+дайн%<adj%>:дайн # ; ! "light"
+дуьзна%<adj%>:дуьзна # ; ! "full"
+даьржана%<adj%>:даьржана # ; ! "spread"
+дедоккха%<adj%>:дедоккха # ; ! "large"
+жима%<adj%>:жима # ; ! "small"
+кӀайн%<adj%>:кӀайн # ; ! "white"
+воккха%<adj%>:воккха # ; ! "old"
+муьлха%<adj%>%<itg%>:муьлха # ; ! "which"
+
 
 
 LEXICON Adv
@@ -616,7 +825,27 @@ LEXICON Adv
 буьйсанна%<adv%>%<tmp%>:буьйсанна # ; ! "at night"
 масала%<adv%>:масала # ; ! "for example"\
 вовшех%<adv%>:вовшех # ; ! "each other"
-сов%<adv%>:сов # ; ! "more"
+сов%<adv%>%<quan%>:сов # ; ! "more"
+чӀогӀа%<adv%>%<quan%>:чӀогӀа # ; ! "very"
+цига%<adv%>%<loc%>:цига # ; ! "there"
+бен%<adv%>%<quan%>:бен # ; ! "only"
+хӀора%<adv%>%<quan%>:хӀора # ; ! "every"
+тахана%<adv%>%<tmp%>:тахана # ; ! "today"
+арахь%<adv%>%<loc%>:арахь # ; ! "outside"
+уггар%<adv%>%<quan%>:уггар # ; ! "most"
+цуьндела%<adv%>%<rea%>:цуьндела # ; ! "therefore"
+муха%<adv>%<itg%>:муха # ; ! "how"
+хӀун%<adv%>%<rea%>%<itg%>:хӀун # ; ! "why"
+мича%<adv%>%<loc%>%<itg%>:мича # ; ! "to where"
+мичахь%<adv%>%<loc%>%<itg%>:мичахь # ; ! "where"
+мичахьара%<adv%>%<loc%>%<itg%>:мичахьара # ; ! "from where"
+мичахьарагӀула%<adv%>%<loc%>%<itg%>:мичахьарагӀула # ; ! "through where"
+маца%<adv%>%<tmp%>%<itg%>:маца # ; ! "when"
+масазза%<adv%>%<quan%>%<itg%>:масазза # ; ! "how many times"
+мел%<adv%>%<quan%>%<itg%>:мел # ; ! "how much"
+маса%<adv%>%<quan%>%<itg%>:маса # ; ! "how many"
+
+
 
 LEXICON VerbRoot
 
@@ -700,29 +929,57 @@ LEXICON Conjunction
 LEXICON Postposition
 
 ши%<post%>: ши # ; ! "on"
+лаьцна%<post%>: лаьцна # ; ! "about"
 
 
 LEXICON ProNoun
 
-иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>:иза # ; ! "he/she/it"
-
-цо%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>:цо # ; ! "he/she/it"
-
+со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>:со # ; ! "I"
 ас%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>:ас # ; ! "I"
+со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>%<ref%>:со # ; ! "I"
+айса%<prn%>%<pers%>%<p1%>%<sg%>%<erg%>%<ref%>:айса # ; ! "Iself"
+
+хьо%<prn%>%<pers%>%<p2%>%<sg%>%<abs%>:хьо # ; ! "you"
+ахь%<prn%>%<pers%>%<p2%>%<sg%>%<erg%>:ахь # ; ! "you"
+хьо%<prn%>%<pers%>%<p2%>%<sg%>%<abs%>%<ref%>:хьо # ; ! "youself"
+айхьа%<prn%>%<pers%>%<p2%>%<sg%>%<erg%>%<ref%>:айхьа # ; ! "yourself"
+
+иза%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>:иза # ; ! "he/she/it"
+цо%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>:цо # ; ! "he/she/it"
+ша%<prn%>%<pers%>%<p3%>%<sg%>%<abs%>%<ref%>:ша # ; ! "it/her/himself"
+ша%<prn%>%<pers%>%<p3%>%<sg%>%<erg%>%<ref%>:ша # ; ! "it/her/himself"
+
+вай%<prn%>%<pers%>%<p1%>%<pl%>%<inc%>%<abs%>:вай # ; ! "we"
+вай%<prn%>%<pers%>%<p1%>%<pl%>%<inc%>%<erg%>:вай # ; ! "we"
+ваьш%<prn%>%<pers%>%<p1%>%<pl%>%<inc%>%<abs%>%<ref%>:ваьш # ; ! "ourselves"
+ваьш%<prn%>%<pers%>%<p1%>%<pl%>%<inc%>%<erg%>%<ref%>:ваьш # ; ! "ourselves"
+
+тхо%<prn%>%<pers%>%<p1%>%<pl%>%<exc%>%<abs%>:тхо # ; ! "we"
+оха%<prn%>%<pers%>%<p1%>%<pl%>%<exc%>%<erg%>:оха # ; ! "we"
+тхаьш%<prn%>%<pers%>%<p1%>%<pl%>%<exc%>%<abs%>%<ref%>:тхаьш # ; ! "ourselves"
+тхай%<prn%>%<pers%>%<p1%>%<pl%>%<exc%>%<erg%>%<ref%>:тхай # ; ! "ourselves"
+
+шу%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>:шу # ; ! "you"
+аша%<prn%>%<pers%>%<p2%>%<pl%>%<erg%>:аша # ; ! "you"
+шаьш%<prn%>%<pers%>%<p2%>%<pl%>%<abs%>%<ref%>:шаьш # ; ! "youselves"
+шай%<prn%>%<pers%>%<p2%>%<pl%>%<erg%>%<ref%>:шай # ; ! "yourselves"
+
+уьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>:уьш # ; ! "they"
+цо%<prn%>%<pers%>%<p3%>%<pl%>%<erg%>:цо # ; ! "they"
+шаьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>%<ref%>:шаьш # ; ! "themselves"
+шаьш%<prn%>%<pers%>%<p3%>%<pl%>%<erg%>%<ref%>:шаьш # ; ! "themselves"
 
 цуьнга%<prn%>%<pers%>%<p3%>%<sg%>%<all%>:цуьнга # ; ! "its, hers, his"
 
-уьш%<prn%>%<pers%>%<p3%>%<pl%>%<abs%>:уьш # ; ! "they"
-
-и%<prn%>%<dem%>%<dst%>:и # ; ! "that"
-
 сан%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:сан # ; ! "my"
-
-со%<prn%>%<pers%>%<p1%>%<sg%>%<abs%>:со # ; ! "I"
 
 церан%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:церан # ; ! "their"
 
 суна%<prs%>%<pers%>%<p1%>%<sg%>%<dat%>:суна # ; ! "to me"
+
+и%<prn%>%<dem%>%<dst%>:и # ; ! "that"
+
+мила%<prn%>%<pers%>%<itg%>%<abs%>%<sg%>:мила # ; ! "who"
 
 LEXICON Punctuation
 
@@ -749,6 +1006,28 @@ LEXICON Punctuation
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
 +%<mat%>:+ # ;
+
+LEXICON Digits
+DIGITLEX ; ! Use/Circ
+
+LEXICON LOOP
+%,:%, DIGITLEX ;
+%.:%. DIGITLEX ;
+      DIGITLEX ;
+%<num%>: # ;
+%<num%>%<ord%>:% ވަނަ # ;
+
+LEXICON DIGITLEX
+%0:%0 LOOP ;
+1:1 LOOP ;
+2:2 LOOP ;
+3:3 LOOP ;
+4:4 LOOP ;
+5:5 LOOP ;
+6:6 LOOP ;
+7:7 LOOP ;
+8:8 LOOP ;
+9:9 LOOP ;
 
 
 ! Resources:
