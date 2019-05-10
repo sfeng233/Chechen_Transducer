@@ -709,7 +709,7 @@ LEXICON NounRoot
 революци:революци NounJc-Aug-inan ; ! "revolution"
 
 мохк:мохк NounUc ; ! "country"
-мохк:мохк NounU-Aug-inan ; ! "country"
+мохк:мохк NounUc-Aug-inan ; ! "country"
 
 къам:къам NounDc ; ! "tribe"
 къам:къам NounDc-Aug-inan ; ! "tribe"
@@ -720,11 +720,33 @@ LEXICON NounRoot
 автобуса:автобуса NounJc ; ! "bus"
 автобуса:автобуса NounJc-Aug-inan ;
 
+аса:аса NounJc ; ! "zone, stripe"
+аса:асан NounJc-Aug-inan ;
 
+йогӀу:йогӀу NounJc ; ! "future"
+йогӀу:йогӀу NounJc-Aug-inan ;
 
+эвла:эвла NounJc ; ! "village"
+эвла:эвла NounJc-Aug-inan ;
 
+кӀошт:кӀошт NounJc ; ! "sector"
+кӀошт:кӀошт NounJc-Aug-inan ;
 
+Климат:Климат NounUc ; ! "climate"
+климат:климат NounUc ; ! "climate"
 
+област:област NounUc ; ! "oblast"
+област:област NounUc-Aug-inan ;
+
+лела:лела NounUc-Aug-inan ; ! "direction"
+
+Федерацин:Федерацин NounUc ; ! "federation"
+
+континентал:континентал NounUc ; ! "continent"
+континентал:континентал NounUc-Aug-inan ;
+
+Ӏа:Ӏа NounDc ; ! "winter"
+Ӏаьн:Ӏаьн NounDc-Aug-inan ;
 
 
 
@@ -753,6 +775,7 @@ LEXICON PropNounRoot
 Зарема:Зарема PropNounAnt ; ! "Zamera"
 Ӏимран:Ӏимран PropNounAnt ; ! "Imran"
 Моско:Моско PropNounHyd ; ! "Moscow"
+Москва:Москва PropNounHyd ; ! "Moscow"
 Руслан:Руслан PropNounAnt ; ! "Ruslan"
 Муса:Муса PropNounAnt ; ! "Musa"
 Ӏумара%<np%>%<ant%>%<erg%>%<sg%>:Ӏумара # ; ! "Wumar"
@@ -778,6 +801,7 @@ LEXICON AdjRoot
 немцойн%<adj%>:немцойн # ; ! "German"
 тюркийн%<adj%>:тюркийн # ; ! "Turkish"
 оьрсийн%<adj%>:оьрсийн # ; ! "Russian"
+Российн%<adj%>:Российн # ; ! "Russian"
 Ӏаьрбийн%<adj%>:Ӏаьрбийн # ; ! "Arabic"
 туркойн%<adj%>:туркойн # ; ! "Turkish"
 официалан%<adj%>:официалан # ; ! "official"
@@ -817,7 +841,9 @@ LEXICON AdjRoot
 кӀайн%<adj%>:кӀайн # ; ! "white"
 воккха%<adj%>:воккха # ; ! "old"
 муьлха%<adj%>%<itg%>:муьлха # ; ! "which"
-
+нийса%<adj%>:нийса # ; ! "right, fair"
+шийла%<adj%>:шийла # ; ! "cold"
+йовха%<adj%>:йовха # ; ! "?"
 
 
 LEXICON Adv
@@ -834,7 +860,7 @@ LEXICON Adv
 арахь%<adv%>%<loc%>:арахь # ; ! "outside"
 уггар%<adv%>%<quan%>:уггар # ; ! "most"
 цуьндела%<adv%>%<rea%>:цуьндела # ; ! "therefore"
-муха%<adv>%<itg%>:муха # ; ! "how"
+муха%<adv%>%<itg%>:муха # ; ! "how"
 хӀун%<adv%>%<rea%>%<itg%>:хӀун # ; ! "why"
 мича%<adv%>%<loc%>%<itg%>:мича # ; ! "to where"
 мичахь%<adv%>%<loc%>%<itg%>:мичахь # ; ! "where"
@@ -844,6 +870,8 @@ LEXICON Adv
 масазза%<adv%>%<quan%>%<itg%>:масазза # ; ! "how many times"
 мел%<adv%>%<quan%>%<itg%>:мел # ; ! "how much"
 маса%<adv%>%<quan%>%<itg%>:маса # ; ! "how many"
+Кхузахь%<adv%>%<loc%>:Кхузахь # ; ! "here"
+юкъа%<adv%>%<loc%>:юкъа # ; ! "in the middle, halfway"
 
 
 
@@ -900,6 +928,7 @@ LEXICON VerbRoot
 у%<v%>%<cpl%>%<pres%>%<cl_j%>:ю # ; ! "copular verb form for j-class"
 у%<v%>%<cpl%>%<pres%>%<cl_v%>:ву # ; ! "copular verb form for v-class"
 у%<v%>%<cpl%>%<pres%>%<cl_b%>:бу # ; ! "copular verb form for b-class"
+у%<v%>%<cpl%>%<pres%>%<cl_d%>:ду # ; ! "copular verb form for d-class"
 
 яьлла%<v%>%<tv%>%<pres%>%<pf%>:яьлла # ; ! "give"
 
