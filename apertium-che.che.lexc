@@ -746,7 +746,7 @@ LEXICON NounRoot
 континентал:континентал NounUc-Aug-inan ;
 
 Ӏа:Ӏа NounDc ; ! "winter"
-Ӏаьн:Ӏаьн NounDc-Aug-inan ;
+Ӏа:Ӏаьн NounDc-Aug-inan ;
 
 
 
@@ -797,7 +797,7 @@ LEXICON AdjRoot
 экономикан%<adj%>:экономикан # ; ! "economic"
 керла%<adj%>:керла # ; ! "new"
 нохчийн%<adj%>:нохчийн # ; ! "Chechen"
-коптий%<adj%>:коптий # ; ! "Coptic"
+коптийн%<adj%>:коптийн # ; ! "Coptic"
 немцойн%<adj%>:немцойн # ; ! "German"
 тюркийн%<adj%>:тюркийн # ; ! "Turkish"
 оьрсийн%<adj%>:оьрсийн # ; ! "Russian"
