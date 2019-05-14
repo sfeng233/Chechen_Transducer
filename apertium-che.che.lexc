@@ -79,6 +79,7 @@ Multichar_Symbols
 %<ptcp%> ! participle
 %<neg%> ! Negation
 %<cond%> ! Conditional
+%<deic%> ! Deictic prefixes
 
 !Postposition
 %<post%> ! Postposition
@@ -728,12 +729,17 @@ LEXICON NounRoot
 
 эвла:эвла NounJc ; ! "village"
 эвла:эвла NounJc-Aug-inan ;
+Эвла:Эвла NounJc ; ! "village"
+Эвла:Эвла NounJc-Aug-inan ;
+
 
 кӀошт:кӀошт NounJc ; ! "sector"
 кӀошт:кӀошт NounJc-Aug-inan ;
 
 Климат:Климат NounUc ; ! "climate"
+Климат:Климат NounUc-Aug-inan ; ! "climate"
 климат:климат NounUc ; ! "climate"
+климат:климат NounUc-Aug-inan ; ! "climate"
 
 област:област NounUc ; ! "oblast"
 област:област NounUc-Aug-inan ;
@@ -748,6 +754,11 @@ LEXICON NounRoot
 Ӏа:Ӏа NounDc ; ! "winter"
 Ӏа:Ӏаьн NounDc-Aug-inan ;
 
+барам:барам NounDc ; ! "funeral bier"
+барам:барам NounDc-Aug-inan ; ! "funeral bier"
+
+аьхке:аьхке NounJc ; ! "summer"
+аьхке:аьхкен NounJc-Aug-inan ; ! "summer"
 
 
 
@@ -844,6 +855,7 @@ LEXICON AdjRoot
 нийса%<adj%>:нийса # ; ! "right, fair"
 шийла%<adj%>:шийла # ; ! "cold"
 йовха%<adj%>:йовха # ; ! "?"
+тӀуьна%<adj%>:тӀуьна # ; ! "wet"
 
 
 LEXICON Adv
@@ -859,6 +871,7 @@ LEXICON Adv
 тахана%<adv%>%<tmp%>:тахана # ; ! "today"
 арахь%<adv%>%<loc%>:арахь # ; ! "outside"
 уггар%<adv%>%<quan%>:уггар # ; ! "most"
+уггаре%<adv%>%<quan%>:уггаре # ; ! "most"
 цуьндела%<adv%>%<rea%>:цуьндела # ; ! "therefore"
 муха%<adv%>%<itg%>:муха # ; ! "how"
 хӀун%<adv%>%<rea%>%<itg%>:хӀун # ; ! "why"
@@ -872,6 +885,7 @@ LEXICON Adv
 маса%<adv%>%<quan%>%<itg%>:маса # ; ! "how many"
 Кхузахь%<adv%>%<loc%>:Кхузахь # ; ! "here"
 юкъа%<adv%>%<loc%>:юкъа # ; ! "in the middle, halfway"
+аьхка%<adv%>%<tmp%>:аьхка # ; ! "summer"
 
 
 
@@ -951,14 +965,15 @@ LEXICON Negation
 
 LEXICON Conjunction
 
-а%<conj%>: а # ; ! "and"
-я%<conj%>: я # ; ! "either"
-амма%<conj%>: амма # ; ! "but"
+а%<conj%>:а # ; ! "and"
+я%<conj%>:я # ; ! "either"
+амма%<conj%>:амма # ; ! "but"
+ткъа%<conj%>:ткъа # ; ! "HO RUSS"
 
 LEXICON Postposition
 
-ши%<post%>: ши # ; ! "on"
-лаьцна%<post%>: лаьцна # ; ! "about"
+ши%<post%>:ши # ; ! "on"
+лаьцна%<post%>:лаьцна # ; ! "about"
 
 
 LEXICON ProNoun
