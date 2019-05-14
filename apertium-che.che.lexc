@@ -751,6 +751,9 @@ LEXICON NounRoot
 континентал:континентал NounUc ; ! "continent"
 континентал:континентал NounUc-Aug-inan ;
 
+континент:континент NounUc ; ! "continent"
+континент:континент NounUc-Aug-inan ;
+
 Ӏа:Ӏа NounDc ; ! "winter"
 Ӏа:Ӏаьн NounDc-Aug-inan ;
 
@@ -760,8 +763,19 @@ LEXICON NounRoot
 аьхке:аьхке NounJc ; ! "summer"
 аьхке:аьхкен NounJc-Aug-inan ; ! "summer"
 
+Бахархойн:Бахархойн NounUc ; ! "population"
 
+бутт:бутт NounB2c ; ! "month"
+бутт:батт NounB2c-Aug-inan ; ! "month"
 
+январь:январь NounUc ; ! "Janurary"
+июль:июль NounUc ; ! "June"
+
+шо:шо NounDc ; ! "year"
+шарахь%<n%>%<cl_d%>%<ine%>%<sg%>:шарахь # ; ! "year"
+
+дукхалла:дукхалла NounUc ; ! "number"
+дукхалла:дукхалла NounUc-Aug-inan ; ! "number"
 
 
 
@@ -856,6 +870,11 @@ LEXICON AdjRoot
 шийла%<adj%>:шийла # ; ! "cold"
 йовха%<adj%>:йовха # ; ! "?"
 тӀуьна%<adj%>:тӀуьна # ; ! "wet"
+шеран%<adj%>:шеран # ; ! "annual"
+юккъера%<adj%>:юккъера # ; ! "mid"
+Cахьтан%<adj%>:Cахьтан # ; ! "hour"
+бовха%<adj%>:бовха # ; ! "warm, hot"
+сиха%<adj%>:сиха # ; ! "fast"
 
 
 LEXICON Adv
@@ -886,6 +905,7 @@ LEXICON Adv
 Кхузахь%<adv%>%<loc%>:Кхузахь # ; ! "here"
 юкъа%<adv%>%<loc%>:юкъа # ; ! "in the middle, halfway"
 аьхка%<adv%>%<tmp%>:аьхка # ; ! "summer"
+
 
 
 
@@ -955,6 +975,9 @@ LEXICON VerbRoot
 дӀалетара%<v%>%<iv%>%<past%>%<imp%>:дӀалетара # ; ! "stuck"
 
 бийца:буьйц Verb-TV ; ! "speak"
+
+лело%<v%>%<tv%>%<inf%>:лело # ; ! "drive, wear"
+
 
 
 LEXICON Negation
