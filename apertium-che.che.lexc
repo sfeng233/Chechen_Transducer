@@ -80,6 +80,7 @@ Multichar_Symbols
 %<neg%> ! Negation
 %<cond%> ! Conditional
 %<deic%> ! Deictic prefixes
+%<prov%> ! Proverb
 
 !Postposition
 %<post%> ! Postposition
@@ -762,6 +763,7 @@ LEXICON NounRoot
 барам:барам NounDc ; ! "funeral bier"
 барамера%<n%>%<cl_d%>%<abl%>%<sg%>:барамера # ;
 барамехь%<n%>%<cl_d%>%<ine%>%<sg%>:барамехь # ;
+бараман%<n%>%<cl_d%>%<gen%>%<sg%>:бараман # ;
 
 
 аьхке:аьхке NounJc ; ! "summer"
@@ -887,7 +889,16 @@ UTC%<n%>:UTC # ; ! "Coordinated Universal Time"
 хан:хан NounJc ; ! "time, period"
 хан:хен NounJc-Aug-inan ;
 
+динамика:динамика NounUc ; ! "dynamics"
 
+чкъор:чкъор NounDc ; ! "skin"
+чкъор:чкъур NounDc-Aug-inan ;
+
+Ахк:Ахк NounDc ; ! "abyss"
+Ахк:Аьхк NounDc-Aug-inan ;
+
+мур:мур NounDc ; ! "period"
+мур:муьр NounDc-Aug-inan ;
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
@@ -928,6 +939,7 @@ LEXICON PropNounRoot
 Европера%<np%>%<hyd%>%<abl%>%<sg%>:Европера # ; ! "Europe"
 виета:виета PropNounCog ; ! "Viete"
 леррана%<np%>:леррана # ; ! "??"
+ларарца%<np%>:ларарца # ; ! "??"
 мм%<np%>:мм # ; ! "mm"
 Украин:Украин PropNounHyd ; ! "Ukraine"
 
@@ -1013,6 +1025,15 @@ Cахьтан%<adj%>:Cахьтан # ; ! "hour"
 йовхачу%<adj%>%<obl%>:йовхачу # ; ! "harmful"
 аьхкенца%<adj%>%<neg%>:аьхкенца # ; ! "not summer"
 арктикан%<adj%>:арктикан # ; ! "arctic"
+мехкан%<adj%>:мехкан # ; ! "native"
+шила%<adj%>:шила # ; ! "even(opposite of odd)"
+дукхаллин%<adj%>:дукхаллин # ; ! "quantitative"
+шийлачу%<adj%>%<obl%>:шийлачу # ; ! "cold"
+аренан%<adj%>:аренан # ; ! "field-based"
+Ӏаьнца%<adj%>%<neg%>:Ӏаьнца # ; ! "not winter"
+къаьмнийн%<adj%>:къаьмнийн # ; ! "national"
+Москван%<adj%>:Москван # ; ! "Moscowian"
+
 
 
 LEXICON Adv
@@ -1041,6 +1062,8 @@ LEXICON Adv
 мел%<adv%>%<quan%>%<itg%>:мел # ; ! "how much"
 маса%<adv%>%<quan%>%<itg%>:маса # ; ! "how many"
 Кхузахь%<adv%>%<loc%>:Кхузахь # ; ! "here"
+кхузахь%<adv%>%<loc%>:кхузахь # ; ! "here"
+кхуза%<adv%>%<loc%>:кхуза # ; ! "here"
 юкъа%<adv%>%<loc%>:юкъа # ; ! "in the middle, halfway"
 аьхка%<adv%>%<tmp%>:аьхка # ; ! "summer"
 сих%<adv%>:сих # ; ! "fast"
@@ -1052,6 +1075,8 @@ LEXICON Adv
 дукха%<adv%>%<quan%>:дукха # ; ! "a lot"
 дийнахь%<adv%>%<tmp%>:дийнахь # ; ! "by day"
 бӀаьста%<adv%>%<tmp%>:бӀаьста # ; ! "spring"
+гурахь%<adv%>%<tmp%>:гурахь # ; ! "in autumn"
+гергга%<adv%>:гергга # ; ! "approximately"
 
 
 
@@ -1128,6 +1153,12 @@ LEXICON VerbRoot
 
 догӀу%<v%>%<iv%>%<pres%>:догӀу # ; ! "fell"
 
+кхочу%<v%>%<prov%>:кхочу # ; ! "arrive"
+
+хилар%<v%>%<iv%>%<pres%>:хилар # ; ! "exist"
+
+долуш%<v%>%<tv%>%<pres%>%<cl_d%>:долуш # ; ! "go"
+
 
 
 LEXICON Negation
@@ -1148,6 +1179,7 @@ LEXICON Postposition
 ши%<post%>:ши # ; ! "on"
 лаьцна%<post%>:лаьцна # ; ! "about"
 в%<post%>:в # ; ! "RUSS?"
+чу%<post%>:чу # ; ! "in"
 
 
 LEXICON ProNoun
