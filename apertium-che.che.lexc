@@ -776,6 +776,7 @@ LEXICON NounRoot
 
 январь:январь NounUc ; ! "Janurary"
 июль:июль NounUc ; ! "June"
+декабрь:декабрь NounUc ; ! "December"
 
 шо:шо NounDc ; ! "year"
 шарахь%<n%>%<cl_d%>%<ine%>%<sg%>:шарахь # ; ! "year"
@@ -899,6 +900,14 @@ UTC%<n%>:UTC # ; ! "Coordinated Universal Time"
 
 мур:мур NounDc ; ! "period"
 мур:муьр NounDc-Aug-inan ;
+
+тӀай:тӀай NounDc ; ! "bridge"
+тӀехь%<n%>%<cl_d%>%<abl%>%<sg%>:тӀехь # ;
+
+Ӏаткъам:Ӏаткъам NounUc ; ! "oppression"
+
+гӀорол:гӀорол NounUc ; ! "??"
+гӀорол:гӀорол NounUc-Aug-inan ;
 
 
 ! Irregular Plural (plural forms hard-coded because the inflection does not conform to any rule)
@@ -1033,6 +1042,14 @@ Cахьтан%<adj%>:Cахьтан # ; ! "hour"
 Ӏаьнца%<adj%>%<neg%>:Ӏаьнца # ; ! "not winter"
 къаьмнийн%<adj%>:къаьмнийн # ; ! "national"
 Москван%<adj%>:Москван # ; ! "Moscowian"
+малхбален%<adj%>:малхбален # ; ! "eastern"
+акъарин%<adj%>:акъарин # ; ! "flat"
+Тверан%<adj%>:Тверан # ; ! "Tver"
+тӀуналла%<adj%>:тӀуналла # ; ! "??"
+еха%<adj%>:еха # ; ! "tall, lengthy"
+Новгородан%<adj%>:Новгородан # ; ! "New Year"
+Вологдан%<adj%>:Вологдан # ; ! "Vologdan"
+Пскован%<adj%>:Пскован # ; ! "Pskovan"
 
 
 
@@ -1077,6 +1094,7 @@ LEXICON Adv
 бӀаьста%<adv%>%<tmp%>:бӀаьста # ; ! "spring"
 гурахь%<adv%>%<tmp%>:гурахь # ; ! "in autumn"
 гергга%<adv%>:гергга # ; ! "approximately"
+кӀезиг%<adv%>%<quan%>:кӀезиг # ; ! "no less than"
 
 
 
@@ -1158,6 +1176,7 @@ LEXICON VerbRoot
 хилар%<v%>%<iv%>%<pres%>:хилар # ; ! "exist"
 
 долуш%<v%>%<tv%>%<pres%>%<cl_d%>:долуш # ; ! "go"
+болалуш%<v%>%<tv%>%<pres%>%<cl_b%>:болалуш # ;
 
 
 
@@ -1174,12 +1193,14 @@ LEXICON Conjunction
 амма%<conj%>:амма # ; ! "but"
 ткъа%<conj%>:ткъа # ; ! "HO RUSS"
 
+
 LEXICON Postposition
 
 ши%<post%>:ши # ; ! "on"
 лаьцна%<post%>:лаьцна # ; ! "about"
 в%<post%>:в # ; ! "RUSS?"
 чу%<post%>:чу # ; ! "in"
+кхаччалц%<post%>:кхаччалц # ; ! "until"
 
 
 LEXICON ProNoun
