@@ -652,8 +652,8 @@ LEXICON NounRoot
 хена:хена NounUc ; ! "air"
 хена:хена NounUc-Aug-inan ; ! "air"
 
-хӀоттама:хӀоттама NounUc ; ! "state"
-хӀоттама:хӀоттам NounUc-Aug-inan ;
+хӀоттам:хӀоттам NounUc ; ! "state"
+хӀоттам:хӀоттам NounUc-Aug-inan ;
 
 гӀант:гӀант NounUc ; ! "chair"
 гӀант:гӀант NounUc-Aug-inan ; ! "chair"
@@ -684,7 +684,7 @@ LEXICON NounRoot
 йиша:йиша NounJc-Aug-anim ; ! "sister"
 
 юрт:юрт NounUc ; ! "village"
-юрт:юрт NounUc-Aug-inan ; ! "village"
+юрт:юьрт NounUc-Aug-inan ; ! "village"
 
 чоь:чоь NounUc ; ! "room"
 чоь:чо NounUc-Aug-inan ; ! "room"
@@ -744,6 +744,8 @@ LEXICON NounRoot
 област:област NounUc ; ! "oblast"
 област:област NounUc-Aug-inan ;
 
+область:область NounUc ; ! "oblast"
+
 лела:лела NounUc-Aug-inan ; ! "direction"
 
 Федерацин:Федерацин NounUc ; ! "federation"
@@ -758,7 +760,9 @@ LEXICON NounRoot
 Ӏа:Ӏаьн NounDc-Aug-inan ;
 
 барам:барам NounDc ; ! "funeral bier"
-барам:барам NounDc-Aug-inan ; ! "funeral bier"
+барамера%<n%>%<cl_d%>%<abl%>%<sg%>:барамера # ;
+барамехь%<n%>%<cl_d%>%<ine%>%<sg%>:барамехь # ;
+
 
 аьхке:аьхке NounJc ; ! "summer"
 аьхке:аьхкен NounJc-Aug-inan ; ! "summer"
@@ -773,9 +777,116 @@ LEXICON NounRoot
 
 шо:шо NounDc ; ! "year"
 шарахь%<n%>%<cl_d%>%<ine%>%<sg%>:шарахь # ; ! "year"
+шерашкахь%<n%>%<cl_d%>%<ine%>%<sg%>:шерашкахь # ;
 
 дукхалла:дукхалла NounUc ; ! "number"
 дукхалла:дукхалла NounUc-Aug-inan ; ! "number"
+
+де:де NounDc ; ! "day"
+денош%<n%>%<cl_d%>%<abs%>%<pl%>:денош # ;
+
+меттиг:меттиг NounJc ; ! "place"
+меттиг:меттиг NounJc-Aug-inan ; ! "place"
+
+кӀеда:кӀеда NounB2c ; ! "tongue"
+кӀеда:кӀеда NounB2c-Aug-inan ; ! "tongue"
+
+кхоллам:кхоллам NounBc ; ! "marriage"
+кхоллам:кхоллам NounBc-Aug-inan ; ! "marriage"
+
+мангал:мангал NounBc ; ! "braid"
+мангал:мангал NounBc-Aug-inan ; ! "braid"
+
+хІоттам:хІоттам NounBc ; ! "weather??"
+хІоттам:хІоттам NounBc-Aug-inan ;
+
+кхин:кхин NounJ2c ; ! "daughter-like relative"
+кхин:кхин NounJ2c-Aug-anim ; ! "daughter-like relative"
+
+гуьйре:гуьйре NounJc ; ! "autumn"
+гуьйре:гуьйре NounJc-Aug-inan ; ! "autumn"
+
+UTC%<n%>:UTC # ; ! "Coordinated Universal Time"
+
+къилбаседа:къилбаседа NounB2c ; ! "Polaris"
+къилбаседа:къилбаседан NounB2c-Aug-inan ;
+
+амал:амал NounJc ; ! "custom"
+амал:амал NounJc-Aug-inan ; ! "custom"
+амалехь%<n%>%<cl_j%>%<ine%>%<sg%>:амалехь # ;
+
+кеп:кеп NounJc ; ! "cast"
+кеп:кеп NounJc-Aug-inan ;
+
+хьолаш%<n%>%<cl_u%>%<abs%>%<pl%>:хьолаш # ; ! "??"
+
+масса:масса NounJc ; ! "mass"
+масса:масса NounJc-Aug-inan ;
+
+къилба:къилба NounDc ; ! "compass"
+къилба:къилбан NounDc-Aug-inan ;
+
+хӀаваъ:хӀаваъ NounDc ; ! "air"
+хӀаваан%<n%>%<cl_d%>%<gen%>%<sg%>:хӀаваан # ;
+
+дакъа:дакъа NounDc ; ! "dead person"
+дакъа:докъ NounDc-Aug-anim ;
+
+орам:орам NounB2c ; ! "wordroot"
+орам:орам NounB2c-Aug-inan ;
+
+дитт:дитт NounDc ; ! "tree"
+дитт:дитт NounDc-Aug-inan ;
+
+стом:стом NounB2c ; ! "fruit"
+стом:стоьм NounB2c-Aug-inan ;
+
+буц:буц NounJc ; ! "grass"
+бецаш%<n%>%<cl_j%>%<abs%>%<pl%>:бецаш # ;
+
+ялта:ялта NounDc ; ! "bread"
+ялта:ялта NounDc-Aug-inan ;
+
+беркат:беркат NounDc ; ! "prosperity, wealth"
+беркат:беркат NounDc-Aug-inan ;
+
+картол:картол NounJc ; ! "potato"
+картол:картол NounJc-Aug-inan ;
+
+хастом:хастом NounBc ; ! "vegetable"
+хастом:хастоьм NounBc-Aug-inan ;
+
+циклонашца:циклонашца NounUc ;
+
+йол:йол NounJc ; ! "hay"
+йолчу%<n%>%<cl_j%>%<obl%>:йолчу # ;
+
+адам:адам NounDc ; ! "people"
+адам:адам NounDc-Aug-inan ;
+
+зон:зон NounUc ; ! "zone"
+зонехь%<n%>%<cl_u%>%<ine%>%<sg%>:зонехь # ;
+
+йочана:йочана NounJc ; ! "bad weather"
+йочана:йочана NounJc-Aug-inan ; ! "bad weather"
+
+йовхо:йовхо NounJc ; ! "heat, fever"
+йовхо:йовхон NounJc-Aug-inan ; ! "heat, fever"
+
+мох:мох NounB2c ; ! "wind"
+мох:мех NounB2c-Aug-inan ;
+
+малхбузе:малхбузе NounJc ; ! "west"
+малхбузе:малхбузе NounJc-Aug-inan ;
+
+хӀаваъ:хӀаваъ NounDc ; ! "atmosphere"
+
+дохк:дохк NounDc ; ! "fog, mist"
+дохк:дохкар NounDc-Aug-inan ;
+
+хан:хан NounJc ; ! "time, period"
+хан:хен NounJc-Aug-inan ;
+
 
 
 
@@ -783,6 +894,7 @@ LEXICON NounRoot
 
 стаг:стаг NounVc ; ! "person"
 стаг%<n%>%<cl_v%>%<abs%>%<pl%>:нах # ; ! "people"
+
 
 
 
@@ -812,6 +924,12 @@ LEXICON PropNounRoot
 Зейна:Зейна PropNounAnt ; ! "Zejna"
 Жовхьар:Жовхьар PropNounAnt ; ! "John"
 Мурад:Мурад PropNounAnt ; ! "Myrad"
+Минскца%<np%>:Минскца # ; ! "??"
+Европера%<np%>%<hyd%>%<abl%>%<sg%>:Европера # ; ! "Europe"
+виета:виета PropNounCog ; ! "Viete"
+леррана%<np%>:леррана # ; ! "??"
+мм%<np%>:мм # ; ! "mm"
+Украин:Украин PropNounHyd ; ! "Ukraine"
 
 
 
@@ -847,6 +965,7 @@ LEXICON AdjRoot
 классикан%<adj%>:классикан # ; ! "classic"
 романийн%<adj%>:романийн # ; ! "Roman"
 лавянийн%<adj%>:лавянийн # ; ! "Slavic"
+Белоруссин%<adj%>:Белоруссин # ; ! "Belorussian"
 хаза%<adj%>:хаза # ; ! "beautiful"
 вон%<adj%>:вон # ; ! "bad"
 мерза%<adj%>:мерза # ; ! "tasty"
@@ -875,6 +994,25 @@ LEXICON AdjRoot
 Cахьтан%<adj%>:Cахьтан # ; ! "hour"
 бовха%<adj%>:бовха # ; ! "warm, hot"
 сиха%<adj%>:сиха # ; ! "fast"
+атлантикан%<adj%>:атлантикан # ; ! "Atlantic"
+кӀеда%<adj%>:кӀеда # ; ! "soft, weak"
+алсама%<adj%>:алсама # ; ! "plentiful"
+башха%<adj%>:башха # ; ! "remarkable"
+Малхбален%<adj%>:Малхбален # ; ! "Eastern"
+малхбузан%<adj%>:малхбузан # ; ! "Western"
+Кхузара%<adj%>:Кхузара # ; ! "local"
+стоьмийн%<adj%>:стоьмийн # ; ! "fruity"
+асанан%<adj%>:асанан # ; ! "pertaining to a belt, zone"
+беркате%<adj%>:беркате # ; ! "blssed, abundant"
+тайна%<adj%>:тайна # ; ! "decent"
+йолан%<adj%>:йолан # ; ! "tax"
+хӀордан%<adj%>:хӀордан # ; ! "marine"
+Шаран%<adj%>:Шаран # ; ! "spherical"
+юкъара%<adj%>:юкъара # ; ! "collective"
+Шеран%<adj%>:Шеран # ; ! "yearly"
+йовхачу%<adj%>%<obl%>:йовхачу # ; ! "harmful"
+аьхкенца%<adj%>%<neg%>:аьхкенца # ; ! "not summer"
+арктикан%<adj%>:арктикан # ; ! "arctic"
 
 
 LEXICON Adv
@@ -905,7 +1043,15 @@ LEXICON Adv
 Кхузахь%<adv%>%<loc%>:Кхузахь # ; ! "here"
 юкъа%<adv%>%<loc%>:юкъа # ; ! "in the middle, halfway"
 аьхка%<adv%>%<tmp%>:аьхка # ; ! "summer"
-
+сих%<adv%>:сих # ; ! "fast"
+кхин%<adv%>:кхин # ; ! "further"
+алсам%<adv%>:алсам # ; ! "plenty, more"
+цхьаьна%<adv%>:цхьаьна # ; ! "together"
+дикка%<adv%>%<quan%>:дикка # ; ! "much"
+Ӏай%<adv%>%<tmp%>:Ӏай # ; ! "winter"
+дукха%<adv%>%<quan%>:дукха # ; ! "a lot"
+дийнахь%<adv%>%<tmp%>:дийнахь # ; ! "by day"
+бӀаьста%<adv%>%<tmp%>:бӀаьста # ; ! "spring"
 
 
 
@@ -978,6 +1124,10 @@ LEXICON VerbRoot
 
 лело%<v%>%<tv%>%<inf%>:лело # ; ! "drive, wear"
 
+йолуш%<v%>%<tv%>%<prog%>%<ptcp%>:йолуш # ; ! "?"
+
+догӀу%<v%>%<iv%>%<pres%>:догӀу # ; ! "fell"
+
 
 
 LEXICON Negation
@@ -997,6 +1147,7 @@ LEXICON Postposition
 
 ши%<post%>:ши # ; ! "on"
 лаьцна%<post%>:лаьцна # ; ! "about"
+в%<post%>:в # ; ! "RUSS?"
 
 
 LEXICON ProNoun
@@ -1037,6 +1188,7 @@ LEXICON ProNoun
 шаьш%<prn%>%<pers%>%<p3%>%<pl%>%<erg%>%<ref%>:шаьш # ; ! "themselves"
 
 цуьнга%<prn%>%<pers%>%<p3%>%<sg%>%<all%>:цуьнга # ; ! "its, hers, his"
+цуьнан%<prn%>%<pers%>%<ps%>%<sg%>%<gen%>:цуьнан # ;
 
 сан%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:сан # ; ! "my"
 
